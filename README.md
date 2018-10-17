@@ -1,9 +1,9 @@
 # Project Team-20
-### Neil Shah, Archana Yadawa, Nishtha Atrey, Kruti Thukral
+### **Team Members:** Neil Shah, Archana Yadawa, Nishtha Atrey, Kruti Thukral
 
 
-_Shortlisted Ideas_
 
+## _Shortlisted Ideas:_
 
 ## 1. Improving search experience on BigData 
 
