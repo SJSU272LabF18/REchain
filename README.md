@@ -9,7 +9,13 @@ _Shortlisted Ideas_
 
 ### Problem statement: 
 ```
-    Lots of companies(Cisco, etc)  and organizations have tons of data and other information stored in their database and possibly millions of users access these websites each day. They spend a lot of time trying to search for the information they need on these websites using the website’s search bars. How can we directly answer the question that the visitor/customer/student has without having them go through 100+ URLs and read through the corresponding documentation on those URLs? No one likes to spend more than a min on search and look past the first page of results.
+    Lots of companies(Cisco, etc)  and organizations have tons of data and other information
+    stored in their database and possibly millions of users access these websites each day.
+    They spend a lot of time trying to search for the information they need on these websites
+    using the website’s search bars. How can we directly answer the question that the
+    visitor/customer/student has without having them go through 100+ URLs and read through
+    the corresponding documentation on those URLs? No one likes to spend more than a min on
+    search and look past the first page of results.
 ```
 
 ### Proposed Methodology:
