@@ -5,14 +5,33 @@
 
 ## _Shortlisted Ideas:_
 
-## 1. Improving search experience on BigData 
+## 1. BlockChain for RealEsate title records
 
 ### Problem statement: 
 
-Lots of companies(Cisco, etc)  and organizations have tons of data and other information stored in their database and possibly millions of users access these websites each day. They spend a lot of time trying to search for the information they need on these websites using the website’s search bars. How can we directly answer the question that the visitor/customer/student has without having them go through 100+ URLs and read through the corresponding documentation on those URLs? No one likes to spend more than a min on search and look past the first page of results.
+One of the biggest challenges in buying/selling real estate, especially in a country like India, is the legal process of checking the property's title. The percentage of frauds that happen in that domain are enormous(upwards of 50%) and expensive. A person would have to hire a lawyer and wait for 1-2 months until the legal check is done and even then there is no gurantee that the title is clear.  
+
+Title records are decentralized, challenging-to-access aspect of the real estate buying/selling process. Even in 2017, title information remains stored at the local level and is offline. With the blockchain, this can be changed. The blockchain could provide a central title database for the entire country to securely store and instantly access historical title records, allowing for the streamlining of title transfer in a property sale. 
 
 
-### Proposed Methodology:
+### Proposed Methodology: (Using HyperLedger Fabric, Docker, MEAN stack)
+
+- Property details need to be tracked, de-centralized and accessable to buyer/seller. 
+- Hyper Ledger Fabric will provide - Identity management, Privacy and confidentiality, Efficient processing, Chaincode functionalities, Modular design
+- Create a front-end app/web portal where buyer/seller can search for properties and view all of its title details
+- Back-end node server will handle requests for transactions and write to decentralized ledger
+
+
+
+## 2. Improving search experience on SJSU website/(any BigData) 
+
+### Problem statement: 
+
+While I was applying for the graduate course at SJSU I remember going over to SJSU's website and tyring to use their search bar to look for specific information regarding the different programs and professors that I was interested in. The search would always return several irrelevant links that had be looking through the entire page for what I actually wanted. The search requires some understand of natural language questions to figure out where the best answer would be. 
+A similar problem exists in several companies as well that have a lot of product information that has built up through the years. 
+
+
+### Proposed Methodology: (Using elastic stack, ML, NLP)
 
 - Extract key phrases from documents (bigrams/Trigrams that are the most significantly and semantically representative of the content)
 - Extract synonyms for Unigrams/Keyphrases identified above and use it for query expansion for search (eg: restrictions-> limitations, password reset -> password change)
@@ -21,7 +40,7 @@ Lots of companies(Cisco, etc)  and organizations have tons of data and other inf
 - Find all documents that are full/partial semantic match to the search query (beyond basic keyword search)
 
 
-## 2. SJSU Chatbot 
+## 3. SJSU Chatbot 
 
 ### Project Description/Problem Statement: 
 
@@ -48,7 +67,7 @@ Freshman year in college can be intimidating. Being surrounded by a new place ca
     - Menu - drop down menu will allow users to choose various different tasks 
 
 
-## 3. IOT for laundry system
+## 4. IOT for laundry system
 
 ### Problem statement: 
 
