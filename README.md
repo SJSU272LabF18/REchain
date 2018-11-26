@@ -34,4 +34,11 @@ Title records are decentralized, challenging-to-access aspect of the real estate
 - Kafka 2.1.1-1.1.0
 
 
-
+#### Starting Hyperledger
+- Start Docker
+- Inside hyperledger/fabric-dev-server run the following:
+```sh
+> ./downloadFabric.sh 
+./startFabric.sh
+./createPeerAdminCard.sh>
+```
