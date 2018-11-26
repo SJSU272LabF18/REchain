@@ -1,5 +1,6 @@
 var Properties = require("../../Backend/models/property");
 const request = require('request');
+const today = new Date().toISOString().slice(0, 10);
 
 require("../../Backend/db/mongoose");
 
@@ -37,14 +38,17 @@ function handle_request(msg, callback) {
     photos: [],
     owner_fname: msg.fname,
     owner_lname: msg.lname,
-    yearbuilt: parseInt(msg.yearbuilt),
-    parking: parseInt(msg.parking),
+    yearbuilt: msg.yearbuilt,
+    parking: msg.parking,
     price: String(msg.price),
     sqft: String(msg.sqft)
   });
 
   console.log("Making request to HYPERLEDGER to chk if asset exists")
   propID = String(msg.streetaddr).replace(/\s+/g, "")
+  console.log("*****************************************************")
+  console.log("Year Built=" + msg.yearbuilt)
+  console.log("*****************************************************")
 
   url="http://localhost:4000/api/org.digitalproperty.Property/" + propID
   request(url, { json: true }, (err, res, body) => {
@@ -57,9 +61,9 @@ function handle_request(msg, callback) {
     }
      
     if(res.statusCode==404){
-      console.log("Property Asset does not exist in Hyperledger.");
+      console.log("Property Asset " + propID + " does not exist in Hyperledger.");
 
-      console.log("Creating new asset for property"); 
+      console.log("Creating new asset for property " + propID); 
 
       //create new asset on hyperledger
       bodyData={
@@ -82,16 +86,17 @@ function handle_request(msg, callback) {
                   console.log(error); 
                   callback(null, []);
                 }
-                console.log(body);
-                
+                console.log("Property asset created.")
+                console.log("********************************************************")
                 console.log("Posting transaction for property ",propID)
                 transaction= {
                   "buyer":msg.fname + " " + msg.lname,
                   "seller":"builder",
-                  "trans_date":msg.yearbuilt,
+                  "trans_date":"01/01/"+msg.yearbuilt,
                   "trans_amt":"undisclosed",
                   "property":propID
                 }
+                console.log("Transaction: " + JSON.stringify(transaction))
                 url="http://localhost:4000/api/org.digitalproperty.TransactionDetails"
 
                 request.post({
@@ -108,7 +113,8 @@ function handle_request(msg, callback) {
                           callback(null, []);
                         }
                         //console.log(body);
-
+                        console.log("Posting transaction completed.")
+                        console.log("****************************************")
                         property.save().then(
                           property => {
                             console.log("Property saved to DB : ", property._id);
