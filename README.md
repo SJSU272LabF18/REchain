@@ -53,3 +53,38 @@ composer card import --file admin@digital-property.card
 composer-rest-server -c admin@digital-property -p 4000
 
 ```
+
+#### Starting ZooKeeper and Kafka
+- Inside kafka2.1.1-1.1.0/ folder:
+Terminal 1:
+```sh
+bin/zookeeper-server-start.sh config/zookeeper.properties
+```
+Terminal 2:
+```sh
+bin/kafka-server-start.sh config/server.properties
+```
+Terminal 3: (need to run only each time device restarts)
+```sh
+./topic.sh 
+```
+
+#### Starting Frontend and Backend
+- Inside Backend/
+Terminal 4:
+```sh
+npm install
+node index.js
+```
+- Inside kafka-backend/
+Terminal 5:
+```sh
+npm install
+npm start
+```
+- Inside Fronend/
+Terminal 6:
+```sh
+npm install
+npm start
+```
