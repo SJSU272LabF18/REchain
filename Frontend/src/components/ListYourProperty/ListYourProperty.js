@@ -408,7 +408,7 @@ class ListYourProperty extends Component {
       bathrooms: this.state.bathrooms,
       //accomodates: this.state.accomodates,
       sqft: this.state.sqft,
-      year_built: this.state.year_built,
+      yearbuilt: this.state.yearbuilt,
       parking: this.state.parking,
       price: this.state.pricing,
       // startdate: this.state.startdate,
