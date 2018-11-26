@@ -22,7 +22,7 @@ Title records are decentralized, challenging-to-access aspect of the real estate
 
 ****************************************************************************************************************
 
-### Usage (currently runs locally, will be moved to cloud later)
+### Usage (currently runs locally, will be moved to AWS/Bluemix eventually)
 
 #### Dependencies
 - Docker
