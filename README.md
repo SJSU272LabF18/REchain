@@ -60,11 +60,11 @@ Terminal 1:
 ```sh
 bin/zookeeper-server-start.sh config/zookeeper.properties
 ```
-Terminal 2:
+- Inside kafka2.1.1-1.1.0/ folder:Terminal 2:
 ```sh
 bin/kafka-server-start.sh config/server.properties
 ```
-Terminal 3: (need to run only each time device restarts)
+- Inside kafka2.1.1-1.1.0/ folder:Terminal 3: (need to run only each time device restarts)
 ```sh
 ./topic.sh 
 ```
