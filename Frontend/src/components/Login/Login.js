@@ -72,7 +72,7 @@ class Login extends Component {
           <div class="header-bce bluefont logo">
             <div id="hal" class="navbar-brand">
               <a href="/home" id="hal">
-                HomeAway
+                Bloquity
                 <span class="sup">&reg;</span>
               </a>
             </div>
@@ -84,7 +84,7 @@ class Login extends Component {
             <div align="center" class="helvetica ">
               {" "}
               <br />
-              <h1>Log in to HomeAway</h1>
+              <h1>Log in to Bloquity</h1>
               <h3 color="rgb(143, 137, 137)">
                 Need an account?{" "}
                 <a href="http://localhost:3000/SignUp"> Sign Up</a>
@@ -183,7 +183,7 @@ class Login extends Component {
             </div>
             <br />
             <div class="disclaimer2">
-              Use of this Web site constitutes acceptance of the HomeAway.com{" "}
+              Use of this Web site constitutes acceptance of the Bloquity.com{" "}
               <a href="https://www.homeaway.com/info/about-us/legal/terms-conditions">
                 Terms and Conditions
               </a>{" "}
@@ -191,7 +191,7 @@ class Login extends Component {
               <a href="https://www.homeaway.com/info/about-us/legal/privacy-policy">
                 Privacy Policy
               </a>
-              .<br /> ©2018 HomeAway. All rights reserved.
+              .<br /> ©2018 Bloquity. All rights reserved.
               <br />
               <br />
               <br />
