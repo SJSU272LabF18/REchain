@@ -1760,6 +1760,34 @@ div.card {
   color: gray;
 }
 
+#sqftLabel {
+  position: relative;
+  left: 1vw;
+  font-weight: 400;
+  color: gray;
+}
+
+#yearbuiltLabel {
+  position: relative;
+  left: 1vw;
+  font-weight: 400;
+  color: gray;
+}
+
+#pricingLabel {
+  position: relative;
+  left: 1vw;
+  font-weight: 400;
+  color: gray;
+}
+
+#parkingLabel {
+  position: relative;
+  left: 1vw;
+  font-weight: 400;
+  color: gray;
+}
+
 #bathroomsLabel {
   position: relative;
   left: 1vw;
