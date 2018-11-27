@@ -44,11 +44,9 @@ function handle_request(msg, callback) {
     sqft: String(msg.sqft)
   });
 
+  console.log("************************HYPERLEDGER*****************************")
   console.log("Making request to HYPERLEDGER to chk if asset exists")
   propID = String(msg.streetaddr).replace(/\s+/g, "")
-  console.log("*****************************************************")
-  console.log("Year Built=" + msg.yearbuilt)
-  console.log("*****************************************************")
 
   url="http://localhost:4000/api/org.digitalproperty.Property/" + propID
   request(url, { json: true }, (err, res, body) => {
@@ -143,7 +141,8 @@ function handle_request(msg, callback) {
 
       } else {
         console.log("Owners match!")
-
+        console.log("************************HYPERLEDGER*****************************")
+        
         property.save().then(
           property => {
             console.log("Property saved to DB : ", property._id);
