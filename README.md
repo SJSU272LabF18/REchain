@@ -36,11 +36,15 @@ Title records are decentralized, challenging-to-access aspect of the real estate
 
 #### Starting Hyperledger
 - Start Docker
+- Run below command in terminal
+ ```
+ nvm use 8
+ ```
 - Inside hyperledger/fabric-dev-server/ run the following:
 ```sh
-./downloadFabric.sh 
+./downloadFabric.sh (Only for thr first time . Next time hyperledger needs to be started, this step should be skipped)
 ./startFabric.sh
-./createPeerAdminCard.sh
+./createPeerAdminCard.sh (Needs to be done only first time. Not sure need to check on this)
 ```
 - Go back one level to hyperledger/ and run the following:
 ```sh
@@ -48,7 +52,7 @@ composer network install --archiveFile digital-property.bna --card PeerAdmin@hlf
 
 composer network start --networkName digital-property --networkVersion 0.2.6 --card PeerAdmin@hlfv1 --networkAdmin admin --networkAdminEnrollSecret adminpw
 
-composer card import --file admin@digital-property.card
+composer card import --file admin@digital-property.card (Needs to be done only first time. Not sure need to check on this)
 
 composer-rest-server -c admin@digital-property -p 4000
 

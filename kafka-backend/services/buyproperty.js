@@ -13,12 +13,11 @@ function handle_request(msg, callback) {
 
   //Post request to Hyperledger to save new transaction
   propID = String(msg.streetaddr).replace(/\s+/g, "")
-  console.log("PropID=", propID)
   bodyData ={
-        "buyer":msg.fname,
-        "seller":msg.owner_fname,
-        "trans_date":msg.date,
-        "trans_amt":msg.price,
+        "buyer":msg.fname + " " + msg.lname,
+        "seller":msg.owner_fname + " " + msg.owner_lname,
+        "trans_date":msg.trans_date,
+        "trans_amt":msg.trans_amt,
         "property":propID 
   }
 
@@ -37,7 +36,7 @@ function handle_request(msg, callback) {
                 "There was a problem in saving the transaction history to hyperledger in buyproperty.js"
               );
               console.log(error); 
-              callback(null, []);
+              callback(null, JSON.stringify(error));
             }
             console.log(body);
             
