@@ -1,5 +1,6 @@
 var Properties = require("../../Backend/models/property");
 const request = require('request');
+const today = new Date().toISOString().slice(0, 10);
 
 require("../../Backend/db/mongoose");
 
@@ -17,7 +18,7 @@ function handle_request(msg, callback) {
   bodyData ={
         "buyer":msg.fname,
         "seller":msg.owner_fname,
-        "trans_date":msg.date,
+        "trans_date":today,
         "trans_amt":msg.price,
         "property":propID 
   }
