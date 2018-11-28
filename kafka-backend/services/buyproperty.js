@@ -1,6 +1,6 @@
 var Properties = require("../../Backend/models/property");
 const request = require('request');
-const today = new Date().toISOString().slice(0, 10);
+
 
 require("../../Backend/db/mongoose");
 
@@ -13,19 +13,13 @@ function handle_request(msg, callback) {
   );
 
   //Post request to Hyperledger to save new transaction
+  var today = new Date().toISOString().slice(0, 10);
   propID = String(msg.streetaddr).replace(/\s+/g, "")
   bodyData ={
-<<<<<<< HEAD
         "buyer":msg.fname + " " + msg.lname,
         "seller":msg.owner_fname + " " + msg.owner_lname,
-        "trans_date":msg.trans_date,
-        "trans_amt":msg.trans_amt,
-=======
-        "buyer":msg.fname,
-        "seller":msg.owner_fname,
         "trans_date":today,
-        "trans_amt":msg.price,
->>>>>>> 88e59a2f8eb731448a9865fbe3bd99cd1b0043b8
+        "trans_amt":msg.trans_amt,
         "property":propID 
   }
 
