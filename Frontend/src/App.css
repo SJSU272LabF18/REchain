@@ -1592,7 +1592,7 @@ input:checked + .slider:before {
 .savechangesbutton {
   position: absolute;
   margin-top: 1.2vw;
-  background-color: #0067db;
+  background-color: rgb(38, 52, 175);
   font-size: 1.1vw;
   border: none;
   border-radius: 40px;
@@ -1938,11 +1938,13 @@ div.card {
 .bc2:focus {
   outline: none;
 }
-
+/*
+changed
+*/
 .checkpt {
   position: absolute;
   font-size: 35px;
-  color: rgb(66, 143, 243);
+  color: rgb(38, 52, 175);
   left: -1.5vw;
   bottom: 1vw;
 }

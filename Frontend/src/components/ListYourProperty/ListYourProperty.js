@@ -705,6 +705,17 @@ class ListYourProperty extends Component {
                 </li> */}
                 {/* ADDING PROPERTY REQS */}
                 <li>
+                  <a class="tabitem" href="#photos" data-toggle="tab">
+                    <p class="tabitem">
+                      {" "}
+                      {this.state.isPhotosComplete ? (
+                        <i class="fa fa-check-circle checkpt" />
+                      ) : null}
+                      Photos
+                    </p>
+                  </a>
+                </li>
+                <li>
                   <a class="tabitem" href="#location" data-toggle="tab">
                     <p class="tabitem">
                       {" "}
@@ -726,7 +737,7 @@ class ListYourProperty extends Component {
                     </p>
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a class="tabitem" href="#photos" data-toggle="tab">
                     <p class="tabitem">
                       {" "}
@@ -736,7 +747,7 @@ class ListYourProperty extends Component {
                       Photos
                     </p>
                   </a>
-                </li>
+                </li> */}
                 {/* <li>
                   <a class="tabitem" href="#pricing" data-toggle="tab">
                     <p class="tabitem">
@@ -1114,7 +1125,7 @@ class ListYourProperty extends Component {
                 </div>
                 {/*---------------------------------PHOTOS--------------------------------*/}
                 <div class="tab-pane" id="photos">
-                  <h1>Add up to 5 photos of your property</h1>
+                  <h1> Add up to 5 photos of your property </h1>
                   <hr />
                   Showcase your property’s best features (no pets or people,
                   please).

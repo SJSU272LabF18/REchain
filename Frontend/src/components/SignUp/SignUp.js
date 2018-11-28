@@ -149,7 +149,7 @@ class SignUp extends Component {
                     component={this.renderPField}
                   />
 
-                  <div align="left">
+                  {/* <div align="left">
                     <Field
                       label="Type Of Account"
                       name="typeofaccount"
@@ -157,7 +157,7 @@ class SignUp extends Component {
                     />
 
                     <br />
-                  </div>
+                  </div> */}
                   <div>
                     <button type="submit" class="btn btn-primary">
                       Sign Up
@@ -186,12 +186,12 @@ class SignUp extends Component {
                       rel="stylesheet"
                       type="text/css"
                     />
-                    <a href="#" class="button facebook">
+                    {/* <a href="#" class="button facebook">
                       <span>
                         <i class="fa fa-facebook" aria-hidden="true" />
                       </span>
                       <p>Log in with Facebook</p>
-                    </a>
+                    </a> */}
                   </div>
 
                   <div class="google-btn">
@@ -210,14 +210,14 @@ class SignUp extends Component {
                       <p class="btn-text">Log in with Google</p>
                     </a>
                   </div>
-                  <p class="disclaimer">
+                  {/* <p class="disclaimer">
                     We don't post anything without your permission.
-                  </p>
+                  </p> */}
                   <br />
                   <p class="disclaimer2">
-                    By creating an account you are accepting our{" "}
+                    By joining Bloquity you are accepting our{" "}
                     <a href="https://www.homeaway.com/info/about-us/legal/terms-conditions">
-                      Terms and Conditions
+                      Terms of Service
                     </a>{" "}
                     and{" "}
                     <a href="https://www.homeaway.com/info/about-us/legal/privacy-policy">
@@ -231,15 +231,15 @@ class SignUp extends Component {
           </div>
           <br />
           <div class="disclaimer2">
-            Use of this Web site constitutes acceptance of the Bloquity.com{" "}
+            {/* Use of this Web site constitutes acceptance of the Bloquity.com{" "}
             <a href="https://www.homeaway.com/info/about-us/legal/terms-conditions">
               Terms and Conditions
             </a>{" "}
             and{" "}
             <a href="https://www.homeaway.com/info/about-us/legal/privacy-policy">
               Privacy Policy
-            </a>
-            .<br /> ©2018 Bloquity. All rights reserved.
+            </a> */}
+            ©2018 Bloquity. All rights reserved.
             <br />
             <br />
             <br />
@@ -269,9 +269,9 @@ function validate(values) {
   if (!values.lname) {
     errors.lname = "Last Name is required";
   }
-  if (!values.typeofaccount) {
-    errors.typeofaccount = "Please specify if you are a Traveler or an Owner";
-  }
+  // if (!values.typeofaccount) {
+  //   errors.typeofaccount = "Please specify if you are a Traveler or an Owner";
+  // }
 
   // If errors is empty, the form is fine to submit
   // If errors has *any* properties, redux form assumes form is invalid
