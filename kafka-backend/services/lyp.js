@@ -1,6 +1,5 @@
 var Properties = require("../../Backend/models/property");
 const request = require('request');
-const today = new Date().toISOString().slice(0, 10);
 
 require("../../Backend/db/mongoose");
 
@@ -26,15 +25,7 @@ function handle_request(msg, callback) {
     propdesc: msg.propdesc,
     proptype: msg.proptype,
     rooms: parseInt(msg.rooms, 10),
-    //accomodates: parseInt(msg.accomodates, 10),
     bathrooms: parseInt(msg.bathrooms, 10),
-    //startdate: new Date(msg.startdate),
-    //enddate: new Date(msg.enddate),
-    //nbr: msg.nbr,
-    //minstay: parseInt(msg.minstay, 10),
-    //cf: msg.cf,
-    //apa: msg.apa,
-    //isbooked: "N",
     photos: [],
     owner_fname: msg.fname,
     owner_lname: msg.lname,
@@ -46,9 +37,10 @@ function handle_request(msg, callback) {
 
   console.log("************************HYPERLEDGER*****************************")
   console.log("Making request to HYPERLEDGER to chk if asset exists")
-  propID = String(msg.streetaddr).replace(/\s+/g, "")
+  uniqueID = msg.streetaddr + msg.unit + msg.zip
+  propID = String(uniqueID).replace(/\s+/g, "")
+  url="http://107.23.194.9:4000/api/org.digitalproperty.Property/" + propID
 
-  url="http://localhost:4000/api/org.digitalproperty.Property/" + propID
   request(url, { json: true }, (err, res, body) => {
     if (err) { 
       console.log(
@@ -69,7 +61,7 @@ function handle_request(msg, callback) {
         "transactionHistory": []
       }
 
-      url="http://localhost:4000/api/org.digitalproperty.Property"
+      url="http://107.23.194.9:4000/api/org.digitalproperty.Property"
 
       request.post({
             headers: {'content-type' : 'application/json'},
@@ -95,7 +87,7 @@ function handle_request(msg, callback) {
                   "property":propID
                 }
                 console.log("Transaction: " + JSON.stringify(transaction))
-                url="http://localhost:4000/api/org.digitalproperty.TransactionDetails"
+                url="http://107.23.194.9:4000/api/org.digitalproperty.TransactionDetails"
 
                 request.post({
                     headers: {'content-type' : 'application/json'},
