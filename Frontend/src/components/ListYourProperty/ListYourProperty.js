@@ -471,7 +471,7 @@ class ListYourProperty extends Component {
       document.body.style.backgroundColor = "rgb(242,242,242)";
       navLogin = (
         <form novalidate>
-          <div class="header-bce bluefont">
+          <div class="header-bce-home_New bluefont-home">
             <div id="hal-home" class="navbar-brand bluefont-home">
               <a href="/home" class="bluefont-home">
                 Bloquity
@@ -479,7 +479,7 @@ class ListYourProperty extends Component {
               </a>
             </div>
           </div>
-          <div class="wrappernav-pro bluefont">
+          <div class="wrappernav-pro bluefont-home">
             <link
               href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
               rel="stylesheet"
@@ -496,7 +496,7 @@ class ListYourProperty extends Component {
             </a> */}
             <div class="btn-group inline dropdownnav">
               <div
-                class="btn-home inline bluefont"
+                class="btn-home inline bluefont-home"
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
@@ -507,7 +507,7 @@ class ListYourProperty extends Component {
                 <span class="glyphicon glyphicon-triangle-bottom smallicon" />
               </div>
               <ul class="dropdown-menu dropdown-menu-right bluefont">
-                <li>
+                {/* <li>
                   {" "}
                   <a class="dropdown-item bluefont" href="/inbox">
                     <p class="bluefont">
@@ -516,7 +516,7 @@ class ListYourProperty extends Component {
                       Inbox
                     </p>
                   </a>
-                </li>
+                </li> */}
                 <br />
                 <li>
                   <a class="dropdown-item" href="/dashboard">
@@ -538,14 +538,14 @@ class ListYourProperty extends Component {
                   </a>
                 </li>
                 <br />
-                <li>
+                {/* <li>
                   <a class="dropdown-item" href="#">
                     <p class="bluefont">
                       <span class="glyphicon glyphicon-cog dropdownicons" />
                       {"   "} Account
                     </p>
                   </a>
-                </li>
+                </li> */}
 
                 <li role="separator" class="divider dropdownicons" />
 
@@ -564,7 +564,7 @@ class ListYourProperty extends Component {
                 </li>
               </ul>
             </div>
-            <a href="/inbox" class="bluefont">
+            {/* <a href="/inbox" class="bluefont">
               <span
                 class="glyphicon-glyphicon-envelope envelope inline bluefont"
                 aria-hidden="true"
@@ -573,11 +573,11 @@ class ListYourProperty extends Component {
                   {"  "}
                 </i>
               </span>
-            </a>
+            </a> */}
 
-            <div class="btn-group userdd bluefont inline dropdownnav">
+            {/* <div class="btn-group userdd bluefont inline dropdownnav">
               <div
-                class="btn-home inline bluefont"
+                class="btn-home inline bluefont-home"
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
@@ -585,7 +585,7 @@ class ListYourProperty extends Component {
                 Help{" "}
                 <span class="glyphicon glyphicon-triangle-bottom smallicon" />
               </div>
-              <ul class="dropdown-menu dropdown-menu-right bluefont">
+              <ul class="dropdown-menu dropdown-menu-right bluefont-home">
                 <li>
                   {" "}
                   <a class="dropdown-item " href="#">
@@ -679,7 +679,7 @@ class ListYourProperty extends Component {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
             <button class="buttonlyp default bluefont inline">
               List your property
             </button>
@@ -705,6 +705,17 @@ class ListYourProperty extends Component {
                 </li> */}
                 {/* ADDING PROPERTY REQS */}
                 <li>
+                  <a class="tabitem" href="#photos" data-toggle="tab">
+                    <p class="tabitem">
+                      {" "}
+                      {this.state.isPhotosComplete ? (
+                        <i class="fa fa-check-circle checkpt" />
+                      ) : null}
+                      Photos
+                    </p>
+                  </a>
+                </li>
+                <li>
                   <a class="tabitem" href="#location" data-toggle="tab">
                     <p class="tabitem">
                       {" "}
@@ -726,7 +737,7 @@ class ListYourProperty extends Component {
                     </p>
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a class="tabitem" href="#photos" data-toggle="tab">
                     <p class="tabitem">
                       {" "}
@@ -736,7 +747,7 @@ class ListYourProperty extends Component {
                       Photos
                     </p>
                   </a>
-                </li>
+                </li> */}
                 {/* <li>
                   <a class="tabitem" href="#pricing" data-toggle="tab">
                     <p class="tabitem">
@@ -753,8 +764,8 @@ class ListYourProperty extends Component {
                 ) : null}
                 {//this.state.isPricingComplete &&
                 this.state.isLocationComplete &&
-                this.state.isPhotosComplete &&
                 this.state.isDetailsComplete &&
+                this.state.isPhotosComplete &&
                 this.state.propertyadded ? (
                   <li>
                     <button
@@ -831,7 +842,7 @@ class ListYourProperty extends Component {
                         class="borderbox locationitem "
                         name="unit"
                         ref="unit"
-                        placeholder="Unit, Suite, Building, Etc."
+                        placeholder="Unit, Suite, Building, Etc. (Optional)"
                       />
 
                       <div className="error" id="unitError" />
@@ -961,12 +972,12 @@ class ListYourProperty extends Component {
                           <option value="Bed and Breakfast">
                             Bed and Breakfast
                           </option>
-                          <option value="Boat">Boat</option>
+                          {/* <option value="Boat">Boat</option> */}
                           <option value="Bungalow">Bungalow</option>
-                          <option value="Cabin">Cabin</option>
+                          {/* <option value="Cabin">Cabin</option>
                           <option value="Campground">Campground</option>
                           <option value="Castle">Castle</option>
-                          <option value="Chalet">Chalet</option>
+                          <option value="Chalet">Chalet</option> */}
                           <option value="Chateau / Country House">
                             Chateau / Country House
                           </option>
@@ -974,24 +985,24 @@ class ListYourProperty extends Component {
                           <option value="Corporate Apartment">
                             Corporate Apartment
                           </option>
-                          <option value="Cottage">Cottage</option>
+                          {/* <option value="Cottage">Cottage</option> */}
                           <option value="estate">Estate</option>
-                          <option value="Farmhouse">Farmhouse</option>
-                          <option value="Guest House">Guest House</option>
-                          <option value="Hostel">Hostel</option>
+                          {/* <option value="Farmhouse">Farmhouse</option>
+                          <option value="Guest House">Guest House</option> */}
+                          {/* <option value="Hostel">Hostel</option> */}
                           <option value="Hotel">Hotel</option>
-                          <option value="Hotel Suites">Hotel Suites</option>
+                          {/* <option value="Hotel Suites">Hotel Suites</option> */}
                           <option value="House">House</option>
-                          <option value="House Boat">House Boat</option>
+                          {/* <option value="House Boat">House Boat</option>
                           <option value="Lodge">Lodge</option>
-                          <option value="Mill">Mill</option>
+                          <option value="Mill">Mill</option> */}
                           <option value="Mobile Home">Mobile Home</option>
-                          <option value="Recreational Vehicle">
+                          {/* <option value="Recreational Vehicle">
                             Recreational Vehicle
                           </option>
-                          <option value="Resort">Resort</option>
+                          <option value="Resort">Resort</option> */}
                           <option value="Studio">Studio</option>
-                          <option value="Tower">Tower</option>
+                          {/* <option value="Tower">Tower</option> */}
                           <option value="Town Home">Town Home</option>
                           <option value="Villa">Villa</option>
                           <option value="Yacht">Yacht</option>
@@ -1114,7 +1125,7 @@ class ListYourProperty extends Component {
                 </div>
                 {/*---------------------------------PHOTOS--------------------------------*/}
                 <div class="tab-pane" id="photos">
-                  <h1>Add up to 5 photos of your property</h1>
+                  <h1> Add up to 5 photos of your property </h1>
                   <hr />
                   Showcase your property’s best features (no pets or people,
                   please).

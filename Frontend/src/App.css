@@ -661,6 +661,23 @@ div.wrappernav-home-nli {
   user-select: none;
 }
 
+.HeadLine_New2 {
+  position: relative;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  bottom: -0.75vw;
+  color: #d4d4d4;
+  font-size: 1.4vw;
+  font-weight: 600;
+  letter-spacing: 0.01vw;
+  text-align: center;
+  line-height: normal;
+  margin: 0 1vw 1vw;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .HeadLine__text {
   display: block;
 }
@@ -736,6 +753,7 @@ div.wrappernav-home-nli {
   line-height: 1vw;
   color: rgb(31, 106, 192);
 }
+
 .searchfields_New:focus {
   color: rgb(31, 106, 192);
   transition: width 0.5s ease;
@@ -767,13 +785,17 @@ input::placeholder {
 }
 
 .homesearchbutton_New {
+  position: relative;
   background-color: #4c5258;
-  font-size: 1.2vw;
+  font-size: 2vw;
+  font-weight: 900;
+
   border: none;
   border-radius: 40px;
   color: white;
   line-height: 1vw;
 }
+
 .srch {
   padding-top: 1.5vw;
   padding-left: 3.5vw;
@@ -790,7 +812,7 @@ input::placeholder {
 }
 
 .homesearchbutton_New:hover {
-  background-color: #1466c4;
+  background-color: #1a80f3;
 }
 .inner-addon {
   position: relative;
@@ -1592,7 +1614,7 @@ input:checked + .slider:before {
 .savechangesbutton {
   position: absolute;
   margin-top: 1.2vw;
-  background-color: #0067db;
+  background-color: rgb(38, 52, 175);
   font-size: 1.1vw;
   border: none;
   border-radius: 40px;
@@ -1760,6 +1782,34 @@ div.card {
   color: gray;
 }
 
+#sqftLabel {
+  position: relative;
+  left: 1vw;
+  font-weight: 400;
+  color: gray;
+}
+
+#yearbuiltLabel {
+  position: relative;
+  left: 1vw;
+  font-weight: 400;
+  color: gray;
+}
+
+#pricingLabel {
+  position: relative;
+  left: 1vw;
+  font-weight: 400;
+  color: gray;
+}
+
+#parkingLabel {
+  position: relative;
+  left: 1vw;
+  font-weight: 400;
+  color: gray;
+}
+
 #bathroomsLabel {
   position: relative;
   left: 1vw;
@@ -1910,11 +1960,13 @@ div.card {
 .bc2:focus {
   outline: none;
 }
-
+/*
+changed
+*/
 .checkpt {
   position: absolute;
   font-size: 35px;
-  color: rgb(66, 143, 243);
+  color: rgb(38, 52, 175);
   left: -1.5vw;
   bottom: 1vw;
 }
