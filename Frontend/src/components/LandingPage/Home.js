@@ -129,9 +129,9 @@ class Home extends Component {
     // var ed = `${year}-${month}-${day}`;
 
     // const newTo = {
-    //   pathname: `/home/search?=${this.state.where}/${sd}/${ed}/${
-    //     this.state.guests
-    //   }`
+    // pathname: `/home/search?=${this.state.where}/${sd}/${ed}/${
+    // this.state.guests
+    // }`
     // };
     //if Cookie is set render Logout Button
     let navLogin = null;
@@ -160,28 +160,26 @@ class Home extends Component {
               aria-haspopup="true"
               aria-expanded="false"
             >
-              <img src={this.state.profileicon} class="smallimg" />
-              {"   "}
+              <img src={this.state.profileicon} class="smallimg" />{" "}
               {this.props.fname} {String(this.props.lname).charAt(0) + "."}{" "}
               <span class="glyphicon glyphicon-triangle-bottom smallicon" />
             </div>
             <ul class="dropdown-menu dropdown-menu-right bluefont">
-              <li>
-                {" "}
-                <a class="dropdown-item bluefont" href="/inbox">
-                  <p class="bluefont">
-                    <span class=" glyphicon glyphicon-envelope dropdownicons bluefont" />
-                    {"   "}
-                    Inbox
-                  </p>
-                </a>
-              </li>
-              <br />
+              {/* <li>
+ {" "}
+ <a class="dropdown-item bluefont" href="/inbox">
+ <p class="bluefont">
+ <span class=" glyphicon glyphicon-envelope dropdownicons bluefont" />
+ {" "}
+ Inbox
+ </p>
+ </a>
+ </li> */}
+              {/* <br /> */}
               <li>
                 <a class="dropdown-item" href="/dashboard">
                   <p class="bluefont">
                     <span class="glyphicon glyphicon-briefcase dropdownicons" />{" "}
-                    {"   "}
                     Dashboard
                   </p>
                 </a>
@@ -208,9 +206,8 @@ class Home extends Component {
                   class="dropdown-item"
                 >
                   <p class="bluefont">
-                    <span class="glyphicon glyphicon-user dropdownicons" />
-                    {"   "}
-                    My Profile
+                    <span class="glyphicon glyphicon-user dropdownicons" /> My
+                    Profile
                   </p>
                 </Link>
               </li>
@@ -218,8 +215,8 @@ class Home extends Component {
               <li>
                 <a class="dropdown-item" href="#">
                   <p class="bluefont">
-                    <span class="glyphicon glyphicon-cog dropdownicons" />
-                    {"   "} Account
+                    <span class="glyphicon glyphicon-cog dropdownicons" />{" "}
+                    Account
                   </p>
                 </a>
               </li>
@@ -233,7 +230,6 @@ class Home extends Component {
                 >
                   <p class="bluefont">
                     <span class="glyphicon glyphicon-log-out dropdownicons" />{" "}
-                    {"   "}
                     Logout
                   </p>
                 </a>
@@ -250,8 +246,8 @@ class Home extends Component {
             Post your property
           </a>
           {/* <div class="homeawayimg-home inline">
-            <img src="http://csvcus.homeaway.com/rsrcs/cdn-logos/2.11.0/bce/moniker/homeaway_us/birdhouse-bceheader-white.svg" />
-          </div> */}
+ <img src="http://csvcus.homeaway.com/rsrcs/cdn-logos/2.11.0/bce/moniker/homeaway_us/birdhouse-bceheader-white.svg" />
+ </div> */}
         </div>
       );
     } else {
@@ -273,12 +269,12 @@ class Home extends Component {
 
           <div class="btn-group inline dropdownnav">
             <div
-              class=" btn-home inline  bluefont-home"
+              class=" btn-home inline bluefont-home"
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
             >
-              {"   "}
+              {" "}
               Login{" "}
               <span class="glyphicon glyphicon-triangle-bottom smallicon" />
             </div>
@@ -298,8 +294,8 @@ class Home extends Component {
           </div>
 
           {/* <div class="homeawayimg-home inline">
-            <img src="http://csvcus.homeaway.com/rsrcs/cdn-logos/2.11.0/bce/moniker/homeaway_us/birdhouse-bceheader-white.svg" />
-          </div> */}
+ <img src="http://csvcus.homeaway.com/rsrcs/cdn-logos/2.11.0/bce/moniker/homeaway_us/birdhouse-bceheader-white.svg" />
+ </div> */}
         </div>
       );
     }
@@ -328,35 +324,38 @@ class Home extends Component {
                   <i class="glyphicon glyphicon-map-marker" />
                   <input
                     type="search"
-                    class="searchfields smallseach"
+                    class="searchfields mediumsearch"
                     placeholder="Zip Code"
                     value={this.state.zip}
                     onChange={this.handleZipChange}
                   />
                 </div>
-
+                <h1 class="HeadLine_New2">
+                  <span class="HeadLine__text">OR</span>
+                </h1>
                 <div class="inner-addon left-addon">
                   <i class="glyphicon glyphicon-map-marker" />
                   <input
                     type="search"
-                    class="searchfields largesearch"
+                    class="searchfields mediumsearch"
                     placeholder="City"
                     value={this.state.city}
                     onChange={this.handleCityChange}
                   />
                 </div>
-
+                <h1 class="HeadLine_New2">
+                  <span class="HeadLine__text">OR</span>
+                </h1>
                 <div class="inner-addon left-addon">
                   <i class="glyphicon glyphicon-map-marker" />{" "}
                   <input
                     type="search"
-                    class="searchfields largesearch"
+                    class="searchfields mediumsearch"
                     placeholder="State"
                     value={this.state.state}
                     onChange={this.handleStateChange}
                   />
-                </div>
-
+                </div>{" "}
                 <Link
                   to={{
                     pathname: "/searchresults",
@@ -421,7 +420,7 @@ const mapDispatchStateToProps = dispatch => {
             statusCode: response.status
           });
           //update the state with the response data
-          console.log("Data  HOME: ", response.data);
+          console.log("Data HOME: ", response.data);
         });
     }
   };

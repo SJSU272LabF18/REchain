@@ -82,7 +82,7 @@ Terminal 5:
 npm install
 npm start
 ```
-- Inside Fronend/
+- Inside Frontend/
 Terminal 6:
 ```sh
 npm install
