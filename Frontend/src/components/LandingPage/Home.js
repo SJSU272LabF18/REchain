@@ -154,6 +154,15 @@ class Home extends Component {
 
           <button class="buttonlyp default bluefont inline">Contact</button>
 
+          <a
+            href={
+              sessionStorage.getItem("typeofaccount") == "owner" ? "/lyp" : "#"
+            }
+            class="buttonlyp default bluefont inline"
+          >
+            Post your property
+          </a>
+
           <div class="btn-group inline dropdownnav">
             <div
               class="btn-home inline bluefont-home"
@@ -181,7 +190,7 @@ class Home extends Component {
                 <a class="dropdown-item" href="/dashboard">
                   <p class="bluefont">
                     <span class="glyphicon glyphicon-briefcase dropdownicons" />{" "}
-                    Dashboard
+                    Property History
                   </p>
                 </a>
               </li>
@@ -238,17 +247,10 @@ class Home extends Component {
             </ul>
           </div>
 
-          <a
-            href={
-              sessionStorage.getItem("typeofaccount") == "owner" ? "/lyp" : "#"
-            }
-            class="buttonlyp default bluefont inline"
-          >
-            Post your property
-          </a>
-          {/* <div class="homeawayimg-home inline">
- <img src="http://csvcus.homeaway.com/rsrcs/cdn-logos/2.11.0/bce/moniker/homeaway_us/birdhouse-bceheader-white.svg" />
- </div> */}
+          
+           <div class="homeawayimg-home inline">
+        <img src="https://i.imgur.com/fLTMlTI.png" />
+        </div> 
         </div>
       );
     } else {
@@ -267,6 +269,15 @@ class Home extends Component {
           <button class="buttonlyp default bluefont inline">About Us</button>
 
           <button class="buttonlyp default bluefont inline">Contact</button>
+
+           <a
+            href={
+              sessionStorage.getItem("typeofaccount") == "owner" ? "/lyp" : "#"
+            }
+            class="buttonlyp default bluefont inline"
+          >
+            Post your property
+          </a>
 
           <div class="btn-group inline dropdownnav">
             <div

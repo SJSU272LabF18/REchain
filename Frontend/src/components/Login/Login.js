@@ -67,18 +67,20 @@ class Login extends Component {
     }
     document.body.style.backgroundColor = "rgb(242,242,242)";
     return (
-      <div>
+      <div >
         <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
-          <div class="header-bce bluefont logo">
-            <div id="hal" class="navbar-brand">
-              <a href="/home" id="hal">
-                Bloquity
+        <div class="header-bce-home_New bluefont-home">
+          <div id="hal" class="navbar-brand bluefont-home">
+            <a href="/home" id="hal" class="bluefont-home">
+              Bloquity
                 <span class="sup">&reg;</span>
               </a>
             </div>
             <div class="homeawayimg">
-              <img src="http://csvcus.homeaway.com/rsrcs/cdn-logos/2.10.6/bce/moniker/homeaway_us/birdhouse-bceheader.svg" />
+              <img src="https://i.imgur.com/fLTMlTI.png"/>
             </div>
+
+            
           </div>
           <div>
             <div align="center" class="helvetica ">
@@ -86,8 +88,8 @@ class Login extends Component {
               <br />
               <h1>Log in to Bloquity</h1>
               <h3 color="rgb(143, 137, 137)">
-                Need an account?{" "}
-                <a href="http://localhost:3000/SignUp"> Sign Up</a>
+                Not on Bloquity yet?{" "}
+                <a href="http://localhost:3000/SignUp"> Sign up now!</a>
               </h3>
             </div>
             <div>
@@ -123,7 +125,7 @@ class Login extends Component {
                         Log In
                       </button>
                     </div>
-                    <div align="left" class="kmsi">
+                    <div align="left" class="disclaimer">
                       <input type="checkbox" value="keepSignedIn" /> {"  "}
                       Keep me signed in
                       <br />

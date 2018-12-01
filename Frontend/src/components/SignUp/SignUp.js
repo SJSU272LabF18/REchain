@@ -99,15 +99,15 @@ class SignUp extends Component {
     document.body.style.backgroundColor = "rgb(242,242,242)";
     return (
       <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
-        <div class="header-bce bluefont logo">
-          <div id="hal" class="navbar-brand">
-            <a href="/home" id="hal">
+        <div class="header-bce-home_New bluefont-home">
+          <div id="hal" class="navbar-brand bluefont-home">
+            <a href="/home" id="hal" class="bluefont-home">
               Bloquity
               <span class="sup">&reg;</span>
             </a>
           </div>
           <div class="homeawayimg">
-            <img src="http://csvcus.homeaway.com/rsrcs/cdn-logos/2.10.6/bce/moniker/homeaway_us/birdhouse-bceheader.svg" />
+            <img src="https://i.imgur.com/fLTMlTI.png" />
           </div>
         </div>
         <div>
@@ -116,8 +116,8 @@ class SignUp extends Component {
             <br />
             <h1>Sign up for Bloquity</h1>
             <h4 color="rgb(143, 137, 137)">
-              Already have an account?{" "}
-              <a href="http://localhost:3000/login"> Log in</a>
+              Already registered with us?{" "}
+              <a href="http://localhost:3000/login"> Log in here!</a>
             </h4>
           </div>
           <div>
@@ -214,7 +214,7 @@ class SignUp extends Component {
                     We don't post anything without your permission.
                   </p> */}
                   <br />
-                  <p class="disclaimer2">
+                  <p class="disclaimer">
                     By joining Bloquity you are accepting our{" "}
                     <a href="https://www.homeaway.com/info/about-us/legal/terms-conditions">
                       Terms of Service
