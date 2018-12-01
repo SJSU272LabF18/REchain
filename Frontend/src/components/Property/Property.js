@@ -4,8 +4,9 @@ import axios from "axios";
 import { Redirect } from "react-router";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import { bookproperty } from "../../actions";
-import { sendmessage } from "../../actions";
+import { buyProperty } from "../../actions";
+import { checkTransactionHistory } from "../../actions";
+import { sendmessage, ROOT_URL } from "../../actions";
 //today
 const today = new Date().toISOString().slice(0, 10);
 const token = localStorage.getItem("token");
@@ -97,15 +98,16 @@ class Property extends Component {
     };
 
     //Bind the handlers to this class
-    this.bookNow = this.bookNow.bind(this);
+    this.buyProperty = this.buyProperty.bind(this);
     this.handleLogout = this.handleLogout.bind(this);
+    this.transactionHistory = this.transactionHistory.bind(this);
   }
 
   componentDidMount() {
     document.title = "Bloquity";
     axios.defaults.headers.common["Authorization"] = token;
     axios
-      .get("http://localhost:3001/photos/profile", {
+      .get(`${ROOT_URL}/photos/profile`, {
         params: {
           email: sessionStorage.getItem("email")
         }
@@ -122,7 +124,7 @@ class Property extends Component {
 
     axios.defaults.headers.common["Authorization"] = token;
     axios
-      .get("http://localhost:3001/photos/property", {
+      .get(`${ROOT_URL}/photos/property`, {
         params: {
           owner_email: this.state.prop_owner_email,
           propnum_pk: this.state.propnum_pk
@@ -182,29 +184,40 @@ class Property extends Component {
   handleLogout = () => {
     localStorage.removeItem("token");
   };
-
-  bookNow = e => {
+  transactionHistory = e => {
     var headers = new Headers();
     //prevent page from refresh
     e.preventDefault();
     // var email = sessionStorage.getItem('email');
     const data = {
-      email: sessionStorage.getItem("email"),
-      owner_email: this.state.prop_owner_email,
-      propnum_pk: this.state.propnum_pk,
-      startdate: this.state.startdate_me,
-      enddate: this.state.enddate_me,
-      guests: this.state.guests,
-      total: this.state.total,
-      city: this.state.city,
-      state: this.state.state,
-      country: this.state.country,
-      headline: this.state.headline,
-      fname: this.state.fname,
-      lname: this.state.lname
+      streetaddr: this.state.streetaddr,
+      unit: this.state.unit,
+      zip: this.state.zip
     };
-    this.props.bookproperty(data, () => {
-      alert("Your booking has been made!");
+    this.props.checkTransactionHistory(data, (response) => {
+      console.log("Transaction History:" + JSON.stringify(response))
+      this.props.history.push("/dashboard");
+    });
+  };
+
+  buyProperty = e => {
+    var headers = new Headers();
+    //prevent page from refresh
+    e.preventDefault();
+    // var email = sessionStorage.getItem('email');
+    const data = {
+      trans_amt: this.state.price,
+      fname: this.state.fname,
+      lname: this.state.lname,
+      owner_fname: this.state.owner_fname,
+      owner_lname: this.state.owner_lname,
+      streetaddr: this.state.streetaddr,
+      unit: this.state.unit,
+      zip: this.state.zip,
+      property_id: this.state.propnum_pk
+    };
+    this.props.buyProperty(data, () => {
+      alert("Congratualations. Property Brought!");
       this.props.history.push("/dashboard");
     });
   };
@@ -473,13 +486,13 @@ class Property extends Component {
               <br />
               <br />
 
-              <button class="homesearchbutton book" onClick={this.bookNow}>
-                Buy
+              <button class="homesearchbutton book" onClick={this.buyProperty}>
+                Buy Property
               </button>
               <br />
               <br />
 
-              <button class="homesearchbutton book" onClick={this.bookNow}>
+              <button class="homesearchbutton book" onClick={this.transactionHistory}>
                 View Transaction History
               </button>
               <br />
@@ -509,5 +522,5 @@ class Property extends Component {
 
 export default connect(
   null,
-  { bookproperty, sendmessage }
+  { buyProperty, sendmessage,checkTransactionHistory  }
 )(Property);
