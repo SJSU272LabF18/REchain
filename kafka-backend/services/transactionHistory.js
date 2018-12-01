@@ -26,7 +26,7 @@ function handle_request(msg, callback) {
       callback(null, []);
     }
     //console.log(body[0]["transactionHistory"]);
-    callback(null, JSON.stringify(body, undefined, 2));
+    callback(null, JSON.stringify(body["transactionHistory"], undefined, 2));
   });
 
 }
