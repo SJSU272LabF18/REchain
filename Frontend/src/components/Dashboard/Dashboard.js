@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import Pagination from "../Pagination/Pagination";
 import paginate from "../../utils/paginate";
+import { ROOT_URL } from "../../actions";
 const token = localStorage.getItem("token");
 const today = new Date().toISOString().slice(0, 10);
 
@@ -45,7 +46,7 @@ class Dashboard extends Component {
     if (localStorage.getItem("token")) {
       axios.defaults.headers.common["Authorization"] = token;
       axios
-        .get("http://localhost:3001/photos/profile", {
+        .get(`${ROOT_URL}/profile`, {
           params: {
             email: sessionStorage.getItem("email")
           }
@@ -64,7 +65,7 @@ class Dashboard extends Component {
     if (localStorage.getItem("token")) {
       axios.defaults.headers.common["Authorization"] = token;
       axios
-        .get("http://localhost:3001/home", {
+        .get(`${ROOT_URL}/home`, {
           params: {
             email: sessionStorage.getItem("email")
           }
@@ -173,30 +174,23 @@ class Dashboard extends Component {
         <div>
           <h2 class="bluefont">
             {"  "}
-            Your property bookings
+            Transaction History
           </h2>
           <table class="table">
             <thead>
               <tr>
                 <th>
-                  <p class="tableh">Property</p>
+                  <p class="tableh">Buyer</p>
                 </th>
                 <th>
-                  <p class="tableh">Location</p>
+                  <p class="tableh">Seller</p>
                 </th>
                 <th>
-                  <p class="tableh">From</p>
+                  <p class="tableh">Transaction Date</p>
                 </th>
                 <th>
-                  <p class="tableh">To</p>
+                  <p class="tableh">Transaction Amount</p>
                 </th>
-                <th>
-                  <p class="tableh">Cost</p>
-                </th>
-                <th>
-                  <p class="tableh">Booked by</p>
-                </th>
-
                 <th />
               </tr>
             </thead>
@@ -483,30 +477,6 @@ class Dashboard extends Component {
         {navLogin}
         <br />
         <br />
-        <label class="filterlabel">Where</label>
-        <input
-          type="text"
-          id="myInput"
-          value={this.state.searchinput}
-          onChange={this.handleLocationSearch}
-          class="filters"
-          min="0"
-          step="1"
-        />
-        <label class="filterlabel">From</label>
-        <input
-          type="date"
-          id="myInput"
-          onChange={this.handleFromFilter}
-          class="filters"
-        />
-        <label class="filterlabel">To</label>
-        <input
-          type="date"
-          id="myInput"
-          onChange={this.handleToFilter}
-          class="filters"
-        />
         <br />
         <div>{details}</div>
         <Pagination
@@ -535,7 +505,7 @@ const mapDispatchStateToProps = dispatch => {
     onGetRender: () => {
       axios.defaults.headers.common["Authorization"] = token;
       axios
-        .get("http://localhost:3001/dashboard", {
+        .get(`${ROOT_URL}/dashboard`, {
           params: {
             email: sessionStorage.getItem("email"),
             typeofaccount: sessionStorage.getItem("typeofaccount")

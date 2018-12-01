@@ -7,7 +7,8 @@ import Dropzone from "react-dropzone";
 import "react-datepicker/dist/react-datepicker.css";
 import moment from "moment";
 import { connect } from "react-redux";
-import { lyp } from "../../actions";
+import { ROOT_URL, lyp } from "../../actions";
+
 const upload = require("superagent");
 const token = localStorage.getItem("token");
 const today = new Date().toISOString().slice(0, 10);
@@ -87,7 +88,7 @@ class ListYourProperty extends Component {
     if (localStorage.getItem("token")) {
       axios.defaults.headers.common["Authorization"] = token;
       axios
-        .get("http://localhost:3001/photos/profile", {
+        .get(`${ROOT_URL}/photos/profile`, {
           params: {
             email: sessionStorage.getItem("email")
           }
@@ -104,7 +105,7 @@ class ListYourProperty extends Component {
     if (localStorage.getItem("token")) {
       axios.defaults.headers.common["Authorization"] = token;
       axios
-        .get("http://localhost:3001/home", {
+        .get(`${ROOT_URL}/home`, {
           params: {
             email: sessionStorage.getItem("email")
           }

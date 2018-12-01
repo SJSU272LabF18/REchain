@@ -8,8 +8,10 @@ import "react-datepicker/dist/react-datepicker.css";
 import axios from "axios";
 import { connect } from "react-redux";
 import { profile } from "../../actions";
+import { ROOT_URL } from "../../actions";
 const token = localStorage.getItem("token");
 const upload = require("superagent");
+
 
 //create the Navbar Component
 class Profile extends Component {
@@ -68,7 +70,7 @@ class Profile extends Component {
   componentDidMount() {
     axios.defaults.headers.common["Authorization"] = token;
     axios
-      .get("http://localhost:3001/photos/profile", {
+      .get(`${ROOT_URL}/photos/profile`, {
         params: {
           email: sessionStorage.getItem("email")
         }

@@ -13,8 +13,10 @@ function handle_request(msg, callback) {
   );
 
   //make request to hyperLedger to fetch property history
-  
-  url="http://localhost:4000/api/org.digitalproperty.Property/" + msg.streetaddr.replace(/\s+/, "") //msg.propID
+  uniqueID = msg.streetaddr + msg.unit + msg.zip
+  propID = String(uniqueID).replace(/\s+/g, "")
+  console.log(propID)
+  url="http://107.23.194.9:4000/api/org.digitalproperty.Property/" + propID //msg.propID
   request(url, { json: true }, (err, res, body) => {
     if (err) { 
       console.log(

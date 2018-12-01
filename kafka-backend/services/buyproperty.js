@@ -14,7 +14,8 @@ function handle_request(msg, callback) {
 
   //Post request to Hyperledger to save new transaction
   var today = new Date().toISOString().slice(0, 10);
-  propID = String(msg.streetaddr).replace(/\s+/g, "")
+  uniqueID = msg.streetaddr + msg.unit + msg.zip
+  propID = String(uniqueID).replace(/\s+/g, "")
   bodyData ={
         "buyer":msg.fname + " " + msg.lname,
         "seller":msg.owner_fname + " " + msg.owner_lname,
@@ -25,7 +26,7 @@ function handle_request(msg, callback) {
 
   console.log("HyperL bodyData=" + bodyData)
 
-  url="http://localhost:4000/api/org.digitalproperty.TransactionDetails"
+  url="http://107.23.194.9:4000/api/org.digitalproperty.TransactionDetails"
 
   request.post({
         headers: {'content-type' : 'application/json'},

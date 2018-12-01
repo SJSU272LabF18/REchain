@@ -5,7 +5,7 @@ import cookie from "react-cookies";
 import { Redirect } from "react-router";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import { sendmessage } from "../../actions";
+import { sendmessage, ROOT_URL } from "../../actions";
 
 import { bindActionCreators } from "redux";
 const token = localStorage.getItem("token");
@@ -37,7 +37,7 @@ class Inbox extends Component {
     if (localStorage.getItem("token")) {
       axios.defaults.headers.common["Authorization"] = token;
       axios
-        .get("http://localhost:3001/photos/profile", {
+        .get(`${ROOT_URL}/photos/profile`, {
           params: {
             email: sessionStorage.getItem("email")
           }
@@ -56,7 +56,7 @@ class Inbox extends Component {
     if (localStorage.getItem("token")) {
       axios.defaults.headers.common["Authorization"] = token;
       axios
-        .get("http://localhost:3001/home", {
+        .get(`${ROOT_URL}/home`, {
           params: {
             email: sessionStorage.getItem("email")
           }
@@ -497,7 +497,7 @@ const mapDispatchStateToProps = dispatch => {
     onGetRender: () => {
       axios.defaults.headers.common["Authorization"] = token;
       axios
-        .get("http://localhost:3001/inbox", {
+        .get(`${ROOT_URL}/inbox`, {
           params: {
             email: sessionStorage.getItem("email")
           }

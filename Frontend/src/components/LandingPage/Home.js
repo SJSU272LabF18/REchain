@@ -9,6 +9,7 @@ import { BrowserRouter, Link, Route } from "react-router-dom";
 
 import { connect } from "react-redux";
 import "react-datepicker/dist/react-datepicker.css";
+import { ROOT_URL } from "../../actions";
 const token = localStorage.getItem("token");
 //create the Navbar Component
 class Home extends Component {
@@ -46,7 +47,7 @@ class Home extends Component {
     if (localStorage.getItem("token")) {
       axios.defaults.headers.common["Authorization"] = token;
       axios
-        .get("http://localhost:3001/photos/profile", {
+        .get(`${ROOT_URL}/photos/profile`, {
           params: {
             email: sessionStorage.getItem("email")
           }
@@ -408,7 +409,7 @@ const mapDispatchStateToProps = dispatch => {
 
       axios.defaults.headers.common["Authorization"] = token;
       axios
-        .get("http://localhost:3001/home", {
+        .get(`${ROOT_URL}/home`, {
           params: {
             email: sessionStorage.getItem("email")
           }

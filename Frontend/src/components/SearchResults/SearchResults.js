@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import Pagination from "../Pagination/Pagination";
 import paginate from "../../utils/paginate";
+import { ROOT_URL } from "../../actions";
 const token = localStorage.getItem("token");
 const today = new Date().toISOString().slice(0, 10);
 const path = require("path");
@@ -63,7 +64,7 @@ class SearchResults extends Component {
     if (token) {
       axios.defaults.headers.common["Authorization"] = token;
       axios
-        .get("http://localhost:3001/photos/profile", {
+        .get(`${ROOT_URL}/photos/profile`, {
           params: {
             email: sessionStorage.getItem("email")
           }
@@ -501,7 +502,7 @@ const mapDispatchStateToProps = dispatch => {
     onGetRender: (zip, city, state) => {
       axios.defaults.headers.common["Authorization"] = token;
       axios
-        .get("http://localhost:3001/home/search", {
+        .get(`${ROOT_URL}/home/search`, {
           // change to zip, state, city (params for searching)
           params: {
             zip: zip,
