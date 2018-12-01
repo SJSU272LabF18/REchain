@@ -271,9 +271,7 @@ class Home extends Component {
           <button class="buttonlyp default bluefont inline">Contact</button>
 
            <a
-            href={
-              sessionStorage.getItem("typeofaccount") == "owner" ? "/lyp" : "#"
-            }
+            href="/login"
             class="buttonlyp default bluefont inline"
           >
             Post your property
