@@ -60,24 +60,24 @@ class SearchResults extends Component {
   }
 
   componentDidMount() {
-    if (token) {
-      axios.defaults.headers.common["Authorization"] = token;
-      axios
-        .get("http://localhost:3001/photos/profile", {
-          params: {
-            email: sessionStorage.getItem("email")
-          }
-        })
-        .then(response => {
-          //update the state with the response data
-          console.log("Image Res : ", response);
-          let imagePreview = "data:image/jpg;base64, " + response.data;
-          this.setState({
-            profilepic: imagePreview,
-            profileicon: imagePreview
-          });
-        });
-    }
+    // if (token) {
+    //   axios.defaults.headers.common["Authorization"] = token;
+    //   axios
+    //     .get("http://localhost:3001/photos/profile", {
+    //       params: {
+    //         email: sessionStorage.getItem("email")
+    //       }
+    //     })
+    //     .then(response => {
+    //       //update the state with the response data
+    //       console.log("Image Res : ", response);
+    //       let imagePreview = "data:image/jpg;base64, " + response.data;
+    //       this.setState({
+    //         profilepic: imagePreview,
+    //         profileicon: imagePreview
+    //       });
+    //     });
+    // }
 
     this.props.onGetRender(
       // this.state.where,

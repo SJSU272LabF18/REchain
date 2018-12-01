@@ -348,7 +348,7 @@ class Property extends Component {
               List your property
             </a>
             <div class="homeawayimg-pro inline">
-              <img src="https://i.imgur.com/LIgSzus.png" />
+              <img src="https://i.imgur.com/fLTMlTI.png" />
             </div>
           </div>
 
