@@ -194,7 +194,8 @@ class Property extends Component {
       unit: this.state.unit,
       zip: this.state.zip
     };
-    this.props.checkTransactionHistory(data, () => {
+    this.props.checkTransactionHistory(data, (response) => {
+      console.log("Transaction History:" + JSON.stringify(response))
       this.props.history.push("/dashboard");
     });
   };

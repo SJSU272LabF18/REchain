@@ -177,7 +177,7 @@ export function checkTransactionHistory(values, callback) {
     .then(response => {
       console.log("Status Code : ", response.status);
       if (response.status === 200) {
-        callback();
+        callback(response);
       } else {
         console.log("Problem in getting transaction history");
       }
