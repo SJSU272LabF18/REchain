@@ -526,6 +526,7 @@ div.wrappernav-home-nli {
   border: 1px solid rgb(196, 195, 195);
   background-color: white;
   padding: 14px 28px;
+  margin-left: 0.5vw;
   cursor: pointer;
   border-radius: 40px;
   transition: 0.3s;
@@ -775,9 +776,15 @@ input::placeholder {
   font-size: 1.2vw;
 }
 
+.mediumsearch {
+  width: 15.5vw;
+  font-size: 1.2vw;
+}
+
 .homesearchbutton {
   background-color: #0067db;
-  font-size: 1.2vw;
+  font-size: 1.5vw;
+  margin-left: 8vw;
   border: none;
   border-radius: 40px;
   color: white;
@@ -789,6 +796,7 @@ input::placeholder {
   background-color: #4c5258;
   font-size: 2vw;
   font-weight: 900;
+  margin-left: 2vw;
 
   border: none;
   border-radius: 40px;
@@ -937,7 +945,7 @@ input[type="date"]:focus::after {
 }
 .carousel-control.right {
   right: 50;
-  color: white;
+  color: rgb(146, 149, 187);
 }
 /* The colour of the indicators */
 .carousel-indicators li {
@@ -954,18 +962,19 @@ input[type="date"]:focus::after {
   position: relative;
   font-family: HelveticaNeue-Light;
 
-  color: rgb(107, 106, 106);
+  color: rgb(146, 149, 187);
   padding-top: 1vw;
   font-size: 1vw;
 }
 
 .white {
-  color: white;
+  color: rgb(146, 149, 187);
   background: none;
 }
 
 .left {
   left: 0;
+  color: rgb(146, 149, 187);
 }
 
 .noborder {
@@ -1183,12 +1192,27 @@ input[type="date"]:focus::after {
   color: rgb(51, 51, 51);
   font-weight: 600;
 }
-
+/* Changed */
 .grayie {
-  margin-left: 10vw;
-  color: gray;
+  margin-left: 0vw;
+  color: black;
 }
 
+.grayie_Description {
+  margin-left: 6vw;
+  color: black;
+}
+grayie_Addr {
+  margin-left: 10vw;
+  color: black;
+}
+
+.grayie_Details {
+  margin-left: 8vw;
+  font-size: 30px;
+
+  color: black;
+}
 .usericon {
   margin-top: 5vw;
   text-align: center;
@@ -1691,6 +1715,21 @@ div.card {
   left: 10vw;
 }
 
+div.card_New {
+  position: relative;
+  bottom: 10vw;
+  width: max-content;
+
+  text-align: left;
+  background-color: white;
+  padding: 1vw;
+  left: 35vw;
+}
+
+.cardcontent {
+  text-align: center;
+}
+
 /*----------------------------------------LYP NAV---------------------------*/
 
 .lypcont {
@@ -2030,6 +2069,16 @@ changed
   top: 0vw;
   margin-right: 30vw;
 }
+
+.srtabledata_New {
+  position: absolute;
+  width: 100vw;
+  padding: -20vw;
+  margin: 1vw;
+  top: -1vw;
+  margin-right: 30vw;
+}
+
 /* 
 .imgprop {
   width: 70%;
@@ -2042,18 +2091,21 @@ changed
 .carouselprop {
   position: relative;
   top: 0vw;
-  margin-left: 10vw;
+  margin-left: 6vw;
   width: 50vw;
 }
+/* changed */
 #leftcar {
   position: absolute;
   top: 20vw;
   left: -7vw;
+  color: rgb(146, 149, 187);
 }
 #rightcar {
   position: absolute;
   top: 20vw;
   right: -7vw;
+  color: rgb(146, 149, 187);
 }
 .propinfo {
   position: static;
@@ -2063,10 +2115,17 @@ changed
   width: 75vw;
 }
 
+/* Changed */
+.propinfo_New {
+  position: static;
+  top: 10vw;
+  width: 75vw;
+  margin-left: 2cvw;
+}
 .picon {
   padding: 1vw;
   font-size: 2vw;
-  margin-left: 3vw;
+  margin-left: 2vw;
   align-items: center;
 }
 
@@ -2074,27 +2133,28 @@ changed
   font-weight: 300;
   font-size: 1.1vw;
   font-family: Arial, Helvetica, sans-serif;
-  color: gray;
+  color: black;
 }
 
 .propdescclass {
   margin-left: 10vw;
   word-wrap: break-word;
 }
-
+/* changed */
 .detailscontainer {
   position: absolute;
   top: 10vw;
-  left: 70vw;
-  width: 25vw;
+  left: 68vw;
+  width: 27vw;
   height: fit-content;
-  border: #d6d6d6 solid 1px;
-  background: white;
+  border: black solid 4px;
+  background: #f6f6f6;
 }
-
+/* changed */
 .coninfo {
-  padding-left: 2vw;
-  padding-top: 3vw;
+  padding-left: 1.5vw;
+  padding-right: 1vw;
+  padding-top: 1vw;
 }
 
 .mixcolumn {
@@ -2184,6 +2244,18 @@ changed
 .filterlabel {
   position: relative;
   left: 3.6vw;
+}
+
+.filterlabel_New {
+  position: relative;
+  left: 3.7vw;
+  font-size: 20x;
+}
+
+.filterresultslabel_New {
+  position: relative;
+  left: 2.2vw;
+  font-size: 20px;
 }
 
 #myInput {

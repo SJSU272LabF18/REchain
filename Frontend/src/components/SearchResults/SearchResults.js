@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import Pagination from "../Pagination/Pagination";
 import paginate from "../../utils/paginate";
-import { ROOT_URL } from "../../actions";
 const token = localStorage.getItem("token");
 const today = new Date().toISOString().slice(0, 10);
 const path = require("path");
@@ -64,7 +63,7 @@ class SearchResults extends Component {
     if (token) {
       axios.defaults.headers.common["Authorization"] = token;
       axios
-        .get(`${ROOT_URL}/photos/profile`, {
+        .get("http://localhost:3001/photos/profile", {
           params: {
             email: sessionStorage.getItem("email")
           }
@@ -332,7 +331,7 @@ class SearchResults extends Component {
  </a> */}
 
             <div class="btn-group userdd bluefont inline dropdownnav">
-              <div
+              {/* <div
                 class="btn-home inline bluefont-home"
                 data-toggle="dropdown"
                 aria-haspopup="true"
@@ -340,40 +339,40 @@ class SearchResults extends Component {
               >
                 Help{" "}
                 <span class="glyphicon glyphicon-triangle-bottom smallicon" />
-              </div>
+              </div> */}
               <ul class="dropdown-menu dropdown-menu-right bluefont">
-                <li>
+                {/* <li>
                   {" "}
                   <a class="dropdown-item " href="#">
                     <p class="bluefont"> Visit help center</p>
                   </a>
-                </li>
+                </li> */}
                 <li role="separator" class="divider dropdownicons" />
 
-                <li class="dropdown-header travelersfont">
+                {/* <li class="dropdown-header travelersfont">
                   <b>Travelers</b>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <a class="dropdown-item" href="#">
                     <p class="bluefont"> How it works</p>
                   </a>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <a class="dropdown-item" href="#">
                     <p class="bluefont"> Security Center</p>
                   </a>
-                </li>
+                </li> */}
                 <li role="separator" class="divider dropdownicons" />
 
-                <li class="dropdown-header travelersfont">
+                {/* <li class="dropdown-header travelersfont">
                   <b>Home Owners</b>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <a class="dropdown-item" href="#">
                     <p class="bluefont"> How it works</p>
                   </a>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <a
                     class="dropdown-item"
                     href={
@@ -384,21 +383,21 @@ class SearchResults extends Component {
                   >
                     <p class="bluefont"> List your property</p>
                   </a>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <a class="dropdown-item" href="#">
                     <p class="bluefont"> Community</p>
                   </a>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <a class="dropdown-item" href="#">
                     <p class="bluefont"> Discovery Hub</p>
                   </a>
-                </li>
+                </li> */}
                 <li role="separator" class="divider dropdownicons" />
-                <li class="dropdown-header travelersfont">
+                {/* <li class="dropdown-header travelersfont">
                   <b>Property managers</b>
-                </li>
+                </li> */}
                 <li>
                   <a class="dropdown-item" href="#">
                     <p class="bluefont"> Post your property</p>
@@ -438,7 +437,7 @@ class SearchResults extends Component {
           id="myInput"
           onChange={this.handlePriceFilter}
           placeholder="enter exact price"
-          class="filters"
+          class="searchfields medium search"
           min="0"
           step="1"
         />
@@ -461,7 +460,7 @@ class SearchResults extends Component {
           type="number"
           id="myInput"
           onChange={this.handleRoomFilter}
-          class="filters"
+          class="searchfields mediumsearch"
           min="0"
           step="1"
         />
@@ -502,7 +501,7 @@ const mapDispatchStateToProps = dispatch => {
     onGetRender: (zip, city, state) => {
       axios.defaults.headers.common["Authorization"] = token;
       axios
-        .get(`${ROOT_URL}/home/search`, {
+        .get("http://localhost:3001/home/search", {
           // change to zip, state, city (params for searching)
           params: {
             zip: zip,
