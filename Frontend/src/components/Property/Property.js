@@ -4,7 +4,7 @@ import axios from "axios";
 import { Redirect } from "react-router";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import { bookproperty } from "../../actions";
+import { buyProperty } from "../../actions";
 import { checkTransactionHistory } from "../../actions";
 import { sendmessage, ROOT_URL } from "../../actions";
 //today
@@ -98,7 +98,7 @@ class Property extends Component {
     };
 
     //Bind the handlers to this class
-    this.bookNow = this.bookNow.bind(this);
+    this.buyProperty = this.buyProperty.bind(this);
     this.handleLogout = this.handleLogout.bind(this);
     this.transactionHistory = this.transactionHistory.bind(this);
   }
@@ -199,28 +199,24 @@ class Property extends Component {
     });
   };
 
-  bookNow = e => {
+  buyProperty = e => {
     var headers = new Headers();
     //prevent page from refresh
     e.preventDefault();
     // var email = sessionStorage.getItem('email');
     const data = {
-      email: sessionStorage.getItem("email"),
-      owner_email: this.state.prop_owner_email,
-      propnum_pk: this.state.propnum_pk,
-      startdate: this.state.startdate_me,
-      enddate: this.state.enddate_me,
-      guests: this.state.guests,
-      total: this.state.total,
-      city: this.state.city,
-      state: this.state.state,
-      country: this.state.country,
-      headline: this.state.headline,
+      trans_amt: this.state.price,
       fname: this.state.fname,
-      lname: this.state.lname
+      lname: this.state.lname,
+      owner_fname: this.state.owner_fname,
+      owner_lname: this.state.owner_lname,
+      streetaddr: this.state.streetaddr,
+      unit: this.state.unit,
+      zip: this.state.zip,
+      property_id: this.state.propnum_pk
     };
-    this.props.bookproperty(data, () => {
-      alert("Your booking has been made!");
+    this.props.buyProperty(data, () => {
+      alert("Congratualations. Property Brought!");
       this.props.history.push("/dashboard");
     });
   };
@@ -489,8 +485,8 @@ class Property extends Component {
               <br />
               <br />
 
-              <button class="homesearchbutton book" onClick={this.bookNow}>
-                Buy
+              <button class="homesearchbutton book" onClick={this.buyProperty}>
+                Buy Property
               </button>
               <br />
               <br />
@@ -525,5 +521,5 @@ class Property extends Component {
 
 export default connect(
   null,
-  { bookproperty, sendmessage,checkTransactionHistory  }
+  { buyProperty, sendmessage,checkTransactionHistory  }
 )(Property);
