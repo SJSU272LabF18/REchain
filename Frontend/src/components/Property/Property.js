@@ -5,7 +5,8 @@ import { Redirect } from "react-router";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { bookproperty } from "../../actions";
-import { sendmessage } from "../../actions";
+import { checkTransactionHistory } from "../../actions";
+import { sendmessage, ROOT_URL } from "../../actions";
 //today
 const today = new Date().toISOString().slice(0, 10);
 const token = localStorage.getItem("token");
@@ -99,13 +100,14 @@ class Property extends Component {
     //Bind the handlers to this class
     this.bookNow = this.bookNow.bind(this);
     this.handleLogout = this.handleLogout.bind(this);
+    this.transactionHistory = this.transactionHistory.bind(this);
   }
 
   componentDidMount() {
     document.title = "Bloquity";
     axios.defaults.headers.common["Authorization"] = token;
     axios
-      .get("http://localhost:3001/photos/profile", {
+      .get(`${ROOT_URL}/photos/profile`, {
         params: {
           email: sessionStorage.getItem("email")
         }
@@ -122,7 +124,7 @@ class Property extends Component {
 
     axios.defaults.headers.common["Authorization"] = token;
     axios
-      .get("http://localhost:3001/photos/property", {
+      .get(`${ROOT_URL}/photos/property`, {
         params: {
           owner_email: this.state.prop_owner_email,
           propnum_pk: this.state.propnum_pk
@@ -181,6 +183,20 @@ class Property extends Component {
 
   handleLogout = () => {
     localStorage.removeItem("token");
+  };
+  transactionHistory = e => {
+    var headers = new Headers();
+    //prevent page from refresh
+    e.preventDefault();
+    // var email = sessionStorage.getItem('email');
+    const data = {
+      streetaddr: this.state.streetaddr,
+      unit: this.state.unit,
+      zip: this.state.zip
+    };
+    this.props.checkTransactionHistory(data, () => {
+      this.props.history.push("/dashboard");
+    });
   };
 
   bookNow = e => {
@@ -479,7 +495,7 @@ class Property extends Component {
               <br />
               <br />
 
-              <button class="homesearchbutton book" onClick={this.bookNow}>
+              <button class="homesearchbutton book" onClick={this.transactionHistory}>
                 View Transaction History
               </button>
               <br />
@@ -509,5 +525,5 @@ class Property extends Component {
 
 export default connect(
   null,
-  { bookproperty, sendmessage }
+  { bookproperty, sendmessage,checkTransactionHistory  }
 )(Property);

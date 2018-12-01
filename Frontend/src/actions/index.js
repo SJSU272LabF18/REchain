@@ -175,7 +175,6 @@ export function checkTransactionHistory(values, callback) {
   const request = axios
     .get(`${ROOT_URL}/transactionhistory`, {params: values})
     .then(response => {
-      debugger;
       console.log("Status Code : ", response.status);
       if (response.status === 200) {
         callback();
