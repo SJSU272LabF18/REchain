@@ -498,9 +498,17 @@ class ListYourProperty extends Component {
             <button class="buttonlyp default bluefont inline">About Us</button>
 
             <button class="buttonlyp default bluefont inline">Contact</button>
-            <button class="buttonlyp default bluefont inline">
-              Post Your Property
-            </button>
+            <a
+              href={
+                sessionStorage.getItem("typeofaccount") == "owner"
+                  ? "/lyp"
+                  : "#"
+              }
+              class="buttonlyp default bluefont inline"
+            >
+              Post your property
+            </a>
+
             <div class="btn-group inline dropdownnav">
               <div
                 class="btn-home inline bluefont-home"
