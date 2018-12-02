@@ -501,7 +501,7 @@ class ListYourProperty extends Component {
             <a
               href={
                 sessionStorage.getItem("typeofaccount") == "owner"
-                  ? "/lyp/photos"
+                  ? "/lyp/#photos"
                   : "#"
               }
               class="buttonlyp default bluefont inline"
