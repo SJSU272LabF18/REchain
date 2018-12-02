@@ -145,7 +145,7 @@ class Home extends Component {
       console.log("Able to read cookie");
 
       navLogin = (
-        <div class="wrappernav-home">
+        <div class="wrappernav-homepage">
           <link
             href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
             rel="stylesheet"
@@ -267,7 +267,7 @@ class Home extends Component {
     } else {
       //Else display login button
       navLogin = (
-        <div class="wrappernav-home-nli">
+        <div class="wrappernav-homepage-nli">
           <link
             href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
             rel="stylesheet"

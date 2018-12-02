@@ -460,13 +460,31 @@ div.wrappernav-pro {
 div.wrappernav-home {
   position: absolute;
   width: 100%; /* or whatever */
-  left: 47vw;
+  left: 58vw;
+  top: 0.8vw;
+  font-size: 110%;
+  transition: opacity 300ms ease-in-out 0s;
+}
+
+div.wrappernav-homepage {
+  position: absolute;
+  width: 100%; /* or whatever */
+  left: 43vw;
   top: 0.8vw;
   font-size: 110%;
   transition: opacity 300ms ease-in-out 0s;
 }
 
 div.wrappernav-home-nli {
+  position: absolute;
+  width: 100%; /* or whatever */
+  left: 58vw;
+  top: 0.8vw;
+  font-size: 110%;
+  transition: opacity 300ms ease-in-out 0s;
+}
+
+div.wrappernav-homepage-nli {
   position: absolute;
   width: 100%; /* or whatever */
   left: 47vw;

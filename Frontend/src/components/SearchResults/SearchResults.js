@@ -228,7 +228,7 @@ class SearchResults extends Component {
           </tr>
         );
       });
-    if (token) {
+    if (1) {
       navLogin = (
         <div>
           <div class="header-bce-home_New bluefont-home">
