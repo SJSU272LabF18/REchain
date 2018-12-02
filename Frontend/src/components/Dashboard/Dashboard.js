@@ -167,22 +167,13 @@ handleDashSearch=()=>{
 
     const result = paginate(resultnew, currentPage, pageSize);
     if (sessionStorage.getItem("typeofaccount") == "owner") {
-      tablesdata = result.map(booking => {
+      tablesdata = this.props.result.map(booking => {
         return (
           <tr>
-            <td>{booking.headline}</td>
-            <td>
-              {booking.city.charAt(0).toUpperCase() + booking.city.slice(1)},{" "}
-              {booking.state.charAt(0).toUpperCase() + booking.state.slice(1)},{" "}
-              {booking.country.charAt(0).toUpperCase() +
-                booking.country.slice(1)}
-            </td>
-            <td>{booking.startdate}</td>
-            <td>{booking.enddate}</td>
-            <td>${booking.total}</td>
-            <td>
-              {booking.traveler_fname} {booking.traveler_lname}
-            </td>
+            <td>{booking.buyer}</td>
+            <td>{booking.seller}</td>
+            <td>{booking.trans_date}</td>
+            <td>${booking.trans_amt}</td>
           </tr>
         );
       });
