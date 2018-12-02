@@ -485,16 +485,21 @@ class ListYourProperty extends Component {
               href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
               rel="stylesheet"
             />
-            {/* <link
-              href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css"
-              rel="stylesheet"
-            /> */}
+
             <a href="#" class="flag-icon-background flag-icon-us flag inline">
               {"   "}
             </a>
-            {/* <a href="#" class="tb bluefont inline">
-              Trip Boards
-            </a> */}
+
+            <a href="/dashboard" class="buttonlyp default bluefont inline">
+              Property History
+            </a>
+
+            <button class="buttonlyp default bluefont inline">About Us</button>
+
+            <button class="buttonlyp default bluefont inline">Contact</button>
+            <button class="buttonlyp default bluefont inline">
+              Post Your Property
+            </button>
             <div class="btn-group inline dropdownnav">
               <div
                 class="btn-home inline bluefont-home"
@@ -508,16 +513,6 @@ class ListYourProperty extends Component {
                 <span class="glyphicon glyphicon-triangle-bottom smallicon" />
               </div>
               <ul class="dropdown-menu dropdown-menu-right bluefont">
-                {/* <li>
-                  {" "}
-                  <a class="dropdown-item bluefont" href="/inbox">
-                    <p class="bluefont">
-                      <span class=" glyphicon glyphicon-envelope dropdownicons bluefont" />
-                      {"   "}
-                      Inbox
-                    </p>
-                  </a>
-                </li> */}
                 <br />
                 <li>
                   <a class="dropdown-item" href="/dashboard">
@@ -539,14 +534,6 @@ class ListYourProperty extends Component {
                   </a>
                 </li>
                 <br />
-                {/* <li>
-                  <a class="dropdown-item" href="#">
-                    <p class="bluefont">
-                      <span class="glyphicon glyphicon-cog dropdownicons" />
-                      {"   "} Account
-                    </p>
-                  </a>
-                </li> */}
 
                 <li role="separator" class="divider dropdownicons" />
 
@@ -564,129 +551,16 @@ class ListYourProperty extends Component {
                   </a>
                 </li>
               </ul>
-            </div>
-            {/* <a href="/inbox" class="bluefont">
-              <span
-                class="glyphicon-glyphicon-envelope envelope inline bluefont"
-                aria-hidden="true"
-              >
-                <i class="fa fa-envelope bluefont " aria-hidden="true">
-                  {"  "}
-                </i>
-              </span>
-            </a> */}
-
-            {/* <div class="btn-group userdd bluefont inline dropdownnav">
-              <div
-                class="btn-home inline bluefont-home"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Help{" "}
-                <span class="glyphicon glyphicon-triangle-bottom smallicon" />
+              <div class="homeawayimg-home inline">
+                <img src="https://i.imgur.com/fLTMlTI.png" />
               </div>
-              <ul class="dropdown-menu dropdown-menu-right bluefont-home">
-                <li>
-                  {" "}
-                  <a class="dropdown-item " href="#">
-                    <p class="bluefont">
-                      {"   "}
-                      Visit help center
-                    </p>
-                  </a>
-                </li>
-                <li role="separator" class="divider dropdownicons" />
-
-                <li class="dropdown-header travelersfont">
-                  <b>Travelers</b>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <p class="bluefont">
-                      {" "}
-                      {"   "}
-                      How it works
-                    </p>
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <p class="bluefont">
-                      {"   "}
-                      Security Center
-                    </p>
-                  </a>
-                </li>
-                <li role="separator" class="divider dropdownicons" />
-
-                <li class="dropdown-header travelersfont">
-                  <b>Home Owners</b>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <p class="bluefont">
-                      {" "}
-                      {"   "}
-                      How it works
-                    </p>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href={
-                      sessionStorage.getItem("typeofaccount") == "owner"
-                        ? "/lyp"
-                        : "#"
-                    }
-                  >
-                    <p class="bluefont">
-                      {" "}
-                      {"   "}
-                      List your property
-                    </p>
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <p class="bluefont">
-                      {" "}
-                      {"   "}
-                      Community
-                    </p>
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <p class="bluefont">
-                      {" "}
-                      {"   "}
-                      Discovery Hub
-                    </p>
-                  </a>
-                </li>
-                <li role="separator" class="divider dropdownicons" />
-                <li class="dropdown-header travelersfont">
-                  <b>Property managers</b>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/lyp">
-                    <p class="bluefont">
-                      {" "}
-                      {"   "}
-                      List your properties
-                    </p>
-                  </a>
-                </li>
-              </ul>
-            </div> */}
+            </div>
+            {/* <a href="/dashboard" class="buttonlyp default bluefont inline">
+              Property History
+            </a>
             <button class="buttonlyp default bluefont inline">
               List your property
-            </button>
-            {/* <div class="homeawayimg-pro inline">
-              <img src="http://csvcus.homeaway.com/rsrcs/cdn-logos/2.10.6/bce/moniker/homeaway_us/birdhouse-bceheader.svg" />
-            </div> */}
+            </button> */}
           </div>
           <div class="lypstuff">
             <link
@@ -738,28 +612,7 @@ class ListYourProperty extends Component {
                     </p>
                   </a>
                 </li>
-                {/* <li>
-                  <a class="tabitem" href="#photos" data-toggle="tab">
-                    <p class="tabitem">
-                      {" "}
-                      {this.state.isPhotosComplete ? (
-                        <i class="fa fa-check-circle checkpt" />
-                      ) : null}
-                      Photos
-                    </p>
-                  </a>
-                </li> */}
-                {/* <li>
-                  <a class="tabitem" href="#pricing" data-toggle="tab">
-                    <p class="tabitem">
-                      {" "}
-                      {this.state.isPricingComplete ? (
-                        <i class="fa fa-check-circle checkpt" />
-                      ) : null}
-                      Pricing
-                    </p>
-                  </a>
-                </li>{" "} */}
+
                 {!this.state.propertyadded ? (
                   <p class="pa">Property Added!</p>
                 ) : null}
@@ -1167,215 +1020,29 @@ class ListYourProperty extends Component {
                       </Fragment>
                     )}
                   </div>
-                  {/* {this.state.isphotosaved ? (
-                    <div>
-                      <br />
-                      Photos saved!
-                    </div>
-                  ) : null}
-                  {!this.state.isphotosaved ? (
-                    <button
-                      class="savephotos bluefont"
-                      onClick={this.submitPhoto}
-                    >
-                      Save photos
-                    </button>
-                  ) : null} */}
                 </div>
                 {/*---------------------------------PRICING--------------------------------*/}
                 <div class="tab-pane" id="pricing">
                   <div>
-                    {/* <h4 class="h4v">Availability</h4> <hr class="hrlyp" /> */}
-                    {/* <p class="grayie">
-                      Select a starting and ending point for setting up your
-                      availability
-                    </p> */}
-                    {/* <br /> */}
-                    <div>
-                      {/* <div class="form-group borderbox detailsitem2 inlinedate">
-                        <label id="startdateLabel">Start Date</label>
-                        <input
-                          id="bathrooms"
-                          value={this.state.startdate}
-                          onChange={this.startdateChangeHandler}
-                          type="date"
-                          name="startdate"
-                          ref="startdate"
-                          class="detailsitemstep"
-                          required
-                          min={today}
-                        />
-                        <div className="error" id="startdateError" />
-                      </div> */}
-                      {/* <div class="form-group borderbox detailsitem2 inlinedate">
-                        <label id="enddateLabel">End Date</label>
-                        <input
-                          id="bathrooms"
-                          value={this.state.enddate}
-                          onChange={this.enddateChangeHandler}
-                          type="date"
-                          name="enddate"
-                          ref="enddate"
-                          class="detailsitemstep"
-                          // required
-                          // min={this.state.startdate}
-                        />
-                        <div className="error" id="enddateError" />
-                      </div> */}
-                    </div>
-                    {/* <br />
-                    <br />
-                    <br /> */}
+                    <div />
                   </div>
                   <div>
                     {" "}
                     <br /> <br />{" "}
                     <h4 class="h4v">Enter Price of Your Property</h4>{" "}
                     <hr class="hrlyp" />
-                    {/* <p class="grayie">
-                      We recommend starting with a low price to get a few
-                      bookings and earn some initial guest reviews. You can
-                      update your rates at any time.
-                    </p> */}
                     <div>
                       <div>
                         <br />{" "}
-                        {/* <label id="nbrLabel" class="nbrLabel inlinedate">
-                          {" "}
-                          Nightly Base Rate{" "}
-                        </label> */}
-                        {/* <div class="form-group borderbox detailsitem2 inlinedate">
-                          <label id="nbr2Label">$</label>
-                          <input
-                            id="nbr"
-                            value={this.state.nbr}
-                            onChange={this.nbrChangeHandler}
-                            type="number"
-                            name="nbr"
-                            ref="nbr"
-                            class="detailsitemstep"
-                            min="1"
-                          />
-                          <div className="error" id="nbrError" />
-                          <br />
-                        </div> */}
                       </div>
                       <br />
                       <br />
                       <br /> {/* pricing */}
-                      {/* <label id="pricingLabel" class="pricingLabel inlinedate">
-                        {" "}
-                        Property Price{" "}
-                      </label>
-                      <div class="form-group borderbox detailsitem inlinedate">
-                        <label id="pricing2Label">$</label>
-                        <input
-                          id="pricing"
-                          value={this.state.pricing}
-                          onChange={this.pricingChangeHandler}
-                          type="number"
-                          //step="1"
-                          name="pricing"
-                          ref="pricing"
-                          class="detailsitemstep"
-                          required
-                          min="1"
-                        />
-                        <div className="error" id="pricingError" />
-                      </div> */}
                       <br />
                       <br />
-                      {/* <label id="minstayLabel" class="minstayLabel inlinedate">
-                        <br />
-                        Minimum Stay{" "}
-                      </label> */}
-                      {/* <div class="form-group borderbox detailsitem3">
-                        <label id="minstay2Label">$</label>
-                        <input
-                          id="minstay"
-                          value={this.state.minstay}
-                          onChange={this.minstayChangeHandler}
-                          type="number"
-                          step="1"
-                          name="minstay"
-                          ref="minstay"
-                          class="detailsitemstep3"
-                          min="1"
-                        />
-                        <div className="error" id="minstayError" />
-                      </div> */}
                       <br />
                     </div>
                   </div>
-                  {/* <div>
-                    {" "}
-                    <br /> <br /> <h4 class="h4v">Fees</h4> <hr class="hrlyp" />
-                    <p class="grayie">
-                      You can add fees to your listing or skip this step.
-                      Additional fees can be added later.
-                    </p>
-                    <div>
-                      <div>
-                        <br />{" "}
-                        <label id="cfLabel" class="cfLabel inlinedate">
-                          {" "}
-                          Cleaning Fee{" "}
-                        </label>
-                        <div class="form-group borderbox detailsitem2 inlinedate">
-                          <label id="nbr2Label">$</label>
-                          <input
-                            id="cf"
-                            value={this.state.cf}
-                            onChange={this.cfChangeHandler}
-                            type="number"
-                            name="cf"
-                            ref="cf"
-                            class="detailsitemstep"
-                            min="1"
-                          />
-                          <div className="error" id="cfError" />
-                        </div>
-                      </div>
-                      <br />
-                      <br />
-                      <br />
-                      <div>
-                        <div align="left">
-                          <span class="apayn">
-                            <label class="apaLabel">
-                              {" "}
-                              <br />
-                              Are pets allowed?{" "}
-                            </label>
-                            <div class="apayn2">
-                              <input
-                                defaultChecked="true"
-                                type="radio"
-                                name="apa"
-                                value="no"
-                                id="apano"
-                              />{" "}
-                              No
-                              {"     "}
-                              <input
-                                type="radio"
-                                name="apa"
-                                value="yes"
-                                id="apayes"
-                              />{" "}
-                              {"  "}
-                              Yes
-                            </div>
-                          </span>
-                          <br />
-                          <br />
-                        </div>
-                      </div>
-                      <br />
-                      <br />
-                      <br />
-                    </div>
-                  </div> */}
                 </div>
               </div>
             </div>
