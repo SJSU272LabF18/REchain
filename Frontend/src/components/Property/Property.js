@@ -386,7 +386,6 @@ class Property extends Component {
               <img src="https://i.imgur.com/fLTMlTI.png" />
             </div>
           </div>
-
           {/*-----------------------------------------PHOTO -------------------------------------*/}
           <div
             id="myCarousel"
@@ -442,34 +441,25 @@ class Property extends Component {
               <span class="sr-only">Next</span>
             </a>
           </div>
-
           {/*-----------------------------------------PHOTO -------------------------------------*/}
-
           <br />
           <div class="tablecss2">
             <p class="grayie_Description">
               <b> Description of Property:</b> {this.state.propdesc}{" "}
             </p>
           </div>
-
           <div class="tablecss3">
             <div class="coninfo">
               {/* <div class="propinfo_New descNew">
                 <h2>{this.state.headline}</h2>
               </div> */}
               {/* <p class="grayie_Details">
-              Details </p> */}
-              <thead>
-                <tr>
-                  <th>
-                    {" "}
-                    <h3 class="bluefont h2th3">
-                      <center> {"     "} Details</center>
-                      <br />
-                    </h3>
-                  </th>
-                </tr>
-              </thead>
+              Details </p> */}{" "}
+              <h3 class="bluefont2 h2th3">
+                <center> {"     "} Details</center>
+                <p class="vl" />
+                <br />
+              </h3>
               <div class="iconsprop">
                 <p class="grayie">
                   <b>Property Manager: </b> {this.state.owner_fname}{" "}
@@ -494,7 +484,7 @@ class Property extends Component {
                 <p class="grayie">
                   {" "}
                   <b>Property Size: </b>
-                  {this.state.sqft} {"sqft"}
+                  {this.state.sqft} {"Square Feet"}
                 </p>
 
                 <p class="grayie">
@@ -523,42 +513,30 @@ class Property extends Component {
                   </span>
                 </i>
               </div>
-
               <br />
               <br />
-
-              <button class="homesearchbutton book" onClick={this.buyProperty}>
-                Buy Property
-              </button>
               <br />
-              <br />
-              {/* <Link to={{
-      pathname: '/template',
-      search: '?query=abc',
-      state: { detail: response.data }
-    }}> My Link </Link> */}
-
-              <Link
-                class="homesearchbutton book"
-                id="linktranhist"
-                to={{
-                  pathname: "/dashboard",
-                  state: {
-                    streetaddr: this.state.streetaddr,
-                    unit: this.state.unit,
-                    zip: this.state.zip
-                  }
-                }}
-              >
-                View Transaction History
-              </Link>
-
-              <br />
-
-              <br />
-              <br />
+              <div>
+                <Link id="linktranhist2" to={this.buyProperty}>
+                  Buy Property
+                </Link>
+                <br />
+                <Link
+                  id="linktranhist"
+                  to={{
+                    pathname: "/dashboard",
+                    state: {
+                      streetaddr: this.state.streetaddr,
+                      unit: this.state.unit,
+                      zip: this.state.zip
+                    }
+                  }}
+                >
+                  View Transaction History
+                </Link>
+              </div>
             </div>
-          </div>
+          </div>{" "}
         </div>
       );
     } else redirectVar = <Redirect to="/login" />;

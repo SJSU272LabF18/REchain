@@ -501,7 +501,7 @@ class ListYourProperty extends Component {
             <a
               href={
                 sessionStorage.getItem("typeofaccount") == "owner"
-                  ? "/lyp"
+                  ? "/lyp/photos"
                   : "#"
               }
               class="buttonlyp default bluefont inline"
@@ -581,6 +581,9 @@ class ListYourProperty extends Component {
             <div>
               {" "}
               {/*Navs*/}
+              <div class="tablecss4">
+                <b>POST YOUR PROPERTY BY FILLING OUT ALL THREE FEILDS BELOW</b>
+              </div>
               <ul class="nav">
                 {/* ADDING PROPERTY REQS */}
                 <br />
