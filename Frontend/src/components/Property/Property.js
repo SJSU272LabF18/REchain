@@ -220,10 +220,15 @@ class Property extends Component {
       zip: this.state.zip,
       property_id: this.state.propnum_pk
     };
-    this.props.buyProperty(data, () => {
-      alert("Congratualations. Property Brought! Check Property history.");
-      this.props.history.push("/dashboard");
-    });
+    
+    if(data.fname!=data.owner_fname || data.lname!=data.owner_lname) {
+      this.props.buyProperty(data, () => {
+        alert("Congratualations. Property Brought! Check Property history.");
+        this.props.history.push("/dashboard");
+      });
+    } else {
+      alert("You already own the property.")
+    }
   };
 
   sendMessage = () => {
@@ -517,9 +522,9 @@ class Property extends Component {
               <br />
               <br />
               <div>
-                <Link id="linktranhist2" to={this.buyProperty}>
+                <button id="linktranhist2" onClick={this.buyProperty}>
                   Buy Property
-                </Link>
+                </button>
 
                 <Link
                   id="linktranhist"
