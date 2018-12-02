@@ -210,7 +210,7 @@ class Property extends Component {
     e.preventDefault();
     // var email = sessionStorage.getItem('email');
     const data = {
-      trans_amt: "100,000",
+      trans_amt: this.state.price,
       fname: this.state.fname,
       lname: this.state.lname,
       owner_fname: this.state.owner_fname,

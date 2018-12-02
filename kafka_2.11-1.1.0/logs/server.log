@@ -1,2 +1,818 @@
 [2018-12-02 03:08:32,478] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 1 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
 [2018-12-02 03:18:32,515] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 1 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-12-02 10:12:56,276] INFO Reading configuration from: config/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2018-12-02 10:12:56,278] INFO autopurge.snapRetainCount set to 3 (org.apache.zookeeper.server.DatadirCleanupManager)
+[2018-12-02 10:12:56,278] INFO autopurge.purgeInterval set to 0 (org.apache.zookeeper.server.DatadirCleanupManager)
+[2018-12-02 10:12:56,279] INFO Purge task is not scheduled. (org.apache.zookeeper.server.DatadirCleanupManager)
+[2018-12-02 10:12:56,279] WARN Either no config or no quorum defined in config, running  in standalone mode (org.apache.zookeeper.server.quorum.QuorumPeerMain)
+[2018-12-02 10:12:56,295] INFO Reading configuration from: config/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2018-12-02 10:12:56,295] INFO Starting server (org.apache.zookeeper.server.ZooKeeperServerMain)
+[2018-12-02 10:12:56,320] INFO Server environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:12:56,321] INFO Server environment:host.name=10.0.0.8 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:12:56,321] INFO Server environment:java.version=1.8.0_192 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:12:56,321] INFO Server environment:java.vendor=Oracle Corporation (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:12:56,321] INFO Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:12:56,321] INFO Server environment:java.class.path=/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/aopalliance-repackaged-2.5.0-b32.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/argparse4j-0.7.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/commons-lang3-3.5.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/connect-api-1.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/connect-file-1.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/connect-json-1.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/connect-runtime-1.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/connect-transforms-1.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/guava-20.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/hk2-api-2.5.0-b32.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/hk2-locator-2.5.0-b32.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/hk2-utils-2.5.0-b32.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jackson-annotations-2.9.4.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jackson-core-2.9.4.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jackson-databind-2.9.4.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jackson-jaxrs-base-2.9.4.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jackson-jaxrs-json-provider-2.9.4.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jackson-module-jaxb-annotations-2.9.4.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/javassist-3.20.0-GA.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/javassist-3.21.0-GA.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/javax.annotation-api-1.2.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/javax.inject-1.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/javax.inject-2.5.0-b32.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/javax.servlet-api-3.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/javax.ws.rs-api-2.0.1.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jersey-client-2.25.1.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jersey-common-2.25.1.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jersey-container-servlet-2.25.1.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jersey-container-servlet-core-2.25.1.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jersey-guava-2.25.1.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jersey-media-jaxb-2.25.1.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jersey-server-2.25.1.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jetty-client-9.2.24.v20180105.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jetty-continuation-9.2.24.v20180105.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jetty-http-9.2.24.v20180105.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jetty-io-9.2.24.v20180105.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jetty-security-9.2.24.v20180105.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jetty-server-9.2.24.v20180105.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jetty-servlet-9.2.24.v20180105.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jetty-servlets-9.2.24.v20180105.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jetty-util-9.2.24.v20180105.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jopt-simple-5.0.4.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/kafka-clients-1.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/kafka-log4j-appender-1.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/kafka-streams-1.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/kafka-streams-examples-1.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/kafka-streams-test-utils-1.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/kafka-tools-1.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/kafka_2.11-1.1.0-sources.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/kafka_2.11-1.1.0-test-sources.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/kafka_2.11-1.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/log4j-1.2.17.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/lz4-java-1.4.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/maven-artifact-3.5.2.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/metrics-core-2.2.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/osgi-resource-locator-1.0.1.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/plexus-utils-3.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/reflections-0.9.11.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/rocksdbjni-5.7.3.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/scala-library-2.11.12.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/scala-logging_2.11-3.7.2.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/scala-reflect-2.11.12.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/slf4j-api-1.7.25.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/slf4j-log4j12-1.7.25.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/snappy-java-1.1.7.1.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/validation-api-1.1.0.Final.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/zkclient-0.10.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/zookeeper-3.4.10.jar (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:12:56,322] INFO Server environment:java.library.path=/Users/neil/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:. (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:12:56,322] INFO Server environment:java.io.tmpdir=/var/folders/ns/_sx3fj991k98cn2zlfpwn1p40000gn/T/ (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:12:56,322] INFO Server environment:java.compiler=<NA> (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:12:56,322] INFO Server environment:os.name=Mac OS X (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:12:56,322] INFO Server environment:os.arch=x86_64 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:12:56,322] INFO Server environment:os.version=10.14.1 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:12:56,322] INFO Server environment:user.name=neil (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:12:56,322] INFO Server environment:user.home=/Users/neil (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:12:56,322] INFO Server environment:user.dir=/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:12:56,330] INFO tickTime set to 3000 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:12:56,330] INFO minSessionTimeout set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:12:56,330] INFO maxSessionTimeout set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:12:56,361] INFO binding to port 0.0.0.0/0.0.0.0:2181 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:13:14,976] INFO Registered kafka:type=kafka.Log4jController MBean (kafka.utils.Log4jControllerRegistration$)
+[2018-12-02 10:13:15,367] INFO starting (kafka.server.KafkaServer)
+[2018-12-02 10:13:15,368] INFO Connecting to zookeeper on localhost:2181 (kafka.server.KafkaServer)
+[2018-12-02 10:13:15,384] INFO [ZooKeeperClient] Initializing a new session to localhost:2181. (kafka.zookeeper.ZooKeeperClient)
+[2018-12-02 10:13:15,390] INFO Client environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT (org.apache.zookeeper.ZooKeeper)
+[2018-12-02 10:13:15,390] INFO Client environment:host.name=10.0.0.8 (org.apache.zookeeper.ZooKeeper)
+[2018-12-02 10:13:15,390] INFO Client environment:java.version=1.8.0_192 (org.apache.zookeeper.ZooKeeper)
+[2018-12-02 10:13:15,390] INFO Client environment:java.vendor=Oracle Corporation (org.apache.zookeeper.ZooKeeper)
+[2018-12-02 10:13:15,390] INFO Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre (org.apache.zookeeper.ZooKeeper)
+[2018-12-02 10:13:15,390] INFO Client environment:java.class.path=/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/aopalliance-repackaged-2.5.0-b32.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/argparse4j-0.7.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/commons-lang3-3.5.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/connect-api-1.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/connect-file-1.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/connect-json-1.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/connect-runtime-1.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/connect-transforms-1.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/guava-20.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/hk2-api-2.5.0-b32.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/hk2-locator-2.5.0-b32.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/hk2-utils-2.5.0-b32.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jackson-annotations-2.9.4.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jackson-core-2.9.4.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jackson-databind-2.9.4.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jackson-jaxrs-base-2.9.4.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jackson-jaxrs-json-provider-2.9.4.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jackson-module-jaxb-annotations-2.9.4.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/javassist-3.20.0-GA.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/javassist-3.21.0-GA.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/javax.annotation-api-1.2.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/javax.inject-1.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/javax.inject-2.5.0-b32.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/javax.servlet-api-3.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/javax.ws.rs-api-2.0.1.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jersey-client-2.25.1.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jersey-common-2.25.1.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jersey-container-servlet-2.25.1.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jersey-container-servlet-core-2.25.1.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jersey-guava-2.25.1.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jersey-media-jaxb-2.25.1.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jersey-server-2.25.1.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jetty-client-9.2.24.v20180105.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jetty-continuation-9.2.24.v20180105.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jetty-http-9.2.24.v20180105.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jetty-io-9.2.24.v20180105.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jetty-security-9.2.24.v20180105.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jetty-server-9.2.24.v20180105.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jetty-servlet-9.2.24.v20180105.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jetty-servlets-9.2.24.v20180105.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jetty-util-9.2.24.v20180105.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/jopt-simple-5.0.4.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/kafka-clients-1.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/kafka-log4j-appender-1.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/kafka-streams-1.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/kafka-streams-examples-1.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/kafka-streams-test-utils-1.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/kafka-tools-1.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/kafka_2.11-1.1.0-sources.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/kafka_2.11-1.1.0-test-sources.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/kafka_2.11-1.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/log4j-1.2.17.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/lz4-java-1.4.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/maven-artifact-3.5.2.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/metrics-core-2.2.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/osgi-resource-locator-1.0.1.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/plexus-utils-3.1.0.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/reflections-0.9.11.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/rocksdbjni-5.7.3.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/scala-library-2.11.12.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/scala-logging_2.11-3.7.2.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/scala-reflect-2.11.12.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/slf4j-api-1.7.25.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/slf4j-log4j12-1.7.25.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/snappy-java-1.1.7.1.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/validation-api-1.1.0.Final.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/zkclient-0.10.jar:/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0/bin/../libs/zookeeper-3.4.10.jar (org.apache.zookeeper.ZooKeeper)
+[2018-12-02 10:13:15,391] INFO Client environment:java.library.path=/Users/neil/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:. (org.apache.zookeeper.ZooKeeper)
+[2018-12-02 10:13:15,391] INFO Client environment:java.io.tmpdir=/var/folders/ns/_sx3fj991k98cn2zlfpwn1p40000gn/T/ (org.apache.zookeeper.ZooKeeper)
+[2018-12-02 10:13:15,391] INFO Client environment:java.compiler=<NA> (org.apache.zookeeper.ZooKeeper)
+[2018-12-02 10:13:15,392] INFO Client environment:os.name=Mac OS X (org.apache.zookeeper.ZooKeeper)
+[2018-12-02 10:13:15,392] INFO Client environment:os.arch=x86_64 (org.apache.zookeeper.ZooKeeper)
+[2018-12-02 10:13:15,392] INFO Client environment:os.version=10.14.1 (org.apache.zookeeper.ZooKeeper)
+[2018-12-02 10:13:15,392] INFO Client environment:user.name=neil (org.apache.zookeeper.ZooKeeper)
+[2018-12-02 10:13:15,392] INFO Client environment:user.home=/Users/neil (org.apache.zookeeper.ZooKeeper)
+[2018-12-02 10:13:15,392] INFO Client environment:user.dir=/Users/neil/Desktop/SJSU/CMPE272/bloquity/kafka_2.11-1.1.0 (org.apache.zookeeper.ZooKeeper)
+[2018-12-02 10:13:15,393] INFO Initiating client connection, connectString=localhost:2181 sessionTimeout=6000 watcher=kafka.zookeeper.ZooKeeperClient$ZooKeeperClientWatcher$@222545dc (org.apache.zookeeper.ZooKeeper)
+[2018-12-02 10:13:15,409] INFO [ZooKeeperClient] Waiting until connected. (kafka.zookeeper.ZooKeeperClient)
+[2018-12-02 10:13:15,410] INFO Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2018-12-02 10:13:15,430] INFO Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session (org.apache.zookeeper.ClientCnxn)
+[2018-12-02 10:13:15,430] INFO Accepted socket connection from /0:0:0:0:0:0:0:1:55647 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:13:15,439] INFO Client attempting to establish new session at /0:0:0:0:0:0:0:1:55647 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:15,440] INFO Creating new log file: log.11b00 (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2018-12-02 10:13:15,446] INFO Established session 0x167701f93670000 with negotiated timeout 6000 for client /0:0:0:0:0:0:0:1:55647 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:15,449] INFO Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x167701f93670000, negotiated timeout = 6000 (org.apache.zookeeper.ClientCnxn)
+[2018-12-02 10:13:15,451] INFO [ZooKeeperClient] Connected. (kafka.zookeeper.ZooKeeperClient)
+[2018-12-02 10:13:15,486] INFO Got user-level KeeperException when processing sessionid:0x167701f93670000 type:create cxid:0x1 zxid:0x11b01 txntype:-1 reqpath:n/a Error Path:/consumers Error:KeeperErrorCode = NodeExists for /consumers (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:15,500] INFO Got user-level KeeperException when processing sessionid:0x167701f93670000 type:create cxid:0x2 zxid:0x11b02 txntype:-1 reqpath:n/a Error Path:/brokers/ids Error:KeeperErrorCode = NodeExists for /brokers/ids (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:15,501] INFO Got user-level KeeperException when processing sessionid:0x167701f93670000 type:create cxid:0x3 zxid:0x11b03 txntype:-1 reqpath:n/a Error Path:/brokers/topics Error:KeeperErrorCode = NodeExists for /brokers/topics (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:15,503] INFO Got user-level KeeperException when processing sessionid:0x167701f93670000 type:create cxid:0x4 zxid:0x11b04 txntype:-1 reqpath:n/a Error Path:/config/changes Error:KeeperErrorCode = NodeExists for /config/changes (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:15,504] INFO Got user-level KeeperException when processing sessionid:0x167701f93670000 type:create cxid:0x5 zxid:0x11b05 txntype:-1 reqpath:n/a Error Path:/admin/delete_topics Error:KeeperErrorCode = NodeExists for /admin/delete_topics (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:15,505] INFO Got user-level KeeperException when processing sessionid:0x167701f93670000 type:create cxid:0x6 zxid:0x11b06 txntype:-1 reqpath:n/a Error Path:/brokers/seqid Error:KeeperErrorCode = NodeExists for /brokers/seqid (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:15,506] INFO Got user-level KeeperException when processing sessionid:0x167701f93670000 type:create cxid:0x7 zxid:0x11b07 txntype:-1 reqpath:n/a Error Path:/isr_change_notification Error:KeeperErrorCode = NodeExists for /isr_change_notification (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:15,507] INFO Got user-level KeeperException when processing sessionid:0x167701f93670000 type:create cxid:0x8 zxid:0x11b08 txntype:-1 reqpath:n/a Error Path:/latest_producer_id_block Error:KeeperErrorCode = NodeExists for /latest_producer_id_block (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:15,508] INFO Got user-level KeeperException when processing sessionid:0x167701f93670000 type:create cxid:0x9 zxid:0x11b09 txntype:-1 reqpath:n/a Error Path:/log_dir_event_notification Error:KeeperErrorCode = NodeExists for /log_dir_event_notification (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:15,509] INFO Got user-level KeeperException when processing sessionid:0x167701f93670000 type:create cxid:0xa zxid:0x11b0a txntype:-1 reqpath:n/a Error Path:/config/topics Error:KeeperErrorCode = NodeExists for /config/topics (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:15,510] INFO Got user-level KeeperException when processing sessionid:0x167701f93670000 type:create cxid:0xb zxid:0x11b0b txntype:-1 reqpath:n/a Error Path:/config/clients Error:KeeperErrorCode = NodeExists for /config/clients (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:15,511] INFO Got user-level KeeperException when processing sessionid:0x167701f93670000 type:create cxid:0xc zxid:0x11b0c txntype:-1 reqpath:n/a Error Path:/config/users Error:KeeperErrorCode = NodeExists for /config/users (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:15,512] INFO Got user-level KeeperException when processing sessionid:0x167701f93670000 type:create cxid:0xd zxid:0x11b0d txntype:-1 reqpath:n/a Error Path:/config/brokers Error:KeeperErrorCode = NodeExists for /config/brokers (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:15,704] INFO Cluster ID = FxyQ1xqAQDeGUkUS5Qtx7g (kafka.server.KafkaServer)
+[2018-12-02 10:13:15,765] INFO KafkaConfig values: 
+	advertised.host.name = null
+	advertised.listeners = null
+	advertised.port = null
+	alter.config.policy.class.name = null
+	alter.log.dirs.replication.quota.window.num = 11
+	alter.log.dirs.replication.quota.window.size.seconds = 1
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.id = 0
+	broker.id.generation.enable = true
+	broker.rack = null
+	compression.type = producer
+	connections.max.idle.ms = 600000
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delegation.token.expiry.check.interval.ms = 3600000
+	delegation.token.expiry.time.ms = 86400000
+	delegation.token.master.key = null
+	delegation.token.max.lifetime.ms = 604800000
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = true
+	fetch.purgatory.purge.interval.requests = 1000
+	group.initial.rebalance.delay.ms = 0
+	group.max.session.timeout.ms = 300000
+	group.min.session.timeout.ms = 6000
+	host.name = 
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 1.1-IV0
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = PLAINTEXT:PLAINTEXT,SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,SASL_SSL:SASL_SSL
+	listeners = null
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dirs = /tmp/kafka-logs
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.format.version = 1.1-IV0
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	max.incremental.fetch.session.cache.slots = 1000
+	message.max.bytes = 1000012
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.alter.log.dirs.threads = null
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 1440
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 50
+	offsets.topic.replication.factor = 1
+	offsets.topic.segment.bytes = 104857600
+	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
+	password.encoder.iterations = 4096
+	password.encoder.key.length = 128
+	password.encoder.keyfactory.algorithm = null
+	password.encoder.old.secret = null
+	password.encoder.secret = null
+	port = 9092
+	principal.builder.class = null
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.request.bytes = -1
+	queued.max.requests = 500
+	quota.consumer.default = 9223372036854775807
+	quota.producer.default = 9223372036854775807
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 10000
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	security.inter.broker.protocol = PLAINTEXT
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = []
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 60000
+	transaction.max.timeout.ms = 900000
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 1
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 1
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	zookeeper.connect = localhost:2181
+	zookeeper.connection.timeout.ms = 6000
+	zookeeper.max.in.flight.requests = 10
+	zookeeper.session.timeout.ms = 6000
+	zookeeper.set.acl = false
+	zookeeper.sync.time.ms = 2000
+ (kafka.server.KafkaConfig)
+[2018-12-02 10:13:15,772] INFO KafkaConfig values: 
+	advertised.host.name = null
+	advertised.listeners = null
+	advertised.port = null
+	alter.config.policy.class.name = null
+	alter.log.dirs.replication.quota.window.num = 11
+	alter.log.dirs.replication.quota.window.size.seconds = 1
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.id = 0
+	broker.id.generation.enable = true
+	broker.rack = null
+	compression.type = producer
+	connections.max.idle.ms = 600000
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delegation.token.expiry.check.interval.ms = 3600000
+	delegation.token.expiry.time.ms = 86400000
+	delegation.token.master.key = null
+	delegation.token.max.lifetime.ms = 604800000
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = true
+	fetch.purgatory.purge.interval.requests = 1000
+	group.initial.rebalance.delay.ms = 0
+	group.max.session.timeout.ms = 300000
+	group.min.session.timeout.ms = 6000
+	host.name = 
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 1.1-IV0
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = PLAINTEXT:PLAINTEXT,SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,SASL_SSL:SASL_SSL
+	listeners = null
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dirs = /tmp/kafka-logs
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.format.version = 1.1-IV0
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	max.incremental.fetch.session.cache.slots = 1000
+	message.max.bytes = 1000012
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.alter.log.dirs.threads = null
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 1440
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 50
+	offsets.topic.replication.factor = 1
+	offsets.topic.segment.bytes = 104857600
+	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
+	password.encoder.iterations = 4096
+	password.encoder.key.length = 128
+	password.encoder.keyfactory.algorithm = null
+	password.encoder.old.secret = null
+	password.encoder.secret = null
+	port = 9092
+	principal.builder.class = null
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.request.bytes = -1
+	queued.max.requests = 500
+	quota.consumer.default = 9223372036854775807
+	quota.producer.default = 9223372036854775807
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 10000
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	security.inter.broker.protocol = PLAINTEXT
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = []
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 60000
+	transaction.max.timeout.ms = 900000
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 1
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 1
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	zookeeper.connect = localhost:2181
+	zookeeper.connection.timeout.ms = 6000
+	zookeeper.max.in.flight.requests = 10
+	zookeeper.session.timeout.ms = 6000
+	zookeeper.set.acl = false
+	zookeeper.sync.time.ms = 2000
+ (kafka.server.KafkaConfig)
+[2018-12-02 10:13:15,794] INFO [ThrottledRequestReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-12-02 10:13:15,795] INFO [ThrottledRequestReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-12-02 10:13:15,795] INFO [ThrottledRequestReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-12-02 10:13:15,844] INFO Loading logs. (kafka.log.LogManager)
+[2018-12-02 10:13:15,900] INFO [Log partition=post_profile-0, dir=/tmp/kafka-logs] Loading producer state from offset 0 with message format version 2 (kafka.log.Log)
+[2018-12-02 10:13:15,913] INFO [Log partition=post_profile-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 45 ms (kafka.log.Log)
+[2018-12-02 10:13:15,922] INFO [Log partition=get_propertyphotos-0, dir=/tmp/kafka-logs] Loading producer state from offset 0 with message format version 2 (kafka.log.Log)
+[2018-12-02 10:13:15,923] INFO [Log partition=get_propertyphotos-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 2 ms (kafka.log.Log)
+[2018-12-02 10:13:15,934] INFO [Log partition=post_buyproperty-0, dir=/tmp/kafka-logs] Loading producer state from offset 6 with message format version 2 (kafka.log.Log)
+[2018-12-02 10:13:15,938] INFO [ProducerStateManager partition=post_buyproperty-0] Loading producer state from snapshot file '/tmp/kafka-logs/post_buyproperty-0/00000000000000000006.snapshot' (kafka.log.ProducerStateManager)
+[2018-12-02 10:13:15,951] INFO [Log partition=post_buyproperty-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 6 in 25 ms (kafka.log.Log)
+[2018-12-02 10:13:15,957] INFO [Log partition=post_login-0, dir=/tmp/kafka-logs] Loading producer state from offset 26 with message format version 2 (kafka.log.Log)
+[2018-12-02 10:13:15,958] INFO [ProducerStateManager partition=post_login-0] Loading producer state from snapshot file '/tmp/kafka-logs/post_login-0/00000000000000000026.snapshot' (kafka.log.ProducerStateManager)
+[2018-12-02 10:13:15,958] INFO [Log partition=post_login-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 26 in 5 ms (kafka.log.Log)
+[2018-12-02 10:13:15,961] INFO [Log partition=get_propertydetails-0, dir=/tmp/kafka-logs] Loading producer state from offset 0 with message format version 2 (kafka.log.Log)
+[2018-12-02 10:13:15,962] INFO [Log partition=get_propertydetails-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 2 ms (kafka.log.Log)
+[2018-12-02 10:13:15,972] INFO [Log partition=get_transaction_history-0, dir=/tmp/kafka-logs] Loading producer state from offset 57 with message format version 2 (kafka.log.Log)
+[2018-12-02 10:13:15,973] INFO [ProducerStateManager partition=get_transaction_history-0] Loading producer state from snapshot file '/tmp/kafka-logs/get_transaction_history-0/00000000000000000057.snapshot' (kafka.log.ProducerStateManager)
+[2018-12-02 10:13:15,973] INFO [Log partition=get_transaction_history-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 57 in 5 ms (kafka.log.Log)
+[2018-12-02 10:13:15,977] INFO [Log partition=post_ownerlogin-0, dir=/tmp/kafka-logs] Loading producer state from offset 0 with message format version 2 (kafka.log.Log)
+[2018-12-02 10:13:15,978] INFO [Log partition=post_ownerlogin-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 1 ms (kafka.log.Log)
+[2018-12-02 10:13:15,981] INFO [Log partition=post_bookproperty-0, dir=/tmp/kafka-logs] Loading producer state from offset 0 with message format version 2 (kafka.log.Log)
+[2018-12-02 10:13:15,982] INFO [Log partition=post_bookproperty-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 2 ms (kafka.log.Log)
+[2018-12-02 10:13:15,986] INFO [Log partition=get_searchresults-0, dir=/tmp/kafka-logs] Loading producer state from offset 56 with message format version 2 (kafka.log.Log)
+[2018-12-02 10:13:15,987] INFO [ProducerStateManager partition=get_searchresults-0] Loading producer state from snapshot file '/tmp/kafka-logs/get_searchresults-0/00000000000000000056.snapshot' (kafka.log.ProducerStateManager)
+[2018-12-02 10:13:15,987] INFO [Log partition=get_searchresults-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 56 in 3 ms (kafka.log.Log)
+[2018-12-02 10:13:15,991] INFO [Log partition=post_sendmessage-0, dir=/tmp/kafka-logs] Loading producer state from offset 0 with message format version 2 (kafka.log.Log)
+[2018-12-02 10:13:15,991] INFO [Log partition=post_sendmessage-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 2 ms (kafka.log.Log)
+[2018-12-02 10:13:15,995] INFO [Log partition=post_lyp-0, dir=/tmp/kafka-logs] Loading producer state from offset 35 with message format version 2 (kafka.log.Log)
+[2018-12-02 10:13:15,996] INFO [ProducerStateManager partition=post_lyp-0] Loading producer state from snapshot file '/tmp/kafka-logs/post_lyp-0/00000000000000000035.snapshot' (kafka.log.ProducerStateManager)
+[2018-12-02 10:13:15,996] INFO [Log partition=post_lyp-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 35 in 3 ms (kafka.log.Log)
+[2018-12-02 10:13:16,000] INFO [Log partition=post_signup-0, dir=/tmp/kafka-logs] Loading producer state from offset 2 with message format version 2 (kafka.log.Log)
+[2018-12-02 10:13:16,000] INFO [ProducerStateManager partition=post_signup-0] Loading producer state from snapshot file '/tmp/kafka-logs/post_signup-0/00000000000000000002.snapshot' (kafka.log.ProducerStateManager)
+[2018-12-02 10:13:16,001] INFO [Log partition=post_signup-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 2 in 3 ms (kafka.log.Log)
+[2018-12-02 10:13:16,004] INFO [Log partition=get_dashboard-0, dir=/tmp/kafka-logs] Loading producer state from offset 34 with message format version 2 (kafka.log.Log)
+[2018-12-02 10:13:16,005] INFO [ProducerStateManager partition=get_dashboard-0] Loading producer state from snapshot file '/tmp/kafka-logs/get_dashboard-0/00000000000000000034.snapshot' (kafka.log.ProducerStateManager)
+[2018-12-02 10:13:16,005] INFO [Log partition=get_dashboard-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 34 in 3 ms (kafka.log.Log)
+[2018-12-02 10:13:16,010] INFO [Log partition=get_home-0, dir=/tmp/kafka-logs] Loading producer state from offset 254 with message format version 2 (kafka.log.Log)
+[2018-12-02 10:13:16,011] INFO [ProducerStateManager partition=get_home-0] Loading producer state from snapshot file '/tmp/kafka-logs/get_home-0/00000000000000000254.snapshot' (kafka.log.ProducerStateManager)
+[2018-12-02 10:13:16,013] INFO [Log partition=get_home-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 254 in 6 ms (kafka.log.Log)
+[2018-12-02 10:13:16,017] INFO [Log partition=response_topic-0, dir=/tmp/kafka-logs] Loading producer state from offset 419 with message format version 2 (kafka.log.Log)
+[2018-12-02 10:13:16,018] INFO [ProducerStateManager partition=response_topic-0] Loading producer state from snapshot file '/tmp/kafka-logs/response_topic-0/00000000000000000419.snapshot' (kafka.log.ProducerStateManager)
+[2018-12-02 10:13:16,019] INFO [Log partition=response_topic-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 419 in 4 ms (kafka.log.Log)
+[2018-12-02 10:13:16,021] INFO [Log partition=get_profile-0, dir=/tmp/kafka-logs] Loading producer state from offset 0 with message format version 2 (kafka.log.Log)
+[2018-12-02 10:13:16,022] INFO [Log partition=get_profile-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 2 ms (kafka.log.Log)
+[2018-12-02 10:13:16,024] INFO [Log partition=get_inbox-0, dir=/tmp/kafka-logs] Loading producer state from offset 0 with message format version 2 (kafka.log.Log)
+[2018-12-02 10:13:16,025] INFO [Log partition=get_inbox-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 2 ms (kafka.log.Log)
+[2018-12-02 10:13:16,027] INFO [Log partition=post_book-0, dir=/tmp/kafka-logs] Loading producer state from offset 0 with message format version 2 (kafka.log.Log)
+[2018-12-02 10:13:16,028] INFO [Log partition=post_book-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 2 ms (kafka.log.Log)
+[2018-12-02 10:13:16,030] INFO Logs loading complete in 186 ms. (kafka.log.LogManager)
+[2018-12-02 10:13:16,038] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+[2018-12-02 10:13:16,039] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+[2018-12-02 10:13:16,300] INFO Awaiting socket connections on 0.0.0.0:9092. (kafka.network.Acceptor)
+[2018-12-02 10:13:16,326] INFO [SocketServer brokerId=0] Started 1 acceptor threads (kafka.network.SocketServer)
+[2018-12-02 10:13:16,346] INFO [ExpirationReaper-0-Produce]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-12-02 10:13:16,346] INFO [ExpirationReaper-0-Fetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-12-02 10:13:16,347] INFO [ExpirationReaper-0-DeleteRecords]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-12-02 10:13:16,357] INFO [LogDirFailureHandler]: Starting (kafka.server.ReplicaManager$LogDirFailureHandler)
+[2018-12-02 10:13:16,399] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.zk.KafkaZkClient)
+[2018-12-02 10:13:16,403] INFO Result of znode creation at /brokers/ids/0 is: OK (kafka.zk.KafkaZkClient)
+[2018-12-02 10:13:16,403] INFO Registered broker 0 at path /brokers/ids/0 with addresses: ArrayBuffer(EndPoint(10.0.0.8,9092,ListenerName(PLAINTEXT),PLAINTEXT)) (kafka.zk.KafkaZkClient)
+[2018-12-02 10:13:16,436] INFO [ExpirationReaper-0-topic]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-12-02 10:13:16,439] INFO [ExpirationReaper-0-Heartbeat]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-12-02 10:13:16,439] INFO [ExpirationReaper-0-Rebalance]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-12-02 10:13:16,439] INFO Creating /controller (is it secure? false) (kafka.zk.KafkaZkClient)
+[2018-12-02 10:13:16,443] INFO Result of znode creation at /controller is: OK (kafka.zk.KafkaZkClient)
+[2018-12-02 10:13:16,451] INFO [GroupCoordinator 0]: Starting up. (kafka.coordinator.group.GroupCoordinator)
+[2018-12-02 10:13:16,451] INFO [GroupCoordinator 0]: Startup complete. (kafka.coordinator.group.GroupCoordinator)
+[2018-12-02 10:13:16,452] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 1 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-12-02 10:13:16,460] INFO [ProducerId Manager 0]: Acquired new producerId block (brokerId:0,blockStartProducerId:10000,blockEndProducerId:10999) by writing to Zk with path version 11 (kafka.coordinator.transaction.ProducerIdManager)
+[2018-12-02 10:13:16,479] INFO [TransactionCoordinator id=0] Starting up. (kafka.coordinator.transaction.TransactionCoordinator)
+[2018-12-02 10:13:16,481] INFO [Transaction Marker Channel Manager 0]: Starting (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2018-12-02 10:13:16,481] INFO [TransactionCoordinator id=0] Startup complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[2018-12-02 10:13:16,513] INFO [/config/changes-event-process-thread]: Starting (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
+[2018-12-02 10:13:16,557] INFO Kafka version : 1.1.0 (org.apache.kafka.common.utils.AppInfoParser)
+[2018-12-02 10:13:16,557] INFO Kafka commitId : fdcf75ea326b8e07 (org.apache.kafka.common.utils.AppInfoParser)
+[2018-12-02 10:13:16,559] INFO [KafkaServer id=0] started (kafka.server.KafkaServer)
+[2018-12-02 10:13:16,581] INFO Got user-level KeeperException when processing sessionid:0x167701f93670000 type:delete cxid:0x75 zxid:0x11b12 txntype:-1 reqpath:n/a Error Path:/admin/preferred_replica_election Error:KeeperErrorCode = NoNode for /admin/preferred_replica_election (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:16,592] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions get_transaction_history-0,get_dashboard-0,get_searchresults-0,post_login-0,post_ownerlogin-0,get_propertydetails-0,get_home-0,get_inbox-0,post_buyproperty-0,post_sendmessage-0,get_profile-0,response_topic-0,get_propertyphotos-0,post_lyp-0,post_book-0,post_profile-0,post_bookproperty-0,post_signup-0 (kafka.server.ReplicaFetcherManager)
+[2018-12-02 10:13:16,601] INFO Replica loaded for partition post_lyp-0 with initial high watermark 35 (kafka.cluster.Replica)
+[2018-12-02 10:13:16,603] INFO [Partition post_lyp-0 broker=0] post_lyp-0 starts at Leader Epoch 0 from offset 35. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-02 10:13:16,610] INFO Replica loaded for partition post_signup-0 with initial high watermark 2 (kafka.cluster.Replica)
+[2018-12-02 10:13:16,610] INFO [Partition post_signup-0 broker=0] post_signup-0 starts at Leader Epoch 0 from offset 2. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-02 10:13:16,612] INFO Replica loaded for partition post_book-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-12-02 10:13:16,613] INFO [Partition post_book-0 broker=0] post_book-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-02 10:13:16,615] INFO Replica loaded for partition post_sendmessage-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-12-02 10:13:16,616] INFO [Partition post_sendmessage-0 broker=0] post_sendmessage-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-02 10:13:16,619] INFO Replica loaded for partition get_inbox-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-12-02 10:13:16,619] INFO [Partition get_inbox-0 broker=0] get_inbox-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-02 10:13:16,622] INFO Replica loaded for partition get_profile-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-12-02 10:13:16,622] INFO [Partition get_profile-0 broker=0] get_profile-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-02 10:13:16,624] INFO Replica loaded for partition get_home-0 with initial high watermark 254 (kafka.cluster.Replica)
+[2018-12-02 10:13:16,625] INFO [Partition get_home-0 broker=0] get_home-0 starts at Leader Epoch 0 from offset 254. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-02 10:13:16,627] INFO Replica loaded for partition post_buyproperty-0 with initial high watermark 6 (kafka.cluster.Replica)
+[2018-12-02 10:13:16,627] INFO [Partition post_buyproperty-0 broker=0] post_buyproperty-0 starts at Leader Epoch 0 from offset 6. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-02 10:13:16,629] INFO Replica loaded for partition get_searchresults-0 with initial high watermark 56 (kafka.cluster.Replica)
+[2018-12-02 10:13:16,629] INFO [Partition get_searchresults-0 broker=0] get_searchresults-0 starts at Leader Epoch 0 from offset 56. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-02 10:13:16,631] INFO Replica loaded for partition post_ownerlogin-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-12-02 10:13:16,632] INFO [Partition post_ownerlogin-0 broker=0] post_ownerlogin-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-02 10:13:16,633] INFO Replica loaded for partition get_dashboard-0 with initial high watermark 34 (kafka.cluster.Replica)
+[2018-12-02 10:13:16,634] INFO [Partition get_dashboard-0 broker=0] get_dashboard-0 starts at Leader Epoch 0 from offset 34. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-02 10:13:16,635] INFO Replica loaded for partition get_propertydetails-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-12-02 10:13:16,636] INFO [Partition get_propertydetails-0 broker=0] get_propertydetails-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-02 10:13:16,637] INFO Replica loaded for partition get_transaction_history-0 with initial high watermark 57 (kafka.cluster.Replica)
+[2018-12-02 10:13:16,637] INFO [Partition get_transaction_history-0 broker=0] get_transaction_history-0 starts at Leader Epoch 0 from offset 57. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-02 10:13:16,639] INFO Replica loaded for partition response_topic-0 with initial high watermark 419 (kafka.cluster.Replica)
+[2018-12-02 10:13:16,639] INFO [Partition response_topic-0 broker=0] response_topic-0 starts at Leader Epoch 0 from offset 419. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-02 10:13:16,640] INFO Replica loaded for partition post_profile-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-12-02 10:13:16,640] INFO [Partition post_profile-0 broker=0] post_profile-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-02 10:13:16,642] INFO Replica loaded for partition post_bookproperty-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-12-02 10:13:16,642] INFO [Partition post_bookproperty-0 broker=0] post_bookproperty-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-02 10:13:16,643] INFO Replica loaded for partition post_login-0 with initial high watermark 26 (kafka.cluster.Replica)
+[2018-12-02 10:13:16,643] INFO [Partition post_login-0 broker=0] post_login-0 starts at Leader Epoch 0 from offset 26. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-02 10:13:16,645] INFO Replica loaded for partition get_propertyphotos-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-12-02 10:13:16,645] INFO [Partition get_propertyphotos-0 broker=0] get_propertyphotos-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-02 10:13:16,655] INFO [ReplicaAlterLogDirsManager on broker 0] Added fetcher for partitions List() (kafka.server.ReplicaAlterLogDirsManager)
+[2018-12-02 10:13:21,651] INFO Accepted socket connection from /127.0.0.1:55650 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:13:21,653] WARN Connection request from old client /127.0.0.1:55650; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:21,653] INFO Client attempting to establish new session at /127.0.0.1:55650 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:21,654] INFO Established session 0x167701f93670001 with negotiated timeout 30000 for client /127.0.0.1:55650 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,596] INFO Accepted socket connection from /127.0.0.1:55653 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:13:26,596] INFO Accepted socket connection from /127.0.0.1:55654 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:13:26,597] INFO Accepted socket connection from /127.0.0.1:55655 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:13:26,597] INFO Accepted socket connection from /127.0.0.1:55656 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:13:26,597] INFO Accepted socket connection from /127.0.0.1:55657 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:13:26,599] WARN Connection request from old client /127.0.0.1:55653; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,599] INFO Client attempting to establish new session at /127.0.0.1:55653 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,600] WARN Connection request from old client /127.0.0.1:55654; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,600] INFO Client attempting to establish new session at /127.0.0.1:55654 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,600] INFO Accepted socket connection from /127.0.0.1:55658 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:13:26,600] INFO Established session 0x167701f93670002 with negotiated timeout 30000 for client /127.0.0.1:55653 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,601] INFO Accepted socket connection from /127.0.0.1:55659 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:13:26,601] INFO Accepted socket connection from /127.0.0.1:55660 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:13:26,601] INFO Established session 0x167701f93670003 with negotiated timeout 30000 for client /127.0.0.1:55654 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,601] WARN Connection request from old client /127.0.0.1:55655; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,601] INFO Client attempting to establish new session at /127.0.0.1:55655 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,602] WARN Connection request from old client /127.0.0.1:55656; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,602] INFO Client attempting to establish new session at /127.0.0.1:55656 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,602] INFO Accepted socket connection from /127.0.0.1:55661 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:13:26,602] INFO Established session 0x167701f93670004 with negotiated timeout 30000 for client /127.0.0.1:55655 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,602] WARN Connection request from old client /127.0.0.1:55657; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,602] INFO Client attempting to establish new session at /127.0.0.1:55657 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,603] INFO Accepted socket connection from /127.0.0.1:55662 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:13:26,603] INFO Established session 0x167701f93670005 with negotiated timeout 30000 for client /127.0.0.1:55656 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,603] INFO Accepted socket connection from /127.0.0.1:55663 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:13:26,603] INFO Accepted socket connection from /127.0.0.1:55664 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:13:26,603] INFO Established session 0x167701f93670006 with negotiated timeout 30000 for client /127.0.0.1:55657 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,604] WARN Connection request from old client /127.0.0.1:55658; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,604] INFO Client attempting to establish new session at /127.0.0.1:55658 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,604] INFO Accepted socket connection from /127.0.0.1:55665 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:13:26,604] WARN Connection request from old client /127.0.0.1:55662; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,604] INFO Client attempting to establish new session at /127.0.0.1:55662 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,605] INFO Established session 0x167701f93670007 with negotiated timeout 30000 for client /127.0.0.1:55658 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,605] WARN Connection request from old client /127.0.0.1:55665; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,605] INFO Client attempting to establish new session at /127.0.0.1:55665 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,605] WARN Connection request from old client /127.0.0.1:55663; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,605] INFO Client attempting to establish new session at /127.0.0.1:55663 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,605] INFO Established session 0x167701f93670008 with negotiated timeout 30000 for client /127.0.0.1:55662 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,605] WARN Connection request from old client /127.0.0.1:55659; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,605] INFO Client attempting to establish new session at /127.0.0.1:55659 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,606] WARN Connection request from old client /127.0.0.1:55660; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,606] INFO Client attempting to establish new session at /127.0.0.1:55660 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,606] WARN Connection request from old client /127.0.0.1:55664; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,606] INFO Client attempting to establish new session at /127.0.0.1:55664 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,606] INFO Established session 0x167701f93670009 with negotiated timeout 30000 for client /127.0.0.1:55665 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,606] INFO Accepted socket connection from /127.0.0.1:55666 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:13:26,606] WARN Connection request from old client /127.0.0.1:55661; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,606] INFO Established session 0x167701f9367000a with negotiated timeout 30000 for client /127.0.0.1:55663 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,606] INFO Client attempting to establish new session at /127.0.0.1:55661 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,607] INFO Accepted socket connection from /127.0.0.1:55667 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:13:26,607] INFO Established session 0x167701f9367000b with negotiated timeout 30000 for client /127.0.0.1:55659 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,607] WARN Connection request from old client /127.0.0.1:55666; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,607] INFO Client attempting to establish new session at /127.0.0.1:55666 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,607] INFO Established session 0x167701f9367000c with negotiated timeout 30000 for client /127.0.0.1:55660 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,608] INFO Accepted socket connection from /127.0.0.1:55668 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:13:26,608] INFO Established session 0x167701f9367000d with negotiated timeout 30000 for client /127.0.0.1:55664 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,608] WARN Connection request from old client /127.0.0.1:55668; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,608] INFO Client attempting to establish new session at /127.0.0.1:55668 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,608] WARN Connection request from old client /127.0.0.1:55667; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,608] INFO Client attempting to establish new session at /127.0.0.1:55667 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,608] INFO Established session 0x167701f9367000e with negotiated timeout 30000 for client /127.0.0.1:55661 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,609] INFO Established session 0x167701f9367000f with negotiated timeout 30000 for client /127.0.0.1:55666 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,610] INFO Established session 0x167701f93670010 with negotiated timeout 30000 for client /127.0.0.1:55668 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:26,610] INFO Established session 0x167701f93670011 with negotiated timeout 30000 for client /127.0.0.1:55667 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:27,005] INFO Expiring session 0x1676d03dd870069, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:27,005] INFO Expiring session 0x1676d03dd870074, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:27,005] INFO Expiring session 0x1676d03dd870073, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:27,005] INFO Expiring session 0x1676d03dd870070, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:27,005] INFO Expiring session 0x1676d03dd870066, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:27,005] INFO Expiring session 0x1676d03dd87006d, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:27,005] INFO Expiring session 0x1676d03dd870072, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:27,005] INFO Expiring session 0x1676d03dd87006b, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:27,006] INFO Expiring session 0x1676d03dd87006e, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:27,006] INFO Expiring session 0x1676d03dd870065, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:27,006] INFO Expiring session 0x1676d03dd87006f, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:27,006] INFO Expiring session 0x1676d03dd870071, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:27,006] INFO Expiring session 0x1676d03dd870064, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:27,006] INFO Expiring session 0x1676d03dd870063, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:27,006] INFO Expiring session 0x1676d03dd870067, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:27,006] INFO Expiring session 0x1676d03dd870068, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:27,006] INFO Expiring session 0x1676d03dd87006a, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:27,006] INFO Expiring session 0x1676d03dd87006c, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:27,006] INFO Processed session termination for sessionid: 0x1676d03dd870069 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:27,006] INFO Processed session termination for sessionid: 0x1676d03dd870074 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:27,007] INFO Processed session termination for sessionid: 0x1676d03dd870073 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:27,007] INFO Processed session termination for sessionid: 0x1676d03dd870070 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:27,007] INFO Processed session termination for sessionid: 0x1676d03dd870066 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:27,007] INFO Processed session termination for sessionid: 0x1676d03dd87006d (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:27,007] INFO Processed session termination for sessionid: 0x1676d03dd870072 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:27,007] INFO Processed session termination for sessionid: 0x1676d03dd87006b (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:27,007] INFO Processed session termination for sessionid: 0x1676d03dd87006e (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:27,007] INFO Processed session termination for sessionid: 0x1676d03dd870065 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:27,007] INFO Processed session termination for sessionid: 0x1676d03dd87006f (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:27,007] INFO Processed session termination for sessionid: 0x1676d03dd870071 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:27,007] INFO Processed session termination for sessionid: 0x1676d03dd870064 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:27,007] INFO Processed session termination for sessionid: 0x1676d03dd870063 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:27,007] INFO Processed session termination for sessionid: 0x1676d03dd870067 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:27,007] INFO Processed session termination for sessionid: 0x1676d03dd870068 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:27,007] INFO Processed session termination for sessionid: 0x1676d03dd87006a (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:27,007] INFO Processed session termination for sessionid: 0x1676d03dd87006c (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:13:51,125] INFO Accepted socket connection from /127.0.0.1:55721 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:13:51,126] WARN Connection request from old client /127.0.0.1:55721; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:51,126] INFO Client attempting to establish new session at /127.0.0.1:55721 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:13:51,127] INFO Established session 0x167701f93670012 with negotiated timeout 30000 for client /127.0.0.1:55721 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:32:16,325] WARN Client session timed out, have not heard from server in 558743ms for sessionid 0x167701f93670000 (org.apache.zookeeper.ClientCnxn)
+[2018-12-02 10:32:16,326] INFO Client session timed out, have not heard from server in 558743ms for sessionid 0x167701f93670000, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn)
+[2018-12-02 10:32:16,610] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2018-12-02 10:32:16,611] INFO Socket connection established to localhost/127.0.0.1:2181, initiating session (org.apache.zookeeper.ClientCnxn)
+[2018-12-02 10:32:16,329] WARN caught end of stream exception (org.apache.zookeeper.server.NIOServerCnxn)
+EndOfStreamException: Unable to read additional data from client sessionid 0x167701f93670000, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:239)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:203)
+	at java.lang.Thread.run(Thread.java:748)
+[2018-12-02 10:32:16,749] INFO Expiring session 0x167701f93670000, timeout of 6000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:32:18,059] INFO Expiring session 0x167701f93670012, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:32:18,060] INFO Expiring session 0x167701f93670001, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:32:18,060] INFO Expiring session 0x167701f93670009, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:32:18,061] INFO Expiring session 0x167701f9367000c, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:32:18,061] INFO Closed socket connection for client /0:0:0:0:0:0:0:1:55647 which had sessionid 0x167701f93670000 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-02 10:32:18,066] INFO Expiring session 0x167701f9367000a, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:32:18,066] INFO Expiring session 0x167701f93670011, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:32:18,066] INFO Expiring session 0x167701f9367000e, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:32:18,066] INFO Expiring session 0x167701f9367000d, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:32:18,066] INFO Expiring session 0x167701f93670004, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:32:18,066] INFO Expiring session 0x167701f93670007, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:32:18,068] INFO Expiring session 0x167701f93670002, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:32:18,068] INFO Expiring session 0x167701f93670003, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:32:18,068] INFO Expiring session 0x167701f93670006, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:32:18,068] INFO Expiring session 0x167701f93670008, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:32:18,068] INFO Expiring session 0x167701f93670005, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:32:18,068] INFO Expiring session 0x167701f93670010, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:32:18,068] INFO Expiring session 0x167701f9367000b, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:32:18,068] INFO Expiring session 0x167701f9367000f, timeout of 30000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:32:18,068] INFO Processed session termination for sessionid: 0x167701f93670000 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:32:18,068] INFO Processed session termination for sessionid: 0x167701f93670012 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:32:18,068] INFO Processed session termination for sessionid: 0x167701f93670001 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:32:18,069] INFO Processed session termination for sessionid: 0x167701f93670009 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:32:18,069] INFO Processed session termination for sessionid: 0x167701f9367000c (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:32:18,069] INFO Processed session termination for sessionid: 0x167701f9367000a (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:32:18,069] INFO Processed session termination for sessionid: 0x167701f93670011 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:32:18,069] INFO Processed session termination for sessionid: 0x167701f9367000e (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:32:18,069] INFO Processed session termination for sessionid: 0x167701f9367000d (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:32:18,070] INFO Processed session termination for sessionid: 0x167701f93670004 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:32:18,070] INFO Closed socket connection for client /127.0.0.1:55721 which had sessionid 0x167701f93670012 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-02 10:32:18,070] INFO Processed session termination for sessionid: 0x167701f93670007 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:32:18,070] INFO Processed session termination for sessionid: 0x167701f93670002 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:32:18,071] INFO Processed session termination for sessionid: 0x167701f93670003 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:32:18,070] INFO Accepted socket connection from /127.0.0.1:55775 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:32:18,071] INFO Closed socket connection for client /127.0.0.1:55650 which had sessionid 0x167701f93670001 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-02 10:32:18,071] INFO Processed session termination for sessionid: 0x167701f93670006 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:32:18,071] INFO Processed session termination for sessionid: 0x167701f93670008 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:32:18,071] INFO Processed session termination for sessionid: 0x167701f93670005 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:32:18,071] INFO Processed session termination for sessionid: 0x167701f93670010 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:32:18,071] INFO Processed session termination for sessionid: 0x167701f9367000b (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:32:18,072] INFO Processed session termination for sessionid: 0x167701f9367000f (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:32:18,071] INFO Closed socket connection for client /127.0.0.1:55665 which had sessionid 0x167701f93670009 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-02 10:32:18,072] INFO Closed socket connection for client /127.0.0.1:55660 which had sessionid 0x167701f9367000c (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-02 10:32:18,072] INFO Closed socket connection for client /127.0.0.1:55663 which had sessionid 0x167701f9367000a (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-02 10:32:18,073] INFO Closed socket connection for client /127.0.0.1:55667 which had sessionid 0x167701f93670011 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-02 10:32:18,073] INFO Closed socket connection for client /127.0.0.1:55661 which had sessionid 0x167701f9367000e (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-02 10:32:18,074] INFO Closed socket connection for client /127.0.0.1:55664 which had sessionid 0x167701f9367000d (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-02 10:32:18,074] INFO Closed socket connection for client /127.0.0.1:55655 which had sessionid 0x167701f93670004 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-02 10:32:18,074] INFO Closed socket connection for client /127.0.0.1:55658 which had sessionid 0x167701f93670007 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-02 10:32:18,074] INFO Closed socket connection for client /127.0.0.1:55653 which had sessionid 0x167701f93670002 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-02 10:32:18,075] INFO Closed socket connection for client /127.0.0.1:55654 which had sessionid 0x167701f93670003 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-02 10:32:18,076] WARN Exception causing close of session 0x167701f93670004 due to java.nio.channels.CancelledKeyException (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-02 10:32:18,076] INFO Closed socket connection for client /127.0.0.1:55657 which had sessionid 0x167701f93670006 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-02 10:32:18,077] WARN Ignoring unexpected runtime exception (org.apache.zookeeper.server.NIOServerCnxnFactory)
+java.nio.channels.CancelledKeyException
+	at sun.nio.ch.SelectionKeyImpl.ensureValid(SelectionKeyImpl.java:73)
+	at sun.nio.ch.SelectionKeyImpl.readyOps(SelectionKeyImpl.java:87)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:182)
+	at java.lang.Thread.run(Thread.java:748)
+[2018-12-02 10:32:18,077] INFO Closed socket connection for client /127.0.0.1:55662 which had sessionid 0x167701f93670008 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-02 10:32:18,084] INFO Closed socket connection for client /127.0.0.1:55656 which had sessionid 0x167701f93670005 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-02 10:32:18,084] INFO Closed socket connection for client /127.0.0.1:55668 which had sessionid 0x167701f93670010 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-02 10:32:18,084] INFO Client attempting to renew session 0x167701f93670000 at /127.0.0.1:55775 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:32:18,084] INFO Closed socket connection for client /127.0.0.1:55659 which had sessionid 0x167701f9367000b (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-02 10:32:18,085] INFO Invalid session 0x167701f93670000 for client /127.0.0.1:55775, probably expired (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:32:18,085] INFO Closed socket connection for client /127.0.0.1:55666 which had sessionid 0x167701f9367000f (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-02 10:32:18,085] WARN Unable to reconnect to ZooKeeper service, session 0x167701f93670000 has expired (org.apache.zookeeper.ClientCnxn)
+[2018-12-02 10:32:18,085] INFO Unable to reconnect to ZooKeeper service, session 0x167701f93670000 has expired, closing socket connection (org.apache.zookeeper.ClientCnxn)
+[2018-12-02 10:32:18,085] WARN Ignoring unexpected runtime exception (org.apache.zookeeper.server.NIOServerCnxnFactory)
+java.nio.channels.CancelledKeyException
+	at sun.nio.ch.SelectionKeyImpl.ensureValid(SelectionKeyImpl.java:73)
+	at sun.nio.ch.SelectionKeyImpl.readyOps(SelectionKeyImpl.java:87)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:182)
+	at java.lang.Thread.run(Thread.java:748)
+[2018-12-02 10:32:18,087] INFO [ZooKeeperClient] Session expired. (kafka.zookeeper.ZooKeeperClient)
+[2018-12-02 10:32:18,088] INFO EventThread shut down for session: 0x167701f93670000 (org.apache.zookeeper.ClientCnxn)
+[2018-12-02 10:32:18,088] INFO Closed socket connection for client /127.0.0.1:55775 which had sessionid 0x167701f93670000 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-02 10:32:18,089] INFO [ZooKeeperClient] Initializing a new session to localhost:2181. (kafka.zookeeper.ZooKeeperClient)
+[2018-12-02 10:32:18,089] INFO Initiating client connection, connectString=localhost:2181 sessionTimeout=6000 watcher=kafka.zookeeper.ZooKeeperClient$ZooKeeperClientWatcher$@222545dc (org.apache.zookeeper.ZooKeeper)
+[2018-12-02 10:32:18,091] INFO Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2018-12-02 10:32:18,092] INFO Accepted socket connection from /0:0:0:0:0:0:0:1:55785 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:32:18,093] INFO Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session (org.apache.zookeeper.ClientCnxn)
+[2018-12-02 10:32:18,094] INFO Client attempting to establish new session at /0:0:0:0:0:0:0:1:55785 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:32:18,095] INFO Established session 0x167701f93670013 with negotiated timeout 6000 for client /0:0:0:0:0:0:0:1:55785 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:32:18,095] INFO Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x167701f93670013, negotiated timeout = 6000 (org.apache.zookeeper.ClientCnxn)
+[2018-12-02 10:32:18,103] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.zk.KafkaZkClient)
+[2018-12-02 10:32:18,104] INFO Result of znode creation at /brokers/ids/0 is: OK (kafka.zk.KafkaZkClient)
+[2018-12-02 10:32:18,104] INFO Registered broker 0 at path /brokers/ids/0 with addresses: ArrayBuffer(EndPoint(10.0.0.8,9092,ListenerName(PLAINTEXT),PLAINTEXT)) (kafka.zk.KafkaZkClient)
+[2018-12-02 10:32:18,106] INFO Creating /controller (is it secure? false) (kafka.zk.KafkaZkClient)
+[2018-12-02 10:32:18,122] INFO Result of znode creation at /controller is: OK (kafka.zk.KafkaZkClient)
+[2018-12-02 10:32:18,150] INFO Got user-level KeeperException when processing sessionid:0x167701f93670013 type:delete cxid:0x38 zxid:0x11f4b txntype:-1 reqpath:n/a Error Path:/admin/preferred_replica_election Error:KeeperErrorCode = NoNode for /admin/preferred_replica_election (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-02 10:32:18,151] INFO [ReplicaAlterLogDirsManager on broker 0] Added fetcher for partitions List() (kafka.server.ReplicaAlterLogDirsManager)
+[2018-12-02 10:32:34,080] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-12-02 10:42:34,060] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-12-02 10:47:40,623] INFO Accepted socket connection from /127.0.0.1:55882 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:47:40,625] WARN Connection request from old client /127.0.0.1:55882; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:40,625] INFO Client attempting to establish new session at /127.0.0.1:55882 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:40,625] INFO Established session 0x167701f93670014 with negotiated timeout 30000 for client /127.0.0.1:55882 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,822] INFO Accepted socket connection from /127.0.0.1:55885 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:47:44,822] INFO Accepted socket connection from /127.0.0.1:55886 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:47:44,823] INFO Accepted socket connection from /127.0.0.1:55887 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:47:44,823] INFO Accepted socket connection from /127.0.0.1:55888 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:47:44,824] WARN Connection request from old client /127.0.0.1:55885; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,824] INFO Client attempting to establish new session at /127.0.0.1:55885 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,824] WARN Connection request from old client /127.0.0.1:55886; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,824] INFO Client attempting to establish new session at /127.0.0.1:55886 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,825] WARN Connection request from old client /127.0.0.1:55888; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,825] INFO Established session 0x167701f93670015 with negotiated timeout 30000 for client /127.0.0.1:55885 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,825] INFO Client attempting to establish new session at /127.0.0.1:55888 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,825] INFO Accepted socket connection from /127.0.0.1:55889 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:47:44,825] INFO Established session 0x167701f93670016 with negotiated timeout 30000 for client /127.0.0.1:55886 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,825] WARN Connection request from old client /127.0.0.1:55887; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,825] INFO Client attempting to establish new session at /127.0.0.1:55887 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,826] INFO Accepted socket connection from /127.0.0.1:55890 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:47:44,826] INFO Established session 0x167701f93670017 with negotiated timeout 30000 for client /127.0.0.1:55888 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,826] INFO Accepted socket connection from /127.0.0.1:55891 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:47:44,826] INFO Established session 0x167701f93670018 with negotiated timeout 30000 for client /127.0.0.1:55887 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,826] INFO Accepted socket connection from /127.0.0.1:55892 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:47:44,827] INFO Accepted socket connection from /127.0.0.1:55893 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:47:44,827] INFO Accepted socket connection from /127.0.0.1:55894 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:47:44,827] INFO Accepted socket connection from /127.0.0.1:55895 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:47:44,827] INFO Accepted socket connection from /127.0.0.1:55896 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:47:44,827] INFO Accepted socket connection from /127.0.0.1:55897 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:47:44,828] WARN Connection request from old client /127.0.0.1:55889; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,828] INFO Client attempting to establish new session at /127.0.0.1:55889 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,828] WARN Connection request from old client /127.0.0.1:55890; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,828] INFO Client attempting to establish new session at /127.0.0.1:55890 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,828] WARN Connection request from old client /127.0.0.1:55891; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,829] INFO Established session 0x167701f93670019 with negotiated timeout 30000 for client /127.0.0.1:55889 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,829] INFO Client attempting to establish new session at /127.0.0.1:55891 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,829] WARN Connection request from old client /127.0.0.1:55892; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,829] INFO Client attempting to establish new session at /127.0.0.1:55892 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,829] INFO Established session 0x167701f9367001a with negotiated timeout 30000 for client /127.0.0.1:55890 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,829] INFO Accepted socket connection from /127.0.0.1:55898 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:47:44,829] WARN Connection request from old client /127.0.0.1:55894; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,830] INFO Client attempting to establish new session at /127.0.0.1:55894 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,830] WARN Connection request from old client /127.0.0.1:55893; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,830] INFO Client attempting to establish new session at /127.0.0.1:55893 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,830] INFO Established session 0x167701f9367001b with negotiated timeout 30000 for client /127.0.0.1:55891 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,830] INFO Accepted socket connection from /127.0.0.1:55899 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:47:44,830] INFO Established session 0x167701f9367001c with negotiated timeout 30000 for client /127.0.0.1:55892 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,830] INFO Accepted socket connection from /127.0.0.1:55900 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:47:44,831] WARN Connection request from old client /127.0.0.1:55895; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,831] INFO Client attempting to establish new session at /127.0.0.1:55895 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,831] INFO Established session 0x167701f9367001d with negotiated timeout 30000 for client /127.0.0.1:55894 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,831] WARN Connection request from old client /127.0.0.1:55897; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,831] INFO Client attempting to establish new session at /127.0.0.1:55897 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,831] INFO Established session 0x167701f9367001e with negotiated timeout 30000 for client /127.0.0.1:55893 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,831] WARN Connection request from old client /127.0.0.1:55896; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,831] INFO Client attempting to establish new session at /127.0.0.1:55896 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,832] INFO Established session 0x167701f9367001f with negotiated timeout 30000 for client /127.0.0.1:55895 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,832] WARN Connection request from old client /127.0.0.1:55898; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,832] INFO Client attempting to establish new session at /127.0.0.1:55898 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,832] WARN Connection request from old client /127.0.0.1:55899; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,832] INFO Established session 0x167701f93670020 with negotiated timeout 30000 for client /127.0.0.1:55897 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,832] INFO Client attempting to establish new session at /127.0.0.1:55899 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,833] WARN Connection request from old client /127.0.0.1:55900; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,833] INFO Client attempting to establish new session at /127.0.0.1:55900 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,833] INFO Established session 0x167701f93670021 with negotiated timeout 30000 for client /127.0.0.1:55896 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,834] INFO Established session 0x167701f93670022 with negotiated timeout 30000 for client /127.0.0.1:55898 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,834] INFO Established session 0x167701f93670023 with negotiated timeout 30000 for client /127.0.0.1:55899 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:44,835] INFO Established session 0x167701f93670024 with negotiated timeout 30000 for client /127.0.0.1:55900 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:56,614] INFO Accepted socket connection from /127.0.0.1:55943 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-02 10:47:56,615] WARN Connection request from old client /127.0.0.1:55943; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:56,615] INFO Client attempting to establish new session at /127.0.0.1:55943 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:47:56,615] INFO Established session 0x167701f93670025 with negotiated timeout 30000 for client /127.0.0.1:55943 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-02 10:52:34,041] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
