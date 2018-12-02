@@ -254,6 +254,16 @@ class SearchResults extends Component {
             {/* <a href="#" class="tb bluefont inline">
  Trip Boards
  </a> */}
+             <a
+              href={
+                sessionStorage.getItem("typeofaccount") == "owner"
+                  ? "/lyp"
+                  : "#"
+              }
+              class="buttonlyp default bluefont inline"
+            >
+              Post your Property
+            </a>
             <div class="btn-group inline dropdownnav">
               <div
                 class="btn-home inline bluefont-home"
@@ -319,6 +329,10 @@ class SearchResults extends Component {
                 </li>
               </ul>
             </div>
+
+              <div class="homeawayimg-home inline">
+        <img src="https://i.imgur.com/fLTMlTI.png" />
+        </div> 
             {/* <a href="/inbox" class="bluefont">
  <span
  class="glyphicon-glyphicon-envelope envelope inline bluefont"
@@ -405,16 +419,7 @@ class SearchResults extends Component {
                 </li>
               </ul>
             </div>
-            <a
-              href={
-                sessionStorage.getItem("typeofaccount") == "owner"
-                  ? "/lyp"
-                  : "#"
-              }
-              class="buttonlyp default bluefont inline"
-            >
-              Post your Property
-            </a>
+           
             {/* <div class="homeawayimg-pro inline">
  <img src="http://csvcus.homeaway.com/rsrcs/cdn-logos/2.10.6/bce/moniker/homeaway_us/birdhouse-bceheader.svg" />
  </div> */}
@@ -429,41 +434,41 @@ class SearchResults extends Component {
         {navLogin}
         <br />
         <br />
+        <div class="flex-filter">
+        <br />
         <label class="filterresultslabel_New">Filter Postings: </label>
         <br />
-        <label class="filterlabel_New">Price:</label>
+        <div class="flex-filter2">
+        <div class="inner-addon left-addon">
+        <i class="glyphicon glyphicon-usd" />{" "}
         <input
           type="number"
           id="myInput"
           onChange={this.handlePriceFilter}
-          placeholder="enter exact price"
-          class="searchfields medium search"
+          placeholder="Price"
+          class="searchfields mediumsearch"
           min="0"
           step="1"
         />
-        {/* <label class="filterlabel">From</label>
- <input
- type="date"
- id="myInput"
- onChange={this.handleFromFilter}
- class="filters"
- /> */}
-        {/* <label class="filterlabel">To</label>
- <input
- type="date"
- id="myInput"
- onChange={this.handleToFilter}
- class="filters"
- /> */}
-        <label class="filterlabel_New">Rooms: </label>
+
+        </div>
+
+        {/* <label class="filterlabel_New">Rooms: </label> */}
+        <div class="inner-addon left-addon">
+        <i class="glyphicon glyphicon-home" />{" "}
         <input
           type="number"
           id="myInput"
           onChange={this.handleRoomFilter}
           class="searchfields mediumsearch"
+          placeholder="Rooms"
           min="0"
           step="1"
-        />
+        /></div>
+        </div>
+        
+        </div>
+
         <br />
         <br />
         <table class="table" id="myTable">

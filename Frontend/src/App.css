@@ -33,7 +33,7 @@ body {
   line-height: 10px;
 }
 .main-div {
-  background: #052b63e3 none repeat scroll 0 0;
+  background: rgba(14, 23, 104, 0.89) none repeat scroll 0 0;
   border-radius: 19.5px;
   margin: 10px auto 10px;
   max-width: 32%;
@@ -341,7 +341,7 @@ $button-active-blue: #1669f2; */
 }
 
 .header-bce-home_New {
-  background: rgb(38, 52, 175);
+  background: rgb(14, 23, 104);
   border-top: 0;
   position: relative;
   width: 100%;
@@ -688,6 +688,31 @@ div.wrappernav-home-nli {
   position: relative;
   top: 20.5vw;
   left: 13.2vw;
+}
+
+/* new */
+
+.flex-filter {
+  padding-left: 2vw;
+  border-radius: 15px;
+  bottom: 5vw;
+  left: 17vw;
+  height:  8.5vw;
+  width: 44.5vw;
+  margin-left: 1vw;
+  background: rgba(14, 23, 104, 0.89);
+  align-items: center;
+}
+
+.flex-filter2 {
+  position: relative;
+  border-radius: 8px;
+  bottom: 5vw;
+  left: 0.3vw;
+  height: 15vw;
+  width: 32.5vw;
+  display: flex;
+  align-items: center;
 }
 
 .flex-container_New {
@@ -2255,8 +2280,9 @@ changed
 
 .filterresultslabel_New {
   position: relative;
-  left: 2.2vw;
+  left: 0.2vw;
   font-size: 20px;
+  color: white
 }
 
 #myInput {
