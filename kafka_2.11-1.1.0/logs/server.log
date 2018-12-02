@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [2018-12-01 21:00:46,792] INFO Reading configuration from: config/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
 [2018-12-01 21:00:46,801] INFO autopurge.snapRetainCount set to 3 (org.apache.zookeeper.server.DatadirCleanupManager)
 [2018-12-01 21:00:46,801] INFO autopurge.purgeInterval set to 0 (org.apache.zookeeper.server.DatadirCleanupManager)
@@ -913,3 +914,6 @@ EndOfStreamException: Unable to read additional data from client sessionid 0x167
 [2018-12-01 21:51:26,143] INFO [SocketServer brokerId=0] Shutting down socket server (kafka.network.SocketServer)
 [2018-12-01 21:51:26,196] INFO [SocketServer brokerId=0] Shutdown completed (kafka.network.SocketServer)
 [2018-12-01 21:51:26,215] INFO [KafkaServer id=0] shut down completed (kafka.server.KafkaServer)
+=======
+[2018-12-01 21:09:32,398] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+>>>>>>> ece70568e9a8ef58e326137f192572e73ba9fd40

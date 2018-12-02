@@ -280,7 +280,7 @@ handleDashSearch=()=>{
   
       navLogin = (
         <div>
-          <div class="header-bce bluefont">
+            <div class="header-bce-home_New bluefont-home">
             <div id="hal-home" class="navbar-brand bluefont-home">
               <a href="/home" class="bluefont-home">
                 Bloquity
@@ -288,7 +288,7 @@ handleDashSearch=()=>{
               </a>
             </div>
           </div>
-          <div class="wrappernav-pro bluefont">
+          <div class="wrappernav-home-nli">
             <link
               href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
               rel="stylesheet"
@@ -303,9 +303,21 @@ handleDashSearch=()=>{
             <a href="#" class="tb bluefont inline">
               Trip Boards
             </a> */}
+
+             <a
+              href={
+                sessionStorage.getItem("typeofaccount") == "owner"
+                  ? "/lyp"
+                  : "#"
+              }
+              class="buttonlyp default bluefont inline"
+            >
+              Post your property
+            </a>
+
             <div class="btn-group inline dropdownnav">
               <div
-                class="btn-home inline bluefont"
+                class="btn-home inline bluefont-home"
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
@@ -388,7 +400,7 @@ handleDashSearch=()=>{
 
             <div class="btn-group userdd bluefont inline dropdownnav">
               <div
-                class="btn-home inline bluefont"
+                class="btn-home inline bluefont-home"
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
@@ -491,16 +503,7 @@ handleDashSearch=()=>{
                 </li>
               </ul>
             </div>
-            <a
-              href={
-                sessionStorage.getItem("typeofaccount") == "owner"
-                  ? "/lyp"
-                  : "#"
-              }
-              class="buttonlyp default bluefont inline"
-            >
-              List your property
-            </a>
+           
             <div class="homeawayimg-pro inline">
               <img src="https://i.imgur.com/fLTMlTI.png" />
             </div>
@@ -522,7 +525,7 @@ handleDashSearch=()=>{
                   <i class="glyphicon  gapsfi glyphicon-map-marker" />
                   <input
                     type="search"
-                    class="searchfields gapsf"
+                    class="searchfields mediumsearch"
                     placeholder="Street Address"
                     value={this.state.streetaddr}
                     onChange={this.handleStreetaddrChange}
@@ -532,7 +535,7 @@ handleDashSearch=()=>{
                   <i class="glyphicon gapsfi glyphicon-map-marker" />
                   <input
                     type="search"
-                    class="searchfields gapsf"
+                    class="searchfields mediumsearch"
                     placeholder="Unit"
                     value={this.state.unit}
                     onChange={this.handleUnitChange}
@@ -542,7 +545,7 @@ handleDashSearch=()=>{
                   <i class="glyphicon gapsfi glyphicon-map-marker" />
                   <input
                     type="search"
-                    class="searchfields gapsf"
+                    class="searchfields mediumsearch"
                     placeholder="Zip Code"
                     value={this.state.zip}
                     onChange={this.handleZipChange}

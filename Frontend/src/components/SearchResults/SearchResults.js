@@ -471,10 +471,13 @@ class SearchResults extends Component {
 
         <br />
         <br />
+        <div class="tablecss">
         <table class="table" id="myTable">
           <thead>
             <tr>
-              <th class="blackie"> {propnew.length} postings</th>
+              <th > <h3 class="bluefont h2th">
+              <center>{propnew.length} postings</center>
+              <br></br></h3></th>
             </tr>
           </thead>
           <tbody>
@@ -482,12 +485,18 @@ class SearchResults extends Component {
             {details}
           </tbody>
         </table>
+        </div>
+        <br />
+        <br />
+        <br />
+        <div>
         <Pagination
           itemsCount={propnew.length}
           pageSize={pageSize}
           currentPage={currentPage}
           onPageChange={this.handlePageChange}
         />
+        </div>
       </div>
     );
   }
