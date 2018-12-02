@@ -8,6 +8,7 @@ import { connect } from "react-redux";
 import Pagination from "../Pagination/Pagination";
 import paginate from "../../utils/paginate";
 import { ROOT_URL } from "../../actions";
+import { checkTransactionHistory } from "../../actions";
 const token = localStorage.getItem("token");
 const today = new Date().toISOString().slice(0, 10);
 
@@ -18,6 +19,7 @@ class Dashboard extends Component {
     //Call the constrictor of Super class i.e The Component
     super(props);
     //maintain the state required for this component
+
     this.state = {
       fname: "",
       lname: "",
@@ -29,13 +31,20 @@ class Dashboard extends Component {
       currentPage: 1,
       fromfilter: null,
       tofilter: null,
-      searchinput: null
+      searchinput: null,
+      streetaddr:"",
+      unit:"",
+      zip:""
+    
     };
-
     //Bind the handlers to this class
     this.handleLocationSearch = this.handleLocationSearch.bind(this);
     this.handleToFilter = this.handleToFilter.bind(this);
     this.handleFromFilter = this.handleFromFilter.bind(this);
+    this.handleZipChange = this.handleZipChange.bind(this); //zip
+    this.handleUnitChange = this.handleUnitChange.bind(this); //zip
+    this.handleStreetaddrChange = this.handleStreetaddrChange.bind(this); //zip
+
   }
 
   componentDidMount() {
@@ -60,7 +69,11 @@ class Dashboard extends Component {
             profileicon: imagePreview
           });
         });
-      this.props.onGetRender();
+if(this.props.location.state){
+      this.props.getTransactionHistory({streetaddr: this.props.location.state.streetaddr,
+        unit: this.props.location.state.unit,
+        zip: this.props.location.state.zip});
+      }
     }
     if (localStorage.getItem("token")) {
       axios.defaults.headers.common["Authorization"] = token;
@@ -80,6 +93,28 @@ class Dashboard extends Component {
         });
     }
   }
+
+  handleZipChange = e => {
+    this.setState({
+      zip: e.target.value
+    });
+  };
+  handleStreetaddrChange = e => {
+    this.setState({
+      streetaddr: e.target.value
+    });
+  };
+   handleUnitChange = e => {
+    this.setState({
+      unit: e.target.value
+    });
+  };
+
+handleDashSearch=()=>{
+  this.props.getTransactionHistory({streetaddr: this.state.streetaddr,
+    unit: this.state.unit,
+    zip: this.state.zip})
+}
 
   handleLogout = () => {
     localStorage.removeItem("token");
@@ -171,12 +206,15 @@ class Dashboard extends Component {
     }
     if (sessionStorage.getItem("typeofaccount") == "owner") {
       details = (
-        <div>
-          <h2 class="bluefont">
-            {"  "}
+        <div class="tablecss">
+          <h2 class="bluefont h2th">
+            <center>
             Transaction History
+            <br></br>
+            <br></br>
+            </center>
           </h2>
-          <table class="table">
+          <table class="table tableborder" >
             <thead>
               <tr>
                 <th>
@@ -188,8 +226,8 @@ class Dashboard extends Component {
                 <th>
                   <p class="tableh">Transaction Date</p>
                 </th>
-                <th>
-                  <p class="tableh">Transaction Amount</p>
+                <th class="">
+                  <p class="tableh ta">Transaction Amount</p>
                 </th>
                 <th />
               </tr>
@@ -239,13 +277,13 @@ class Dashboard extends Component {
         </div>
       );
     }
-    if (localStorage.getItem("token")) {
+  
       navLogin = (
         <div>
           <div class="header-bce bluefont">
             <div id="hal-home" class="navbar-brand bluefont-home">
               <a href="/home" class="bluefont-home">
-                HomeAway
+                Bloquity
                 <span class="sup">&reg;</span>
               </a>
             </div>
@@ -259,12 +297,12 @@ class Dashboard extends Component {
               href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css"
               rel="stylesheet"
             />
-            <a href="#" class="flag-icon-background flag-icon-us flag inline">
+            {/* <a href="#" class="flag-icon-background flag-icon-us flag inline">
               {"   "}
             </a>
             <a href="#" class="tb bluefont inline">
               Trip Boards
-            </a>
+            </a> */}
             <div class="btn-group inline dropdownnav">
               <div
                 class="btn-home inline bluefont"
@@ -280,7 +318,7 @@ class Dashboard extends Component {
                 <span class="glyphicon glyphicon-triangle-bottom smallicon" />
               </div>
               <ul class="dropdown-menu dropdown-menu-right bluefont">
-                <li>
+                {/* <li>
                   {" "}
                   <a class="dropdown-item bluefont" href="/inbox">
                     <p class="bluefont">
@@ -299,7 +337,7 @@ class Dashboard extends Component {
                       My Trips
                     </p>
                   </a>
-                </li>
+                </li> */}
                 <br />
                 <li>
                   <a class="dropdown-item" href="/profile">
@@ -337,7 +375,7 @@ class Dashboard extends Component {
                 </li>
               </ul>
             </div>
-            <a href="/inbox" class="bluefont">
+            {/* <a href="/inbox" class="bluefont">
               <span
                 class="glyphicon-glyphicon-envelope envelope inline bluefont"
                 aria-hidden="true"
@@ -346,7 +384,7 @@ class Dashboard extends Component {
                   {"  "}
                 </i>
               </span>
-            </a>
+            </a> */}
 
             <div class="btn-group userdd bluefont inline dropdownnav">
               <div
@@ -464,12 +502,12 @@ class Dashboard extends Component {
               List your property
             </a>
             <div class="homeawayimg-pro inline">
-              <img src="http://csvcus.homeaway.com/rsrcs/cdn-logos/2.10.6/bce/moniker/homeaway_us/birdhouse-bceheader.svg" />
+              <img src="https://i.imgur.com/fLTMlTI.png" />
             </div>
           </div>
         </div>
       );
-    } else redirectVar = <Redirect to="/login" />;
+ 
 
     return (
       <div>
@@ -478,6 +516,42 @@ class Dashboard extends Component {
         <br />
         <br />
         <br />
+        <div>
+        <div class="flex-container_New3">
+                <div class="inner-addon left-addon">
+                  <i class="glyphicon  gapsfi glyphicon-map-marker" />
+                  <input
+                    type="search"
+                    class="searchfields gapsf"
+                    placeholder="Street Address"
+                    value={this.state.streetaddr}
+                    onChange={this.handleStreetaddrChange}
+                  />
+                </div>
+                <div class="inner-addon left-addon">
+                  <i class="glyphicon gapsfi glyphicon-map-marker" />
+                  <input
+                    type="search"
+                    class="searchfields gapsf"
+                    placeholder="Unit"
+                    value={this.state.unit}
+                    onChange={this.handleUnitChange}
+                  />
+                </div>
+                <div class="inner-addon left-addon">
+                  <i class="glyphicon gapsfi glyphicon-map-marker" />
+                  <input
+                    type="search"
+                    class="searchfields gapsf"
+                    placeholder="Zip Code"
+                    value={this.state.zip}
+                    onChange={this.handleZipChange}
+                  />
+                </div>
+                <button class="homesearchbuttondash" onClick={this.handleDashSearch}>
+                Search</button>
+                </div>
+          </div>
         <div>{details}</div>
         <Pagination
           itemsCount={resultnew.length}
@@ -494,32 +568,46 @@ class Dashboard extends Component {
 const mapStateToProps = state => {
   console.log("Statetoprops: ", state.login.result);
   return {
-    result: state.login.result,
-    fname: state.login.fname,
-    lname: state.login.lname
+    //access this as this.props.result
+    result: state.login.result
   };
 };
 
 const mapDispatchStateToProps = dispatch => {
   return {
-    onGetRender: () => {
+    getTransactionHistory: (values) => {
+
       axios.defaults.headers.common["Authorization"] = token;
-      axios
-        .get(`${ROOT_URL}/dashboard`, {
-          params: {
-            email: sessionStorage.getItem("email"),
-            typeofaccount: sessionStorage.getItem("typeofaccount")
-          }
-        })
-        .then(response => {
-          dispatch({
-            type: "DASHBOARD",
-            payload: response.data,
-            statusCode: response.status
-          });
-          //update the state with the response data
-          console.log("Data  : ", response);
-        });
+      const request = axios
+        .get(`${ROOT_URL}/transactionhistory`, {params: values})
+        . then(response => {
+              dispatch({
+                type: "BOOK_PROPERTY",
+                payload: response.data,
+                statusCode: response.status
+              });
+              //update the state with the response data
+              console.log("Data  : ", response);
+            });
+    
+    
+      // axios.defaults.headers.common["Authorization"] = token;
+      // axios
+      //   .get(`${ROOT_URL}/dashboard`, {
+      //     params: {
+      //       email: sessionStorage.getItem("email"),
+      //       typeofaccount: sessionStorage.getItem("typeofaccount")
+      //     }
+      //   })
+      //   .then(response => {
+      //     dispatch({
+      //       type: "DASHBOARD",
+      //       payload: response.data,
+      //       statusCode: response.status
+      //     });
+      //     //update the state with the response data
+      //     console.log("Data  : ", response);
+      //   });
     }
   };
 };

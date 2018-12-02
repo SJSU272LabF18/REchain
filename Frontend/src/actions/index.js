@@ -147,7 +147,7 @@ export function buyProperty(values, callback) {
     });
 
   return {
-    type: "BOOK_PROPERTY",
+    type: "BUY_PROPERTY",
     payload: request
   };
 }

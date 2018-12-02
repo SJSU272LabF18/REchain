@@ -189,15 +189,17 @@ class Property extends Component {
     //prevent page from refresh
     e.preventDefault();
     // var email = sessionStorage.getItem('email');
-    const data = {
-      streetaddr: this.state.streetaddr,
-      unit: this.state.unit,
-      zip: this.state.zip
-    };
-    this.props.checkTransactionHistory(data, (response) => {
-      console.log("Transaction History:" + JSON.stringify(response))
-      this.props.history.push("/dashboard");
-    });
+    // const data = {
+    //   streetaddr: this.state.streetaddr,
+    //   unit: this.state.unit,
+    //   zip: this.state.zip
+    // };
+    
+     // this.props.history.push("/dashboard");
+      // this.props.history.push ({
+      //   pathname: '/dashboard',
+      //   state: { tranhist: "HELLO" }
+      // })
   };
 
   buyProperty = e => {
@@ -491,10 +493,17 @@ class Property extends Component {
               </button>
               <br />
               <br />
-
-              <button class="homesearchbutton book" onClick={this.transactionHistory}>
+              {/* <Link to={{
+      pathname: '/template',
+      search: '?query=abc',
+      state: { detail: response.data }
+    }}> My Link </Link> */}
+              <Link id="linktranhist" to={{
+      pathname: '/dashboard',
+      state: { streetaddr: this.state.streetaddr,unit:this.state.unit,zip:this.state.zip }
+    }}>
                 View Transaction History
-              </button>
+              </Link>
               <br />
 
               <br />

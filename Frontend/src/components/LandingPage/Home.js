@@ -116,6 +116,11 @@ class Home extends Component {
     localStorage.removeItem("token");
   };
 
+  goToDash=()=>{
+    this.location.history.push("/dashboard")
+
+  }
+
   render() {
     // var sdate = new Date(this.state.startdate);
     // var year = sdate.getFullYear();
@@ -149,7 +154,13 @@ class Home extends Component {
             href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css"
             rel="stylesheet"
           />
-
+         <a
+            href="/dashboard"
+            class="buttonlyp default bluefont inline"
+          >
+            Property History
+          </a>
+ 
           <button class="buttonlyp default bluefont inline">About Us</button>
 
           <button class="buttonlyp default bluefont inline">Contact</button>
@@ -265,6 +276,13 @@ class Home extends Component {
             href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css"
             rel="stylesheet"
           />
+
+         <a
+            href="/dashboard"
+            class="buttonlyp default bluefont inline"
+          >
+            Property History
+          </a>
 
           <button class="buttonlyp default bluefont inline">About Us</button>
 

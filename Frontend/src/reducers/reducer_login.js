@@ -55,7 +55,8 @@ export default function(state = initialstate, action) {
   if (action.type == "BOOK_PROPERTY") {
     console.log("Data recieved in reducer_login: ", action.payload);
     return {
-      ...state
+      ...state,
+      result: action.payload
     };
   }
   return state;

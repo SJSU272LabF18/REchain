@@ -46,7 +46,7 @@ class Main extends Component {
               render={props => <Property {...props} />}
             /> */}
             <Route path="/property" component={Property} />
-            <Route path="/dashboard" component={Dashboard} />
+            <Route path="/dashboard" component={Dashboard}/>
             <Route path="/inbox" component={Inbox} />
           </div>
         </BrowserRouter>
