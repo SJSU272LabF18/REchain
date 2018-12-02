@@ -1316,7 +1316,7 @@ grayie_Addr {
   position: absolute;
   top: 10.5vw;
   left: 66vw;
-  width: 30vw;
+  width: 31vw;
   height: 40.5vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10px;
@@ -2312,7 +2312,7 @@ changed
   border-radius: 20px;
   color: white;
   padding: 8px;
-  margin-left: 8vw;
+  margin-left: 2.5vw;
 }
 
 #linktranhist2 {

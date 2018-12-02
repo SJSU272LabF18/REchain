@@ -520,7 +520,7 @@ class Property extends Component {
                 <Link id="linktranhist2" to={this.buyProperty}>
                   Buy Property
                 </Link>
-                <br />
+
                 <Link
                   id="linktranhist"
                   to={{
