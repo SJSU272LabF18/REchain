@@ -194,12 +194,12 @@ class Property extends Component {
     //   unit: this.state.unit,
     //   zip: this.state.zip
     // };
-    
-     // this.props.history.push("/dashboard");
-      // this.props.history.push ({
-      //   pathname: '/dashboard',
-      //   state: { tranhist: "HELLO" }
-      // })
+
+    // this.props.history.push("/dashboard");
+    // this.props.history.push ({
+    //   pathname: '/dashboard',
+    //   state: { tranhist: "HELLO" }
+    // })
   };
 
   buyProperty = e => {
@@ -266,21 +266,32 @@ class Property extends Component {
               </a>
             </div>
           </div>
-          <div class="wrappernav-pro bluefont">
-            <link
+          <div class="wrappernavdetails ">
+            {/* <link
               href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
               rel="stylesheet"
             />
             <link
               href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css"
-              rel="stylesheet"
-            />
+              rel="stylesheet" */}
+
             {/* <a href="#" class="flag-icon-background flag-icon-us flag inline">
               {"   "}
             </a> */}
             {/* <a href="#" class="tb bluefont inline">
               Trip Boards
             </a> */}
+            <a href="#" class="flag-icon-background flag-icon-us flag inline">
+              {"   "}
+            </a>
+            <a href="/dashboard" class="buttonlyp default bluefont inline">
+              Property History
+            </a>
+            <button class="buttonlyp default bluefont inline">About Us</button>
+            <button class="buttonlyp default bluefont inline">Contact</button>
+            <button class="buttonlyp default bluefont inline">
+              Post Your Property
+            </button>
             <div class="btn-group inline dropdownnav">
               <div
                 class="btn-home inline bluefont-home"
@@ -351,8 +362,7 @@ class Property extends Component {
                 </li>
               </ul>
             </div>
-
-            <a
+            {/* <a
               href={
                 sessionStorage.getItem("typeofaccount") == "owner"
                   ? "/lyp"
@@ -361,8 +371,8 @@ class Property extends Component {
               class="buttonlyp default bluefont inline"
             >
               List your property
-            </a>
-            <div class="homeawayimg-pro inline">
+            </a> */}
+            <div class="homeawayimg-home inline">
               <img src="https://i.imgur.com/fLTMlTI.png" />
             </div>
           </div>
@@ -426,11 +436,13 @@ class Property extends Component {
           {/*-----------------------------------------PHOTO -------------------------------------*/}
 
           <br />
-          <p class="grayie_Description">
-            <b> Description of Property:</b> {this.state.propdesc}{" "}
-          </p>
+          <div class="tablecss2">
+            <p class="grayie_Description">
+              <b> Description of Property:</b> {this.state.propdesc}{" "}
+            </p>
+          </div>
 
-          <div class="detailscontainer">
+          <div class="tablecss3">
             <div class="coninfo">
               {/* <div class="propinfo_New descNew">
                 <h2>{this.state.headline}</h2>
@@ -498,10 +510,17 @@ class Property extends Component {
       search: '?query=abc',
       state: { detail: response.data }
     }}> My Link </Link> */}
-              <Link id="linktranhist" to={{
-      pathname: '/dashboard',
-      state: { streetaddr: this.state.streetaddr,unit:this.state.unit,zip:this.state.zip }
-    }}>
+              <Link
+                id="linktranhist"
+                to={{
+                  pathname: "/dashboard",
+                  state: {
+                    streetaddr: this.state.streetaddr,
+                    unit: this.state.unit,
+                    zip: this.state.zip
+                  }
+                }}
+              >
                 View Transaction History
               </Link>
               <br />
@@ -531,5 +550,5 @@ class Property extends Component {
 
 export default connect(
   null,
-  { buyProperty, sendmessage,checkTransactionHistory  }
+  { buyProperty, sendmessage, checkTransactionHistory }
 )(Property);

@@ -453,10 +453,16 @@ div.wrappernav {
 div.wrappernav-pro {
   position: absolute;
   width: 100%; /* or whatever */
-  left: 43vw;
+  left: 42vw;
   top: 0.8vw;
 }
 
+div.wrappernavdetails {
+  position: absolute;
+  width: 100%; /* or whatever */
+  left: 40em;
+  top: 0.8em;
+}
 div.wrappernav-home {
   position: absolute;
   width: 100%; /* or whatever */
@@ -715,7 +721,7 @@ div.wrappernav-homepage-nli {
   border-radius: 15px;
   bottom: 5vw;
   left: 17vw;
-  height:  8.5vw;
+  height: 8.5vw;
   width: 44.5vw;
   margin-left: 27vw;
   background: rgba(14, 23, 104, 0.89);
@@ -753,11 +759,14 @@ div.wrappernav-homepage-nli {
   margin-bottom: 5vw;
   margin-left: 20vw;
 }
-.gapsf{margin: 1vw;
-bottom:5vw;}
+.gapsf {
+  margin: 1vw;
+  bottom: 5vw;
+}
 
-.gapsfi{right:12vw;}
-
+.gapsfi {
+  right: 12vw;
+}
 
 .flex-container_New2 {
   position: relative;
@@ -857,13 +866,13 @@ input::placeholder {
   border-radius: 40px;
   color: white;
   line-height: 1vw;
-  width:12vw;
-  padding:1.5vw;
+  width: 12vw;
+  padding: 1.5vw;
 }
 
 .homesearchbuttondash:focus {
   outline: none;
-  border:none;
+  border: none;
 }
 
 .homesearchbutton_New {
@@ -1274,9 +1283,23 @@ input[type="date"]:focus::after {
 }
 
 .grayie_Description {
-  margin-left: 6vw;
+  margin-left: 0vw;
+  margin-top: 0vw;
   color: black;
 }
+
+.tablecss2 {
+  width: 51vw;
+  height: fit-content;
+  margin-left: 5.5vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  padding: 2vw;
+}
+.h2th2 {
+  margin-top: -1vw;
+}
+
 grayie_Addr {
   margin-left: 10vw;
   color: black;
@@ -1288,6 +1311,21 @@ grayie_Addr {
 
   color: black;
 }
+
+.tablecss3 {
+  position: absolute;
+  top: 10vw;
+  left: 66vw;
+  width: 27vw;
+  height: fit-content;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  padding: 2vw;
+}
+.h2th3 {
+  margin-top: 0vw;
+}
+
 .usericon {
   margin-top: 5vw;
   text-align: center;
@@ -1757,8 +1795,10 @@ input:checked + .slider:before {
 
 /*----------------------------------------LYP NAV---------------------------*/
 
+/* changed A */
 .tabitem {
   color: black;
+  margin-top: 1vw;
   width: 10vw;
 }
 
@@ -2242,14 +2282,14 @@ changed
   padding-right: 2vw;
   padding-bottom: 1vw;
 }
-#linktranhist{
+#linktranhist {
   background-color: #0067db;
   font-size: 1.3vw;
   border: none;
   border-radius: 40px;
   color: white;
-  padding:6px;
-  margin-left:2.5vw;
+  padding: 6px;
+  margin-left: 2.5vw;
 }
 
 .book {
@@ -2272,7 +2312,7 @@ changed
 .tableh {
   font-size: 1.5vw;
   color: gray;
-  width:14vw
+  width: 14vw;
 }
 
 .messagebutton {
@@ -2341,7 +2381,7 @@ changed
   position: relative;
   left: 0.2vw;
   font-size: 20px;
-  color: white
+  color: white;
 }
 
 #myInput {
@@ -2354,14 +2394,14 @@ changed
   margin-bottom: 12px;
 }
 
-.tablecss{
-  width:80vw;
-  margin-left:10vw;
+.tablecss {
+  width: 80vw;
+  margin-left: 10vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 30px;
-  padding:5vw
+  padding: 5vw;
 }
 
-.h2th{
-  margin-top:-1vw;
+.h2th {
+  margin-top: -1vw;
 }

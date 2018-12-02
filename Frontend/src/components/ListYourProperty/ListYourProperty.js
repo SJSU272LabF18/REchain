@@ -579,6 +579,8 @@ class ListYourProperty extends Component {
                   </a>
                 </li> */}
                 {/* ADDING PROPERTY REQS */}
+                <br />
+                <br />
                 <li>
                   <a class="tabitem" href="#photos" data-toggle="tab">
                     <p class="tabitem">
@@ -637,10 +639,6 @@ class ListYourProperty extends Component {
               <div class="tab-content">
                 <div class="tab-pane active" id="welcome">
                   {<h2>POST YOUR PROPERTY HERE!</h2>}
-                  {/* <p class="grayie"> Just 4 simple steps.</p> */}
-                  {/* <a class="lypcont" href="#location" data-toggle="tab">
-                    Continue
-                  </a> */}
                 </div>
                 {/*--------------------------------LOCATION---------------------------------------*/}
                 <div class="tab-pane" id="location">

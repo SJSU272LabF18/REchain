@@ -13,3 +13,5 @@
 [2018-12-01 20:19:31,945] INFO Starting the log cleaner (kafka.log.LogCleaner)
 [2018-12-01 20:19:32,006] INFO [kafka-log-cleaner-thread-0]: Starting (kafka.log.LogCleaner)
 >>>>>>> ece70568e9a8ef58e326137f192572e73ba9fd40
+[2018-12-01 21:55:42,819] INFO Starting the log cleaner (kafka.log.LogCleaner)
+[2018-12-01 21:55:43,068] INFO [kafka-log-cleaner-thread-0]: Starting (kafka.log.LogCleaner)
