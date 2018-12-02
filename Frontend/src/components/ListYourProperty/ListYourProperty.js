@@ -427,6 +427,7 @@ class ListYourProperty extends Component {
       console.log("LYPPPPP", response._id);
       this.submitPhoto(response._id);
       alert("Property Added!");
+      this.props.history.push("/home");
     });
   };
 
@@ -445,7 +446,7 @@ class ListYourProperty extends Component {
         isphotosaved: true,
         isPhotosComplete: true
       });
-      alert("Property added!");
+      //alert("Property added!");
     } else alert("2 photos are mandatory!");
   };
 

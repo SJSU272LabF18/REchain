@@ -208,7 +208,7 @@ class Property extends Component {
     e.preventDefault();
     // var email = sessionStorage.getItem('email');
     const data = {
-      trans_amt: this.state.price,
+      trans_amt: "100,000",
       fname: this.state.fname,
       lname: this.state.lname,
       owner_fname: this.state.owner_fname,
@@ -219,7 +219,7 @@ class Property extends Component {
       property_id: this.state.propnum_pk
     };
     this.props.buyProperty(data, () => {
-      alert("Congratualations. Property Brought!");
+      alert("Congratualations. Property Brought! Check Property history.");
       this.props.history.push("/dashboard");
     });
   };
