@@ -289,9 +289,7 @@ class Home extends Component {
           <button class="buttonlyp default bluefont inline">Contact</button>
 
            <a
-            href={
-              sessionStorage.getItem("typeofaccount") == "owner" ? "/lyp" : "#"
-            }
+            href="/login"
             class="buttonlyp default bluefont inline"
           >
             Post your property
@@ -322,10 +320,9 @@ class Home extends Component {
               </li>
             </ul>
           </div>
-
-          {/* <div class="homeawayimg-home inline">
- <img src="http://csvcus.homeaway.com/rsrcs/cdn-logos/2.11.0/bce/moniker/homeaway_us/birdhouse-bceheader-white.svg" />
- </div> */}
+          <div class="homeawayimg-home inline">
+        <img src="https://i.imgur.com/fLTMlTI.png" />
+        </div> 
         </div>
       );
     }

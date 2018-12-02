@@ -9,6 +9,7 @@ import { loginUser } from "../../actions";
 
 //Define a Login Component
 class Login extends Component {
+  
   renderField(field) {
     const {
       meta: { touched, error }
