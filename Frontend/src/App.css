@@ -1314,7 +1314,7 @@ grayie_Addr {
 
 .tablecss3 {
   position: absolute;
-  top: 10vw;
+  top: 10.5vw;
   left: 66vw;
   width: 27vw;
   height: fit-content;
@@ -1323,6 +1323,7 @@ grayie_Addr {
   padding: 2vw;
 }
 .h2th3 {
+  margin-left: 7vw;
   margin-top: 0vw;
 }
 
@@ -2238,7 +2239,7 @@ changed
   margin-left: 2cvw;
 }
 .picon {
-  padding: 1vw;
+  padding: 0.5vw;
   font-size: 2vw;
   margin-left: 2vw;
   align-items: center;

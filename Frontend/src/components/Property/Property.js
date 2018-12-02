@@ -38,6 +38,7 @@ class Property extends Component {
       yearbuilt,
       parking,
       rooms,
+      price,
       bathrooms,
       accomodates,
       nbr,
@@ -90,6 +91,7 @@ class Property extends Component {
       pic3: "",
       pic4: "",
       pic5: "",
+      price: price,
       owner_fname: owner_fname,
       owner_lname: owner_lname,
       //total: total,
@@ -447,8 +449,19 @@ class Property extends Component {
               {/* <div class="propinfo_New descNew">
                 <h2>{this.state.headline}</h2>
               </div> */}
-              <p class="grayie_Details">Details </p>
-
+              {/* <p class="grayie_Details">
+              Details </p> */}
+              <thead>
+                <tr>
+                  <th>
+                    {" "}
+                    <h3 class="bluefont h2th3">
+                      <center> {"     "} Details</center>
+                      <br />
+                    </h3>
+                  </th>
+                </tr>
+              </thead>
               <div class="iconsprop">
                 <p class="grayie">
                   <b>Property Manager: </b> {this.state.owner_fname}{" "}
@@ -466,8 +479,14 @@ class Property extends Component {
 
                 <p class="grayie">
                   {" "}
+                  <b>Price of Property: </b>
+                  {"$"}
+                  {this.state.price}
+                </p>
+                <p class="grayie">
+                  {" "}
                   <b>Property Size: </b>
-                  {this.state.sqft}
+                  {this.state.sqft} {"sqft"}
                 </p>
 
                 <p class="grayie">
@@ -510,7 +529,9 @@ class Property extends Component {
       search: '?query=abc',
       state: { detail: response.data }
     }}> My Link </Link> */}
+
               <Link
+                class="homesearchbutton book"
                 id="linktranhist"
                 to={{
                   pathname: "/dashboard",
@@ -523,6 +544,7 @@ class Property extends Component {
               >
                 View Transaction History
               </Link>
+
               <br />
 
               <br />

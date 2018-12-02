@@ -574,11 +574,6 @@ class ListYourProperty extends Component {
               {" "}
               {/*Navs*/}
               <ul class="nav">
-                {/* <li>
-                  <a class="tabitem" href="#welcome" data-toggle="tab">
-                    <p class="tabitem welcome"> Welcome</p>
-                  </a>
-                </li> */}
                 {/* ADDING PROPERTY REQS */}
                 <br />
                 <br />
@@ -638,9 +633,9 @@ class ListYourProperty extends Component {
             {/*Tab panes*/}
             <div class="lypforms card">
               <div class="tab-content">
-                <div class="tab-pane active" id="welcome">
+                {/* <div class="tab-pane active" id="welcome">
                   {<h2>POST YOUR PROPERTY HERE!</h2>}
-                </div>
+                </div> */}
                 {/*--------------------------------LOCATION---------------------------------------*/}
                 <div class="tab-pane" id="location">
                   <h4 class="h4v">Enter Your Location Details</h4>
