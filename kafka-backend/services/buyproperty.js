@@ -59,7 +59,7 @@ function handle_request(msg, callback) {
               console.log(
                 "There was a problem registering the transaction on the property"
               );
-              callback(null, JSON.stringify({error : res.statusCode}, undefined, 2));
+              callback(null, JSON.stringify({"Error" : "Error in buying property"}, undefined, 2));
             }
 
     });
