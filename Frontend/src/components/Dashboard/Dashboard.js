@@ -48,6 +48,7 @@ class Dashboard extends Component {
   }
 
   componentDidMount() {
+    document.title = "Bloquity";
     if (sessionStorage.getItem("typeofaccount") == "owner")
       this.setState({
         lyp: "/lyp"
@@ -295,16 +296,16 @@ handleDashSearch=()=>{
               href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
               rel="stylesheet"
             />
-            <link
+            {/* <link
               href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css"
               rel="stylesheet"
             />
-            {/* <a href="#" class="flag-icon-background flag-icon-us flag inline">
+            {/* <a href="#" class="flag-icon-background flag-icon-us flag inline"> */}
               {"   "}
-            </a>
-            <a href="#" class="tb bluefont inline">
+            {/* </a> */}
+            {/* <a href="#" class="tb bluefont inline">
               Trip Boards
-            </a> */}
+            </a>  */}
 
              <a
               href={
@@ -401,7 +402,7 @@ handleDashSearch=()=>{
             </a> */}
 
             <div class="btn-group userdd bluefont inline dropdownnav">
-              <div
+              {/* <div
                 class="btn-home inline bluefont-home"
                 data-toggle="dropdown"
                 aria-haspopup="true"
@@ -409,55 +410,55 @@ handleDashSearch=()=>{
               >
                 Help{" "}
                 <span class="glyphicon glyphicon-triangle-bottom smallicon" />
-              </div>
+              </div> */}
               <ul class="dropdown-menu dropdown-menu-right bluefont">
                 <li>
                   {" "}
-                  <a class="dropdown-item " href="#">
+                  {/* <a class="dropdown-item " href="#">
                     <p class="bluefont">
                       {"   "}
                       Visit help center
                     </p>
-                  </a>
+                  </a> */}
                 </li>
                 <li role="separator" class="divider dropdownicons" />
 
-                <li class="dropdown-header travelersfont">
-                  <b>Travelers</b>
-                </li>
+                {/* // <li class="dropdown-header travelersfont">
+                //   <b>Travelers</b>
+                // </li> */}
                 <li>
                   <a class="dropdown-item" href="#">
-                    <p class="bluefont">
+                    {/* <p class="bluefont">
                       {" "}
                       {"   "}
                       How it works
-                    </p>
+                    </p> */}
                   </a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">
-                    <p class="bluefont">
+                    {/* <p class="bluefont">
                       {"   "}
                       Security Center
-                    </p>
+                    </p> */}
                   </a>
                 </li>
                 <li role="separator" class="divider dropdownicons" />
 
-                <li class="dropdown-header travelersfont">
+                {/* <li class="dropdown-header travelersfont">
                   <b>Home Owners</b>
-                </li>
+                </li> */}
                 <li>
                   <a class="dropdown-item" href="#">
-                    <p class="bluefont">
+                    {/* <p class="bluefont">
                       {" "}
                       {"   "}
                       How it works
-                    </p>
+                    </p> */}
                   </a>
                 </li>
                 <li>
-                  <a
+                  {/* <a
                     class="dropdown-item"
                     href={
                       sessionStorage.getItem("typeofaccount") == "owner"
@@ -470,38 +471,38 @@ handleDashSearch=()=>{
                       {"   "}
                       List your property
                     </p>
-                  </a>
+                  </a> */}
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  {/* <a class="dropdown-item" href="#">
                     <p class="bluefont">
                       {" "}
                       {"   "}
                       Community
                     </p>
-                  </a>
+                  </a> */}
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  {/* <a class="dropdown-item" href="#">
                     <p class="bluefont">
                       {" "}
                       {"   "}
                       Discovery Hub
                     </p>
-                  </a>
+                  </a> */}
                 </li>
                 <li role="separator" class="divider dropdownicons" />
-                <li class="dropdown-header travelersfont">
+                {/* <li class="dropdown-header travelersfont">
                   <b>Property managers</b>
-                </li>
+                </li> */}
                 <li>
-                  <a class="dropdown-item" href="#">
+                  {/* <a class="dropdown-item" href="#">
                     <p class="bluefont">
                       {" "}
                       {"   "}
                       List your properties
                     </p>
-                  </a>
+                  </a> */}
                 </li>
               </ul>
             </div>
