@@ -11,7 +11,7 @@ router.post("/", function(req, res) {
   console.log("Inside LYP POST Request");
   console.log("Req Body : ", req.body);
   kafka.make_request("post_lyp", req.body, function(err, result) {
-    console.log("In Profile Book result :");
+    console.log("In List Property Result :");
     console.log(result);
     if (err) {
       console.log("Inside err");
@@ -20,8 +20,11 @@ router.post("/", function(req, res) {
         msg: "System Error, Try Again."
       });
     } else {
-      console.log("Inside else");
-      res.status(200).end(result);
+      if (result.indexOf('error') < 0){
+        res.status(500).send(result);
+      }else {
+        res.status(200).send(result);
+      }    
     }
   });
 });

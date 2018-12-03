@@ -130,7 +130,7 @@ function handle_request(msg, callback) {
       var postOwner=msg.fname + " " + msg.lname
       if(currentOwner.toLowerCase()!=postOwner.toLowerCase()){
         console.log("Owners dont match")
-        callback(null, JSON.stringify({"error":"Property Owners do not match. Cannot post property."}));
+        callback(null, JSON.stringify({error:"You cannot post a property you do not own!"}));
       } else {
         console.log("Owners match!")
         console.log("************************HYPERLEDGER*****************************")
