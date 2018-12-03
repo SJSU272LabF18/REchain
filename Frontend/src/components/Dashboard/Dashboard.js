@@ -48,6 +48,7 @@ class Dashboard extends Component {
   }
 
   componentDidMount() {
+    document.title = "Bloquity";
     if (sessionStorage.getItem("typeofaccount") == "owner")
       this.setState({
         lyp: "/lyp"
