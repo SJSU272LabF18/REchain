@@ -258,7 +258,7 @@ class Profile extends Component {
           <div class="header-bce bluefont">
             <div id="hal-home" class="navbar-brand bluefont-home">
               <a href="/home" class="bluefont-home">
-                HomeAway
+                Bloquity
                 <span class="sup">&reg;</span>
               </a>
             </div>
@@ -272,12 +272,12 @@ class Profile extends Component {
               href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css"
               rel="stylesheet"
             />
-            <a href="#" class="flag-icon-background flag-icon-us flag inline">
+            {/* <a href="#" class="flag-icon-background flag-icon-us flag inline">
               {"   "}
             </a>
             <a href="#" class="tb bluefont inline">
               Trip Boards
-            </a>
+            </a> */}
             <div class="btn-group inline dropdownnav">
               <div
                 class="btn-home inline bluefont"
