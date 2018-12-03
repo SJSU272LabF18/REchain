@@ -984,7 +984,7 @@ class ListYourProperty extends Component {
                   </div>
                 </div>
                 {/*---------------------------------PHOTOS--------------------------------*/}
-                <div class="tab-pane" id="photos">
+                <div class="tab-pane active" id="photos">
                   <h1> Add up to 5 photos of your property </h1>
                   <hr />
                   Showcase your property’s best features (no pets or people,
