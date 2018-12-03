@@ -22,8 +22,11 @@ function handle_request(msg, callback) {
       console.log(err); 
       callback(null, []);
     } else if (res.statusCode == 200) {
-      var transHistory = body["transactionHistory"].reverse();
-      callback(null, JSON.stringify(transHistory, undefined, 2));
+      if (body != null && body.hasOwnProperty("transactionHistory")) {
+        var transHistory = body["transactionHistory"].reverse();
+        callback(null, JSON.stringify(transHistory, undefined, 2));
+      } else 
+        callback(null, []);
     } else if (res.statusCode == 404) {
       console.log(
         "Property does not exist"
