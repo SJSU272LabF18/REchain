@@ -717,13 +717,13 @@ div.wrappernav-homepage-nli {
 /* new */
 
 .flex-filter {
-  padding-left: 2vw;
+  padding-left: 15vw;
   border-radius: 15px;
   bottom: 5vw;
-  left: 17vw;
+  left: 15vw;
   height: 8.5vw;
-  width: 44.5vw;
-  margin-left: 27vw;
+  width: 75.5vw;
+  margin-left: 12vw;
   background: rgba(14, 23, 104, 0.89);
   align-items: center;
 }
@@ -751,13 +751,19 @@ div.wrappernav-homepage-nli {
 }
 
 .flex-container_New3 {
-  position: relative;
-  border-radius: 8px;
-  left: 1vw;
   display: flex;
-  align-items: center;
+  background: rgba(14, 23, 104, 0.89);
   margin-bottom: 5vw;
-  margin-left: 20vw;
+  margin-left: 12vw;
+  padding-left: 8.25vw;
+  border-radius: 15px;
+  bottom: 5vw;
+  left: 15vw;
+  height: 8.5vw;
+  width: 75.5vw;
+  margin-left: 12vw;
+  background: rgba(14, 23, 104, 0.89);
+  align-items: center;
 }
 .gapsf {
   margin: 1vw;
@@ -868,6 +874,7 @@ input::placeholder {
   line-height: 1vw;
   width: 12vw;
   padding: 1.5vw;
+  margin-left: 1vw;
 }
 
 .homesearchbuttondash:focus {
@@ -2412,7 +2419,7 @@ changed
 
 .filterresultslabel_New {
   position: relative;
-  left: 0.2vw;
+  left: 20vw;
   font-size: 20px;
   color: white;
 }

@@ -254,6 +254,11 @@ class SearchResults extends Component {
             {/* <a href="#" class="tb bluefont inline">
  Trip Boards
  </a> */}
+               <a href="/dashboard" class="buttonlyp default bluefont inline">
+              Property History
+            </a>
+             
+             
              <a
               href={
                 sessionStorage.getItem("typeofaccount") == "owner"
@@ -436,31 +441,35 @@ class SearchResults extends Component {
         <br />
         <div class="flex-filter">
         <br />
-        <label class="filterresultslabel_New">Filter Postings: </label>
+        
+        <label class="filterresultslabel_New">Filter Postings</label>
         <br />
+
         <div class="flex-filter2">
+
+   
         <div class="inner-addon left-addon">
         <i class="glyphicon glyphicon-usd" />{" "}
         <input
           type="number"
-          id="myInput"
+          class="searchfields largesearch"
           onChange={this.handlePriceFilter}
           placeholder="Price"
-          class="searchfields mediumsearch"
+          
           min="0"
           step="1"
         />
 
         </div>
 
-        {/* <label class="filterlabel_New">Rooms: </label> */}
+ 
         <div class="inner-addon left-addon">
         <i class="glyphicon glyphicon-home" />{" "}
         <input
           type="number"
-          id="myInput"
+          
           onChange={this.handleRoomFilter}
-          class="searchfields mediumsearch"
+          class="searchfields largesearch"
           placeholder="Rooms"
           min="0"
           step="1"
@@ -468,8 +477,7 @@ class SearchResults extends Component {
         </div>
         
         </div>
-
-        <br />
+       
         <br />
         <div class="tablecss">
         <table class="table" id="myTable">
