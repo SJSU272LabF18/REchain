@@ -724,6 +724,7 @@ div.wrappernav-homepage-nli {
   height: 8.5vw;
   width: 75.5vw;
   margin-left: 12vw;
+  margin-bottom: 2vw;
   background: rgba(14, 23, 104, 0.89);
   align-items: center;
 }
@@ -751,19 +752,15 @@ div.wrappernav-homepage-nli {
 }
 
 .flex-container_New3 {
-  display: flex;
-  background: rgba(14, 23, 104, 0.89);
-  margin-bottom: 5vw;
-  margin-left: 12vw;
-  padding-left: 8.25vw;
-  border-radius: 15px;
+  position: relative;
+  border-radius: 8px;
   bottom: 5vw;
-  left: 15vw;
-  height: 8.5vw;
+  left: -6.3vw;
+  height: 15vw;
   width: 75.5vw;
-  margin-left: 12vw;
-  background: rgba(14, 23, 104, 0.89);
+  display: flex;
   align-items: center;
+  margin-bottom: 5vw;
 }
 .gapsf {
   margin: 1vw;
@@ -2424,6 +2421,12 @@ changed
   color: white;
 }
 
+.filterresultslabel_New2 {
+  position: relative;
+  left: 19vw;
+  font-size: 20px;
+  color: white;
+}
 #myInput {
   background-position: 10px 10px;
   background-repeat: no-repeat;
