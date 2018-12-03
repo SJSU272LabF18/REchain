@@ -717,13 +717,14 @@ div.wrappernav-homepage-nli {
 /* new */
 
 .flex-filter {
-  padding-left: 2vw;
+  padding-left: 15vw;
   border-radius: 15px;
   bottom: 5vw;
-  left: 17vw;
+  left: 15vw;
   height: 8.5vw;
-  width: 44.5vw;
-  margin-left: 27vw;
+  width: 75.5vw;
+  margin-left: 12vw;
+  margin-bottom: 2vw;
   background: rgba(14, 23, 104, 0.89);
   align-items: center;
 }
@@ -753,11 +754,13 @@ div.wrappernav-homepage-nli {
 .flex-container_New3 {
   position: relative;
   border-radius: 8px;
-  left: 1vw;
+  bottom: 5vw;
+  left: -6.3vw;
+  height: 15vw;
+  width: 75.5vw;
   display: flex;
   align-items: center;
   margin-bottom: 5vw;
-  margin-left: 20vw;
 }
 .gapsf {
   margin: 1vw;
@@ -868,6 +871,7 @@ input::placeholder {
   line-height: 1vw;
   width: 12vw;
   padding: 1.5vw;
+  margin-left: 1vw;
 }
 
 .homesearchbuttondash:focus {
@@ -2412,11 +2416,17 @@ changed
 
 .filterresultslabel_New {
   position: relative;
-  left: 0.2vw;
+  left: 20vw;
   font-size: 20px;
   color: white;
 }
 
+.filterresultslabel_New2 {
+  position: relative;
+  left: 19vw;
+  font-size: 20px;
+  color: white;
+}
 #myInput {
   background-position: 10px 10px;
   background-repeat: no-repeat;

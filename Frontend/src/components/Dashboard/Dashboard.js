@@ -511,7 +511,17 @@ handleDashSearch=()=>{
         <br />
         <br />
         <div>
+
+        <div class="flex-filter">
+        <br />
+        
+        <label class="filterresultslabel_New2">Enter Full Address</label>
+        <br />
+        
+
         <div class="flex-container_New3">
+
+                
                 <div class="inner-addon left-addon">
                   <i class="glyphicon  gapsfi glyphicon-map-marker" />
                   <input
@@ -544,6 +554,7 @@ handleDashSearch=()=>{
                 </div>
                 <button class="homesearchbuttondash" onClick={this.handleDashSearch}>
                 Search</button>
+                </div>
                 </div>
           </div>
         <div>{details}</div>
