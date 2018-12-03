@@ -223,11 +223,11 @@ class Property extends Component {
     
     if(data.fname!=data.owner_fname || data.lname!=data.owner_lname) {
       this.props.buyProperty(data, () => {
-        alert("Congratualations. Property Brought! Check Property history.");
+        alert("Congratulations. Property Brought! Check Property history");
         this.props.history.push("/dashboard");
       });
     } else {
-      alert("You already own the property.")
+      alert("You already own the property")
     }
   };
 
@@ -450,7 +450,7 @@ class Property extends Component {
           <br />
           <div class="tablecss2">
             <p class="grayie_Description">
-              <b> Description of Property:</b> {this.state.propdesc}{" "}
+              <b> Property Description:</b> {this.state.propdesc}{" "}
             </p>
           </div>
           <div class="tablecss3">

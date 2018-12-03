@@ -1,8 +1,4 @@
-var Bookings = require("../../Backend/models/propertyHistory");
 const request = require('request');
-
-
-require("../../Backend/db/mongoose");
 
 console.log(
   "---------------------INSIDE /SERVICES/BUYPROPERTY.js------------------"
@@ -12,21 +8,33 @@ function handle_request(msg, callback) {
     "In services transactionHistory.js handle request:" + JSON.stringify(msg)
   );
 
-  //make request to hyperLedger to fetch property history
+  //make request to hyperLedger fabric to fetch property transaction history
   uniqueID = msg.streetaddr + msg.unit + msg.zip
   propID = String(uniqueID).replace(/\s+/g, "")
+  propID = propID.toLowerCase()
   console.log(propID)
   url="http://107.23.194.9:4000/api/org.digitalproperty.Property/" + propID //msg.propID
   request(url, { json: true }, (err, res, body) => {
-    if (err) { 
+    if(err) {
       console.log(
         "There was a problem in getting the transaction history from hyperledger."
       );
       console.log(err); 
       callback(null, []);
+    } else if (res.statusCode == 200) {
+      var transHistory = body["transactionHistory"].reverse();
+      callback(null, JSON.stringify(transHistory, undefined, 2));
+    } else if (res.statusCode == 404) {
+      console.log(
+        "Property does not exist"
+      );
+      callback(null, JSON.stringify({error : res.statusCode}, undefined, 2));
+    } else {
+        console.log(
+          "Problem in getting the transaction history from hyperledger."
+        );
+        callback(null, []);
     }
-    //console.log(body[0]["transactionHistory"]);
-    callback(null, JSON.stringify(body["transactionHistory"], undefined, 2));
   });
 
 }

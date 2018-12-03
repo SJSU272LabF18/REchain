@@ -167,16 +167,27 @@ handleDashSearch=()=>{
 
     const result = paginate(resultnew, currentPage, pageSize);
     if (sessionStorage.getItem("typeofaccount") == "owner") {
-      tablesdata = this.props.result.map(booking => {
-        return (
+      if (this.props.result.hasOwnProperty('error') && this.props.result.error == 404) {
+        tablesdata = (
           <tr>
-            <td>{booking.buyer}</td>
-            <td>{booking.seller}</td>
-            <td>{booking.trans_date}</td>
-            <td>${booking.trans_amt}</td>
-          </tr>
+          <td>Property does not exist</td>
+          <td>NA</td>
+          <td>NA</td>
+          <td>NA</td>
+        </tr>
         );
-      });
+      } else  {
+        tablesdata = this.props.result.map(booking => {
+          return (
+            <tr>
+              <td>{booking.buyer}</td>
+              <td>{booking.seller}</td>
+              <td>{booking.trans_date}</td>
+              <td>${booking.trans_amt}</td>
+            </tr>
+          );
+        });
+      }
     } else if (sessionStorage.getItem("typeofaccount") == "traveler") {
       tablesdata = result.map(booking => {
         return (
