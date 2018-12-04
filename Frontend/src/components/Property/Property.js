@@ -224,7 +224,11 @@ class Property extends Component {
     if(data.fname!=data.owner_fname || data.lname!=data.owner_lname) {
       this.props.buyProperty(data, () => {
         alert("Congratulations. Property Brought! Check Property history");
-        this.props.history.push("/dashboard");
+        var address=String(this.state.streetaddr).replace(/\s+/g, "")
+        this.props.history.push({
+          pathname: `/dashboard?=${address}/${this.state.unit}/${this.state.zip}`,
+          // state: { streetaddr: this.state.streetaddr,unit:this.state.unit,zip:this.state.zip }
+        });
       });
     } else {
       alert("You already own the property")

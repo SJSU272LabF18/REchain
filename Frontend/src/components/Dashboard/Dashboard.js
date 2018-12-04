@@ -70,11 +70,19 @@ class Dashboard extends Component {
             profileicon: imagePreview
           });
         });
-if(this.props.location.state){
-      this.props.getTransactionHistory({streetaddr: this.props.location.state.streetaddr,
-        unit: this.props.location.state.unit,
-        zip: this.props.location.state.zip});
+      if(this.props.location.state){
+        this.props.getTransactionHistory({streetaddr: this.props.location.state.streetaddr,
+          unit: this.props.location.state.unit,
+          zip: this.props.location.state.zip});
       }
+
+      if(typeof(this.props.match.params.streetaddr)!="undefined") {
+        this.props.getTransactionHistory({streetaddr: this.props.match.params.streetaddr,
+          unit: this.props.match.params.unit,
+          zip: this.props.match.params.zip});
+      }
+
+
     }
     if (localStorage.getItem("token")) {
       axios.defaults.headers.common["Authorization"] = token;
