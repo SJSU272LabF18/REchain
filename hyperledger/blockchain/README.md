@@ -1,4 +1,14 @@
 # Digital Property Network
+Go to blockchain folder and run below commands
+* nvm use 8
+* npm install 
+* Create BNA file if not created 
+> Example 
+cd blockchain
+> nvm use 8
+> npm install
+> composer archive create  --sourceType dir --sourceName . -a ./dist/digital-property.bna
+ 
 
 > Example business network that digital properties and transactions on the property
 
