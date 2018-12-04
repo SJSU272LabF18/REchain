@@ -424,10 +424,14 @@ class ListYourProperty extends Component {
 
     this.props.lyp(data, response => {
       // this.submitPhoto();
-      console.log("LYPPPPP", response._id);
-      this.submitPhoto(response._id);
-      alert("Property Added!");
-      this.props.history.push("/home");
+      if (response.hasOwnProperty('error')) {
+        alert(response.error);
+      } else {
+        console.log("LYPPPPP", response._id);
+        this.submitPhoto(response._id);
+        alert("Property Added!");
+        this.props.history.push("/home");
+      }
     });
   };
 
