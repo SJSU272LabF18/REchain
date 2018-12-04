@@ -48,7 +48,6 @@ async function setupDemo(setupDemo) {  // eslint-disable-line no-unused-vars
 
     // create the shipment
     const property = factory.newResource(NS, 'Property', 'PROP_1');
-   
 
     // add the shipments
     const propertyRegistry = await getAssetRegistry(NS + '.Property');
