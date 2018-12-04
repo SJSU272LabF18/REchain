@@ -215,9 +215,11 @@ class SearchResults extends Component {
                     {r.sqft} Square Feet{" "}
                   </h4>
                 </td>
-                {console.log(r.photos[0])}
+                
+               
               </div>
               <div class="searchphoto">
+              {console.log("Photo", r.photos[0])}
                 {/* <img src="https://i.imgur.com/lVAv7GN.jpg" /> */}
                 <img class="proppp" src={require("../../images/photo1.jpg")} />
               </div>

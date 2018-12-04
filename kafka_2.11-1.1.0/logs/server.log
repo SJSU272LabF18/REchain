@@ -732,3 +732,792 @@
 [2018-12-03 19:23:17,762] INFO Client attempting to establish new session at /127.0.0.1:54983 (org.apache.zookeeper.server.ZooKeeperServer)
 [2018-12-03 19:23:17,771] INFO Established session 0x16777393ce60012 with negotiated timeout 30000 for client /127.0.0.1:54983 (org.apache.zookeeper.server.ZooKeeperServer)
 [2018-12-03 19:29:18,079] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-12-03 23:25:43,605] INFO Reading configuration from: config/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2018-12-03 23:25:43,612] INFO autopurge.snapRetainCount set to 3 (org.apache.zookeeper.server.DatadirCleanupManager)
+[2018-12-03 23:25:43,613] INFO autopurge.purgeInterval set to 0 (org.apache.zookeeper.server.DatadirCleanupManager)
+[2018-12-03 23:25:43,613] INFO Purge task is not scheduled. (org.apache.zookeeper.server.DatadirCleanupManager)
+[2018-12-03 23:25:43,613] WARN Either no config or no quorum defined in config, running  in standalone mode (org.apache.zookeeper.server.quorum.QuorumPeerMain)
+[2018-12-03 23:25:43,697] INFO Reading configuration from: config/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2018-12-03 23:25:43,698] INFO Starting server (org.apache.zookeeper.server.ZooKeeperServerMain)
+[2018-12-03 23:25:43,710] INFO Server environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:25:43,710] INFO Server environment:host.name=nishtha-Inspiron-5567 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:25:43,710] INFO Server environment:java.version=1.8.0_191 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:25:43,710] INFO Server environment:java.vendor=Oracle Corporation (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:25:43,711] INFO Server environment:java.home=/usr/lib/jvm/java-8-oracle/jre (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:25:43,711] INFO Server environment:java.class.path=/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/aopalliance-repackaged-2.5.0-b32.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/argparse4j-0.7.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/commons-lang3-3.5.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/connect-api-1.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/connect-file-1.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/connect-json-1.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/connect-runtime-1.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/connect-transforms-1.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/guava-20.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/hk2-api-2.5.0-b32.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/hk2-locator-2.5.0-b32.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/hk2-utils-2.5.0-b32.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jackson-annotations-2.9.4.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jackson-core-2.9.4.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jackson-databind-2.9.4.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jackson-jaxrs-base-2.9.4.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jackson-jaxrs-json-provider-2.9.4.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jackson-module-jaxb-annotations-2.9.4.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/javassist-3.20.0-GA.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/javassist-3.21.0-GA.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/javax.annotation-api-1.2.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/javax.inject-1.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/javax.inject-2.5.0-b32.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/javax.servlet-api-3.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/javax.ws.rs-api-2.0.1.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jersey-client-2.25.1.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jersey-common-2.25.1.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jersey-container-servlet-2.25.1.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jersey-container-servlet-core-2.25.1.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jersey-guava-2.25.1.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jersey-media-jaxb-2.25.1.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jersey-server-2.25.1.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jetty-client-9.2.24.v20180105.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jetty-continuation-9.2.24.v20180105.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jetty-http-9.2.24.v20180105.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jetty-io-9.2.24.v20180105.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jetty-security-9.2.24.v20180105.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jetty-server-9.2.24.v20180105.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jetty-servlet-9.2.24.v20180105.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jetty-servlets-9.2.24.v20180105.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jetty-util-9.2.24.v20180105.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jopt-simple-5.0.4.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/kafka_2.11-1.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/kafka_2.11-1.1.0-sources.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/kafka_2.11-1.1.0-test-sources.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/kafka-clients-1.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/kafka-log4j-appender-1.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/kafka-streams-1.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/kafka-streams-examples-1.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/kafka-streams-test-utils-1.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/kafka-tools-1.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/log4j-1.2.17.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/lz4-java-1.4.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/maven-artifact-3.5.2.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/metrics-core-2.2.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/osgi-resource-locator-1.0.1.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/plexus-utils-3.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/reflections-0.9.11.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/rocksdbjni-5.7.3.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/scala-library-2.11.12.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/scala-logging_2.11-3.7.2.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/scala-reflect-2.11.12.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/slf4j-api-1.7.25.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/slf4j-log4j12-1.7.25.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/snappy-java-1.1.7.1.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/validation-api-1.1.0.Final.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/zkclient-0.10.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/zookeeper-3.4.10.jar (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:25:43,711] INFO Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:25:43,712] INFO Server environment:java.io.tmpdir=/tmp (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:25:43,712] INFO Server environment:java.compiler=<NA> (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:25:43,712] INFO Server environment:os.name=Linux (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:25:43,712] INFO Server environment:os.arch=amd64 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:25:43,712] INFO Server environment:os.version=4.15.0-39-generic (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:25:43,712] INFO Server environment:user.name=nishtha (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:25:43,712] INFO Server environment:user.home=/home/nishtha (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:25:43,712] INFO Server environment:user.dir=/home/nishtha/Project-Team-20/kafka_2.11-1.1.0 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:25:43,720] INFO tickTime set to 3000 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:25:43,721] INFO minSessionTimeout set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:25:43,721] INFO maxSessionTimeout set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:25:43,763] INFO binding to port 0.0.0.0/0.0.0.0:2181 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:26:44,023] INFO Registered kafka:type=kafka.Log4jController MBean (kafka.utils.Log4jControllerRegistration$)
+[2018-12-03 23:26:44,726] INFO starting (kafka.server.KafkaServer)
+[2018-12-03 23:26:44,727] INFO Connecting to zookeeper on localhost:2181 (kafka.server.KafkaServer)
+[2018-12-03 23:26:44,745] INFO [ZooKeeperClient] Initializing a new session to localhost:2181. (kafka.zookeeper.ZooKeeperClient)
+[2018-12-03 23:26:44,748] INFO Client environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT (org.apache.zookeeper.ZooKeeper)
+[2018-12-03 23:26:44,749] INFO Client environment:host.name=nishtha-Inspiron-5567 (org.apache.zookeeper.ZooKeeper)
+[2018-12-03 23:26:44,749] INFO Client environment:java.version=1.8.0_191 (org.apache.zookeeper.ZooKeeper)
+[2018-12-03 23:26:44,749] INFO Client environment:java.vendor=Oracle Corporation (org.apache.zookeeper.ZooKeeper)
+[2018-12-03 23:26:44,749] INFO Client environment:java.home=/usr/lib/jvm/java-8-oracle/jre (org.apache.zookeeper.ZooKeeper)
+[2018-12-03 23:26:44,749] INFO Client environment:java.class.path=/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/aopalliance-repackaged-2.5.0-b32.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/argparse4j-0.7.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/commons-lang3-3.5.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/connect-api-1.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/connect-file-1.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/connect-json-1.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/connect-runtime-1.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/connect-transforms-1.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/guava-20.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/hk2-api-2.5.0-b32.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/hk2-locator-2.5.0-b32.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/hk2-utils-2.5.0-b32.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jackson-annotations-2.9.4.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jackson-core-2.9.4.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jackson-databind-2.9.4.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jackson-jaxrs-base-2.9.4.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jackson-jaxrs-json-provider-2.9.4.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jackson-module-jaxb-annotations-2.9.4.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/javassist-3.20.0-GA.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/javassist-3.21.0-GA.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/javax.annotation-api-1.2.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/javax.inject-1.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/javax.inject-2.5.0-b32.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/javax.servlet-api-3.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/javax.ws.rs-api-2.0.1.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jersey-client-2.25.1.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jersey-common-2.25.1.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jersey-container-servlet-2.25.1.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jersey-container-servlet-core-2.25.1.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jersey-guava-2.25.1.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jersey-media-jaxb-2.25.1.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jersey-server-2.25.1.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jetty-client-9.2.24.v20180105.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jetty-continuation-9.2.24.v20180105.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jetty-http-9.2.24.v20180105.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jetty-io-9.2.24.v20180105.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jetty-security-9.2.24.v20180105.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jetty-server-9.2.24.v20180105.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jetty-servlet-9.2.24.v20180105.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jetty-servlets-9.2.24.v20180105.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jetty-util-9.2.24.v20180105.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/jopt-simple-5.0.4.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/kafka_2.11-1.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/kafka_2.11-1.1.0-sources.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/kafka_2.11-1.1.0-test-sources.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/kafka-clients-1.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/kafka-log4j-appender-1.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/kafka-streams-1.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/kafka-streams-examples-1.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/kafka-streams-test-utils-1.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/kafka-tools-1.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/log4j-1.2.17.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/lz4-java-1.4.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/maven-artifact-3.5.2.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/metrics-core-2.2.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/osgi-resource-locator-1.0.1.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/plexus-utils-3.1.0.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/reflections-0.9.11.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/rocksdbjni-5.7.3.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/scala-library-2.11.12.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/scala-logging_2.11-3.7.2.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/scala-reflect-2.11.12.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/slf4j-api-1.7.25.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/slf4j-log4j12-1.7.25.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/snappy-java-1.1.7.1.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/validation-api-1.1.0.Final.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/zkclient-0.10.jar:/home/nishtha/Project-Team-20/kafka_2.11-1.1.0/bin/../libs/zookeeper-3.4.10.jar (org.apache.zookeeper.ZooKeeper)
+[2018-12-03 23:26:44,749] INFO Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib (org.apache.zookeeper.ZooKeeper)
+[2018-12-03 23:26:44,749] INFO Client environment:java.io.tmpdir=/tmp (org.apache.zookeeper.ZooKeeper)
+[2018-12-03 23:26:44,749] INFO Client environment:java.compiler=<NA> (org.apache.zookeeper.ZooKeeper)
+[2018-12-03 23:26:44,749] INFO Client environment:os.name=Linux (org.apache.zookeeper.ZooKeeper)
+[2018-12-03 23:26:44,749] INFO Client environment:os.arch=amd64 (org.apache.zookeeper.ZooKeeper)
+[2018-12-03 23:26:44,749] INFO Client environment:os.version=4.15.0-39-generic (org.apache.zookeeper.ZooKeeper)
+[2018-12-03 23:26:44,749] INFO Client environment:user.name=nishtha (org.apache.zookeeper.ZooKeeper)
+[2018-12-03 23:26:44,749] INFO Client environment:user.home=/home/nishtha (org.apache.zookeeper.ZooKeeper)
+[2018-12-03 23:26:44,749] INFO Client environment:user.dir=/home/nishtha/Project-Team-20/kafka_2.11-1.1.0 (org.apache.zookeeper.ZooKeeper)
+[2018-12-03 23:26:44,751] INFO Initiating client connection, connectString=localhost:2181 sessionTimeout=6000 watcher=kafka.zookeeper.ZooKeeperClient$ZooKeeperClientWatcher$@6c64cb25 (org.apache.zookeeper.ZooKeeper)
+[2018-12-03 23:26:44,769] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2018-12-03 23:26:44,771] INFO [ZooKeeperClient] Waiting until connected. (kafka.zookeeper.ZooKeeperClient)
+[2018-12-03 23:26:44,774] INFO Accepted socket connection from /127.0.0.1:59880 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:26:44,777] INFO Socket connection established to localhost/127.0.0.1:2181, initiating session (org.apache.zookeeper.ClientCnxn)
+[2018-12-03 23:26:44,790] INFO Client attempting to establish new session at /127.0.0.1:59880 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:26:44,792] INFO Creating new log file: log.1 (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2018-12-03 23:26:44,855] INFO Established session 0x167781bbfe70000 with negotiated timeout 6000 for client /127.0.0.1:59880 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:26:44,857] INFO Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x167781bbfe70000, negotiated timeout = 6000 (org.apache.zookeeper.ClientCnxn)
+[2018-12-03 23:26:44,859] INFO [ZooKeeperClient] Connected. (kafka.zookeeper.ZooKeeperClient)
+[2018-12-03 23:26:44,918] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe70000 type:create cxid:0x2 zxid:0x3 txntype:-1 reqpath:n/a Error Path:/brokers Error:KeeperErrorCode = NoNode for /brokers (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:26:45,023] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe70000 type:create cxid:0x6 zxid:0x7 txntype:-1 reqpath:n/a Error Path:/config Error:KeeperErrorCode = NoNode for /config (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:26:45,078] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe70000 type:create cxid:0x9 zxid:0xa txntype:-1 reqpath:n/a Error Path:/admin Error:KeeperErrorCode = NoNode for /admin (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:26:45,636] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe70000 type:create cxid:0x15 zxid:0x15 txntype:-1 reqpath:n/a Error Path:/cluster Error:KeeperErrorCode = NoNode for /cluster (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:26:45,703] INFO Cluster ID = dStd91NnSpG0Xhxh-ecwDQ (kafka.server.KafkaServer)
+[2018-12-03 23:26:45,732] WARN No meta.properties file under dir /tmp/kafka-logs/meta.properties (kafka.server.BrokerMetadataCheckpoint)
+[2018-12-03 23:26:45,830] INFO KafkaConfig values: 
+	advertised.host.name = null
+	advertised.listeners = null
+	advertised.port = null
+	alter.config.policy.class.name = null
+	alter.log.dirs.replication.quota.window.num = 11
+	alter.log.dirs.replication.quota.window.size.seconds = 1
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.id = 0
+	broker.id.generation.enable = true
+	broker.rack = null
+	compression.type = producer
+	connections.max.idle.ms = 600000
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delegation.token.expiry.check.interval.ms = 3600000
+	delegation.token.expiry.time.ms = 86400000
+	delegation.token.master.key = null
+	delegation.token.max.lifetime.ms = 604800000
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = true
+	fetch.purgatory.purge.interval.requests = 1000
+	group.initial.rebalance.delay.ms = 0
+	group.max.session.timeout.ms = 300000
+	group.min.session.timeout.ms = 6000
+	host.name = 
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 1.1-IV0
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = PLAINTEXT:PLAINTEXT,SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,SASL_SSL:SASL_SSL
+	listeners = null
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dirs = /tmp/kafka-logs
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.format.version = 1.1-IV0
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	max.incremental.fetch.session.cache.slots = 1000
+	message.max.bytes = 1000012
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.alter.log.dirs.threads = null
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 1440
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 50
+	offsets.topic.replication.factor = 1
+	offsets.topic.segment.bytes = 104857600
+	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
+	password.encoder.iterations = 4096
+	password.encoder.key.length = 128
+	password.encoder.keyfactory.algorithm = null
+	password.encoder.old.secret = null
+	password.encoder.secret = null
+	port = 9092
+	principal.builder.class = null
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.request.bytes = -1
+	queued.max.requests = 500
+	quota.consumer.default = 9223372036854775807
+	quota.producer.default = 9223372036854775807
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 10000
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	security.inter.broker.protocol = PLAINTEXT
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = []
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 60000
+	transaction.max.timeout.ms = 900000
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 1
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 1
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	zookeeper.connect = localhost:2181
+	zookeeper.connection.timeout.ms = 6000
+	zookeeper.max.in.flight.requests = 10
+	zookeeper.session.timeout.ms = 6000
+	zookeeper.set.acl = false
+	zookeeper.sync.time.ms = 2000
+ (kafka.server.KafkaConfig)
+[2018-12-03 23:26:45,839] INFO KafkaConfig values: 
+	advertised.host.name = null
+	advertised.listeners = null
+	advertised.port = null
+	alter.config.policy.class.name = null
+	alter.log.dirs.replication.quota.window.num = 11
+	alter.log.dirs.replication.quota.window.size.seconds = 1
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.id = 0
+	broker.id.generation.enable = true
+	broker.rack = null
+	compression.type = producer
+	connections.max.idle.ms = 600000
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delegation.token.expiry.check.interval.ms = 3600000
+	delegation.token.expiry.time.ms = 86400000
+	delegation.token.master.key = null
+	delegation.token.max.lifetime.ms = 604800000
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = true
+	fetch.purgatory.purge.interval.requests = 1000
+	group.initial.rebalance.delay.ms = 0
+	group.max.session.timeout.ms = 300000
+	group.min.session.timeout.ms = 6000
+	host.name = 
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 1.1-IV0
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = PLAINTEXT:PLAINTEXT,SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,SASL_SSL:SASL_SSL
+	listeners = null
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dirs = /tmp/kafka-logs
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.format.version = 1.1-IV0
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	max.incremental.fetch.session.cache.slots = 1000
+	message.max.bytes = 1000012
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.alter.log.dirs.threads = null
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 1440
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 50
+	offsets.topic.replication.factor = 1
+	offsets.topic.segment.bytes = 104857600
+	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
+	password.encoder.iterations = 4096
+	password.encoder.key.length = 128
+	password.encoder.keyfactory.algorithm = null
+	password.encoder.old.secret = null
+	password.encoder.secret = null
+	port = 9092
+	principal.builder.class = null
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.request.bytes = -1
+	queued.max.requests = 500
+	quota.consumer.default = 9223372036854775807
+	quota.producer.default = 9223372036854775807
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 10000
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	security.inter.broker.protocol = PLAINTEXT
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = []
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 60000
+	transaction.max.timeout.ms = 900000
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 1
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 1
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	zookeeper.connect = localhost:2181
+	zookeeper.connection.timeout.ms = 6000
+	zookeeper.max.in.flight.requests = 10
+	zookeeper.session.timeout.ms = 6000
+	zookeeper.set.acl = false
+	zookeeper.sync.time.ms = 2000
+ (kafka.server.KafkaConfig)
+[2018-12-03 23:26:45,875] INFO [ThrottledRequestReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-12-03 23:26:45,875] INFO [ThrottledRequestReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-12-03 23:26:45,876] INFO [ThrottledRequestReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-12-03 23:26:45,908] INFO Log directory '/tmp/kafka-logs' not found, creating it. (kafka.log.LogManager)
+[2018-12-03 23:26:45,983] INFO Loading logs. (kafka.log.LogManager)
+[2018-12-03 23:26:45,993] INFO Logs loading complete in 10 ms. (kafka.log.LogManager)
+[2018-12-03 23:26:46,003] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+[2018-12-03 23:26:46,007] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+[2018-12-03 23:26:46,429] INFO Awaiting socket connections on 0.0.0.0:9092. (kafka.network.Acceptor)
+[2018-12-03 23:26:46,462] INFO [SocketServer brokerId=0] Started 1 acceptor threads (kafka.network.SocketServer)
+[2018-12-03 23:26:46,509] INFO [ExpirationReaper-0-Produce]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-12-03 23:26:46,510] INFO [ExpirationReaper-0-DeleteRecords]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-12-03 23:26:46,511] INFO [ExpirationReaper-0-Fetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-12-03 23:26:46,522] INFO [LogDirFailureHandler]: Starting (kafka.server.ReplicaManager$LogDirFailureHandler)
+[2018-12-03 23:26:46,553] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.zk.KafkaZkClient)
+[2018-12-03 23:26:46,609] INFO Result of znode creation at /brokers/ids/0 is: OK (kafka.zk.KafkaZkClient)
+[2018-12-03 23:26:46,612] INFO Registered broker 0 at path /brokers/ids/0 with addresses: ArrayBuffer(EndPoint(nishtha-Inspiron-5567,9092,ListenerName(PLAINTEXT),PLAINTEXT)) (kafka.zk.KafkaZkClient)
+[2018-12-03 23:26:46,613] WARN No meta.properties file under dir /tmp/kafka-logs/meta.properties (kafka.server.BrokerMetadataCheckpoint)
+[2018-12-03 23:26:46,757] INFO [ExpirationReaper-0-topic]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-12-03 23:26:46,760] INFO Creating /controller (is it secure? false) (kafka.zk.KafkaZkClient)
+[2018-12-03 23:26:46,761] INFO [ExpirationReaper-0-Heartbeat]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-12-03 23:26:46,767] INFO [ExpirationReaper-0-Rebalance]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-12-03 23:26:46,798] INFO Result of znode creation at /controller is: OK (kafka.zk.KafkaZkClient)
+[2018-12-03 23:26:46,812] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe70000 type:setData cxid:0x21 zxid:0x1a txntype:-1 reqpath:n/a Error Path:/controller_epoch Error:KeeperErrorCode = NoNode for /controller_epoch (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:26:46,852] INFO [GroupCoordinator 0]: Starting up. (kafka.coordinator.group.GroupCoordinator)
+[2018-12-03 23:26:46,865] INFO [GroupCoordinator 0]: Startup complete. (kafka.coordinator.group.GroupCoordinator)
+[2018-12-03 23:26:46,877] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 11 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-12-03 23:26:46,933] INFO [ProducerId Manager 0]: Acquired new producerId block (brokerId:0,blockStartProducerId:0,blockEndProducerId:999) by writing to Zk with path version 1 (kafka.coordinator.transaction.ProducerIdManager)
+[2018-12-03 23:26:46,969] INFO [TransactionCoordinator id=0] Starting up. (kafka.coordinator.transaction.TransactionCoordinator)
+[2018-12-03 23:26:46,982] INFO [TransactionCoordinator id=0] Startup complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[2018-12-03 23:26:46,983] INFO [Transaction Marker Channel Manager 0]: Starting (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2018-12-03 23:26:47,038] INFO [/config/changes-event-process-thread]: Starting (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
+[2018-12-03 23:26:47,073] INFO Kafka version : 1.1.0 (org.apache.kafka.common.utils.AppInfoParser)
+[2018-12-03 23:26:47,073] INFO Kafka commitId : fdcf75ea326b8e07 (org.apache.kafka.common.utils.AppInfoParser)
+[2018-12-03 23:26:47,074] INFO [KafkaServer id=0] started (kafka.server.KafkaServer)
+[2018-12-03 23:26:47,085] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe70000 type:delete cxid:0x37 zxid:0x1d txntype:-1 reqpath:n/a Error Path:/admin/preferred_replica_election Error:KeeperErrorCode = NoNode for /admin/preferred_replica_election (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:41,633] INFO Accepted socket connection from /127.0.0.1:59886 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:27:41,636] INFO Client attempting to establish new session at /127.0.0.1:59886 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:41,662] INFO Established session 0x167781bbfe70001 with negotiated timeout 30000 for client /127.0.0.1:59886 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:41,876] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe70001 type:setData cxid:0x5 zxid:0x1f txntype:-1 reqpath:n/a Error Path:/config/topics/get_dashboard Error:KeeperErrorCode = NoNode for /config/topics/get_dashboard (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:41,949] INFO Processed session termination for sessionid: 0x167781bbfe70001 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:41,962] INFO Closed socket connection for client /127.0.0.1:59886 which had sessionid 0x167781bbfe70001 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-03 23:27:42,353] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions get_dashboard-0 (kafka.server.ReplicaFetcherManager)
+[2018-12-03 23:27:42,396] INFO [Log partition=get_dashboard-0, dir=/tmp/kafka-logs] Loading producer state from offset 0 with message format version 2 (kafka.log.Log)
+[2018-12-03 23:27:42,401] INFO [Log partition=get_dashboard-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 30 ms (kafka.log.Log)
+[2018-12-03 23:27:42,417] INFO Created log for partition get_dashboard-0 in /tmp/kafka-logs with properties {compression.type -> producer, message.format.version -> 1.1-IV0, file.delete.delay.ms -> 60000, max.message.bytes -> 1000012, min.compaction.lag.ms -> 0, message.timestamp.type -> CreateTime, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> false, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> [delete], flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 1073741824, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}. (kafka.log.LogManager)
+[2018-12-03 23:27:42,418] INFO [Partition get_dashboard-0 broker=0] No checkpointed highwatermark is found for partition get_dashboard-0 (kafka.cluster.Partition)
+[2018-12-03 23:27:42,420] INFO Replica loaded for partition get_dashboard-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-12-03 23:27:42,422] INFO [Partition get_dashboard-0 broker=0] get_dashboard-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-03 23:27:42,434] INFO [ReplicaAlterLogDirsManager on broker 0] Added fetcher for partitions List() (kafka.server.ReplicaAlterLogDirsManager)
+[2018-12-03 23:27:42,960] INFO Accepted socket connection from /127.0.0.1:59888 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:27:42,963] INFO Client attempting to establish new session at /127.0.0.1:59888 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:42,985] INFO Established session 0x167781bbfe70002 with negotiated timeout 30000 for client /127.0.0.1:59888 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:43,142] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe70002 type:setData cxid:0x5 zxid:0x27 txntype:-1 reqpath:n/a Error Path:/config/topics/get_home Error:KeeperErrorCode = NoNode for /config/topics/get_home (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:43,223] INFO Processed session termination for sessionid: 0x167781bbfe70002 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:43,254] INFO Closed socket connection for client /127.0.0.1:59888 which had sessionid 0x167781bbfe70002 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-03 23:27:43,295] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions get_home-0 (kafka.server.ReplicaFetcherManager)
+[2018-12-03 23:27:43,325] INFO [Log partition=get_home-0, dir=/tmp/kafka-logs] Loading producer state from offset 0 with message format version 2 (kafka.log.Log)
+[2018-12-03 23:27:43,327] INFO [Log partition=get_home-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 27 ms (kafka.log.Log)
+[2018-12-03 23:27:43,330] INFO Created log for partition get_home-0 in /tmp/kafka-logs with properties {compression.type -> producer, message.format.version -> 1.1-IV0, file.delete.delay.ms -> 60000, max.message.bytes -> 1000012, min.compaction.lag.ms -> 0, message.timestamp.type -> CreateTime, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> false, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> [delete], flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 1073741824, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}. (kafka.log.LogManager)
+[2018-12-03 23:27:43,331] INFO [Partition get_home-0 broker=0] No checkpointed highwatermark is found for partition get_home-0 (kafka.cluster.Partition)
+[2018-12-03 23:27:43,332] INFO Replica loaded for partition get_home-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-12-03 23:27:43,332] INFO [Partition get_home-0 broker=0] get_home-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-03 23:27:43,334] INFO [ReplicaAlterLogDirsManager on broker 0] Added fetcher for partitions List() (kafka.server.ReplicaAlterLogDirsManager)
+[2018-12-03 23:27:44,298] INFO Accepted socket connection from /127.0.0.1:59890 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:27:44,300] INFO Client attempting to establish new session at /127.0.0.1:59890 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:44,316] INFO Established session 0x167781bbfe70003 with negotiated timeout 30000 for client /127.0.0.1:59890 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:44,472] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe70003 type:setData cxid:0x5 zxid:0x2f txntype:-1 reqpath:n/a Error Path:/config/topics/get_inbox Error:KeeperErrorCode = NoNode for /config/topics/get_inbox (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:44,537] INFO Processed session termination for sessionid: 0x167781bbfe70003 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:44,568] INFO Closed socket connection for client /127.0.0.1:59890 which had sessionid 0x167781bbfe70003 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-03 23:27:44,610] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions get_inbox-0 (kafka.server.ReplicaFetcherManager)
+[2018-12-03 23:27:44,620] INFO [Log partition=get_inbox-0, dir=/tmp/kafka-logs] Loading producer state from offset 0 with message format version 2 (kafka.log.Log)
+[2018-12-03 23:27:44,622] INFO [Log partition=get_inbox-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 5 ms (kafka.log.Log)
+[2018-12-03 23:27:44,625] INFO Created log for partition get_inbox-0 in /tmp/kafka-logs with properties {compression.type -> producer, message.format.version -> 1.1-IV0, file.delete.delay.ms -> 60000, max.message.bytes -> 1000012, min.compaction.lag.ms -> 0, message.timestamp.type -> CreateTime, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> false, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> [delete], flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 1073741824, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}. (kafka.log.LogManager)
+[2018-12-03 23:27:44,626] INFO [Partition get_inbox-0 broker=0] No checkpointed highwatermark is found for partition get_inbox-0 (kafka.cluster.Partition)
+[2018-12-03 23:27:44,627] INFO Replica loaded for partition get_inbox-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-12-03 23:27:44,628] INFO [Partition get_inbox-0 broker=0] get_inbox-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-03 23:27:44,630] INFO [ReplicaAlterLogDirsManager on broker 0] Added fetcher for partitions List() (kafka.server.ReplicaAlterLogDirsManager)
+[2018-12-03 23:27:45,581] INFO Accepted socket connection from /127.0.0.1:59892 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:27:45,583] INFO Client attempting to establish new session at /127.0.0.1:59892 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:45,598] INFO Established session 0x167781bbfe70004 with negotiated timeout 30000 for client /127.0.0.1:59892 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:45,756] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe70004 type:setData cxid:0x5 zxid:0x37 txntype:-1 reqpath:n/a Error Path:/config/topics/get_profile Error:KeeperErrorCode = NoNode for /config/topics/get_profile (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:45,841] INFO Processed session termination for sessionid: 0x167781bbfe70004 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:45,872] INFO Closed socket connection for client /127.0.0.1:59892 which had sessionid 0x167781bbfe70004 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-03 23:27:45,912] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions get_profile-0 (kafka.server.ReplicaFetcherManager)
+[2018-12-03 23:27:45,918] INFO [Log partition=get_profile-0, dir=/tmp/kafka-logs] Loading producer state from offset 0 with message format version 2 (kafka.log.Log)
+[2018-12-03 23:27:45,919] INFO [Log partition=get_profile-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 3 ms (kafka.log.Log)
+[2018-12-03 23:27:45,920] INFO Created log for partition get_profile-0 in /tmp/kafka-logs with properties {compression.type -> producer, message.format.version -> 1.1-IV0, file.delete.delay.ms -> 60000, max.message.bytes -> 1000012, min.compaction.lag.ms -> 0, message.timestamp.type -> CreateTime, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> false, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> [delete], flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 1073741824, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}. (kafka.log.LogManager)
+[2018-12-03 23:27:45,920] INFO [Partition get_profile-0 broker=0] No checkpointed highwatermark is found for partition get_profile-0 (kafka.cluster.Partition)
+[2018-12-03 23:27:45,921] INFO Replica loaded for partition get_profile-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-12-03 23:27:45,921] INFO [Partition get_profile-0 broker=0] get_profile-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-03 23:27:45,921] INFO [ReplicaAlterLogDirsManager on broker 0] Added fetcher for partitions List() (kafka.server.ReplicaAlterLogDirsManager)
+[2018-12-03 23:27:46,833] INFO Accepted socket connection from /127.0.0.1:59894 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:27:46,836] INFO Client attempting to establish new session at /127.0.0.1:59894 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:46,858] INFO Established session 0x167781bbfe70005 with negotiated timeout 30000 for client /127.0.0.1:59894 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:47,015] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe70005 type:setData cxid:0x5 zxid:0x3f txntype:-1 reqpath:n/a Error Path:/config/topics/get_propertydetails Error:KeeperErrorCode = NoNode for /config/topics/get_propertydetails (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:47,085] INFO Processed session termination for sessionid: 0x167781bbfe70005 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:47,120] INFO Closed socket connection for client /127.0.0.1:59894 which had sessionid 0x167781bbfe70005 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-03 23:27:47,161] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions get_propertydetails-0 (kafka.server.ReplicaFetcherManager)
+[2018-12-03 23:27:47,175] INFO [Log partition=get_propertydetails-0, dir=/tmp/kafka-logs] Loading producer state from offset 0 with message format version 2 (kafka.log.Log)
+[2018-12-03 23:27:47,176] INFO [Log partition=get_propertydetails-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 4 ms (kafka.log.Log)
+[2018-12-03 23:27:47,180] INFO Created log for partition get_propertydetails-0 in /tmp/kafka-logs with properties {compression.type -> producer, message.format.version -> 1.1-IV0, file.delete.delay.ms -> 60000, max.message.bytes -> 1000012, min.compaction.lag.ms -> 0, message.timestamp.type -> CreateTime, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> false, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> [delete], flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 1073741824, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}. (kafka.log.LogManager)
+[2018-12-03 23:27:47,181] INFO [Partition get_propertydetails-0 broker=0] No checkpointed highwatermark is found for partition get_propertydetails-0 (kafka.cluster.Partition)
+[2018-12-03 23:27:47,181] INFO Replica loaded for partition get_propertydetails-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-12-03 23:27:47,182] INFO [Partition get_propertydetails-0 broker=0] get_propertydetails-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-03 23:27:47,183] INFO [ReplicaAlterLogDirsManager on broker 0] Added fetcher for partitions List() (kafka.server.ReplicaAlterLogDirsManager)
+[2018-12-03 23:27:48,153] INFO Accepted socket connection from /127.0.0.1:59896 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:27:48,155] INFO Client attempting to establish new session at /127.0.0.1:59896 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:48,173] INFO Established session 0x167781bbfe70006 with negotiated timeout 30000 for client /127.0.0.1:59896 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:48,330] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe70006 type:setData cxid:0x5 zxid:0x47 txntype:-1 reqpath:n/a Error Path:/config/topics/get_propertyphotos Error:KeeperErrorCode = NoNode for /config/topics/get_propertyphotos (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:48,407] INFO Processed session termination for sessionid: 0x167781bbfe70006 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:48,418] INFO Closed socket connection for client /127.0.0.1:59896 which had sessionid 0x167781bbfe70006 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-03 23:27:48,495] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions get_propertyphotos-0 (kafka.server.ReplicaFetcherManager)
+[2018-12-03 23:27:48,505] INFO [Log partition=get_propertyphotos-0, dir=/tmp/kafka-logs] Loading producer state from offset 0 with message format version 2 (kafka.log.Log)
+[2018-12-03 23:27:48,506] INFO [Log partition=get_propertyphotos-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 3 ms (kafka.log.Log)
+[2018-12-03 23:27:48,511] INFO Created log for partition get_propertyphotos-0 in /tmp/kafka-logs with properties {compression.type -> producer, message.format.version -> 1.1-IV0, file.delete.delay.ms -> 60000, max.message.bytes -> 1000012, min.compaction.lag.ms -> 0, message.timestamp.type -> CreateTime, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> false, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> [delete], flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 1073741824, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}. (kafka.log.LogManager)
+[2018-12-03 23:27:48,513] INFO [Partition get_propertyphotos-0 broker=0] No checkpointed highwatermark is found for partition get_propertyphotos-0 (kafka.cluster.Partition)
+[2018-12-03 23:27:48,514] INFO Replica loaded for partition get_propertyphotos-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-12-03 23:27:48,514] INFO [Partition get_propertyphotos-0 broker=0] get_propertyphotos-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-03 23:27:48,515] INFO [ReplicaAlterLogDirsManager on broker 0] Added fetcher for partitions List() (kafka.server.ReplicaAlterLogDirsManager)
+[2018-12-03 23:27:49,410] INFO Accepted socket connection from /127.0.0.1:59898 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:27:49,412] INFO Client attempting to establish new session at /127.0.0.1:59898 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:49,428] INFO Established session 0x167781bbfe70007 with negotiated timeout 30000 for client /127.0.0.1:59898 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:49,583] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe70007 type:setData cxid:0x5 zxid:0x4f txntype:-1 reqpath:n/a Error Path:/config/topics/get_searchresults Error:KeeperErrorCode = NoNode for /config/topics/get_searchresults (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:49,656] INFO Processed session termination for sessionid: 0x167781bbfe70007 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:49,691] INFO Closed socket connection for client /127.0.0.1:59898 which had sessionid 0x167781bbfe70007 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-03 23:27:49,732] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions get_searchresults-0 (kafka.server.ReplicaFetcherManager)
+[2018-12-03 23:27:49,756] INFO [Log partition=get_searchresults-0, dir=/tmp/kafka-logs] Loading producer state from offset 0 with message format version 2 (kafka.log.Log)
+[2018-12-03 23:27:49,758] INFO [Log partition=get_searchresults-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 20 ms (kafka.log.Log)
+[2018-12-03 23:27:49,760] INFO Created log for partition get_searchresults-0 in /tmp/kafka-logs with properties {compression.type -> producer, message.format.version -> 1.1-IV0, file.delete.delay.ms -> 60000, max.message.bytes -> 1000012, min.compaction.lag.ms -> 0, message.timestamp.type -> CreateTime, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> false, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> [delete], flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 1073741824, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}. (kafka.log.LogManager)
+[2018-12-03 23:27:49,762] INFO [Partition get_searchresults-0 broker=0] No checkpointed highwatermark is found for partition get_searchresults-0 (kafka.cluster.Partition)
+[2018-12-03 23:27:49,764] INFO Replica loaded for partition get_searchresults-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-12-03 23:27:49,767] INFO [Partition get_searchresults-0 broker=0] get_searchresults-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-03 23:27:49,768] INFO [ReplicaAlterLogDirsManager on broker 0] Added fetcher for partitions List() (kafka.server.ReplicaAlterLogDirsManager)
+[2018-12-03 23:27:50,690] INFO Accepted socket connection from /127.0.0.1:59900 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:27:50,693] INFO Client attempting to establish new session at /127.0.0.1:59900 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:50,709] INFO Established session 0x167781bbfe70008 with negotiated timeout 30000 for client /127.0.0.1:59900 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:50,875] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe70008 type:setData cxid:0x5 zxid:0x57 txntype:-1 reqpath:n/a Error Path:/config/topics/post_book Error:KeeperErrorCode = NoNode for /config/topics/post_book (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:50,948] INFO Processed session termination for sessionid: 0x167781bbfe70008 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:50,983] INFO Closed socket connection for client /127.0.0.1:59900 which had sessionid 0x167781bbfe70008 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-03 23:27:51,022] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions post_book-0 (kafka.server.ReplicaFetcherManager)
+[2018-12-03 23:27:51,028] INFO [Log partition=post_book-0, dir=/tmp/kafka-logs] Loading producer state from offset 0 with message format version 2 (kafka.log.Log)
+[2018-12-03 23:27:51,029] INFO [Log partition=post_book-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 3 ms (kafka.log.Log)
+[2018-12-03 23:27:51,030] INFO Created log for partition post_book-0 in /tmp/kafka-logs with properties {compression.type -> producer, message.format.version -> 1.1-IV0, file.delete.delay.ms -> 60000, max.message.bytes -> 1000012, min.compaction.lag.ms -> 0, message.timestamp.type -> CreateTime, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> false, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> [delete], flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 1073741824, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}. (kafka.log.LogManager)
+[2018-12-03 23:27:51,031] INFO [Partition post_book-0 broker=0] No checkpointed highwatermark is found for partition post_book-0 (kafka.cluster.Partition)
+[2018-12-03 23:27:51,031] INFO Replica loaded for partition post_book-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-12-03 23:27:51,032] INFO [Partition post_book-0 broker=0] post_book-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-03 23:27:51,032] INFO [ReplicaAlterLogDirsManager on broker 0] Added fetcher for partitions List() (kafka.server.ReplicaAlterLogDirsManager)
+[2018-12-03 23:27:51,942] INFO Accepted socket connection from /127.0.0.1:59902 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:27:51,944] INFO Client attempting to establish new session at /127.0.0.1:59902 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:51,969] INFO Established session 0x167781bbfe70009 with negotiated timeout 30000 for client /127.0.0.1:59902 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:52,123] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe70009 type:setData cxid:0x5 zxid:0x5f txntype:-1 reqpath:n/a Error Path:/config/topics/post_bookproperty Error:KeeperErrorCode = NoNode for /config/topics/post_bookproperty (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:52,203] INFO Processed session termination for sessionid: 0x167781bbfe70009 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:52,232] INFO Closed socket connection for client /127.0.0.1:59902 which had sessionid 0x167781bbfe70009 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-03 23:27:52,272] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions post_bookproperty-0 (kafka.server.ReplicaFetcherManager)
+[2018-12-03 23:27:52,279] INFO [Log partition=post_bookproperty-0, dir=/tmp/kafka-logs] Loading producer state from offset 0 with message format version 2 (kafka.log.Log)
+[2018-12-03 23:27:52,281] INFO [Log partition=post_bookproperty-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 4 ms (kafka.log.Log)
+[2018-12-03 23:27:52,283] INFO Created log for partition post_bookproperty-0 in /tmp/kafka-logs with properties {compression.type -> producer, message.format.version -> 1.1-IV0, file.delete.delay.ms -> 60000, max.message.bytes -> 1000012, min.compaction.lag.ms -> 0, message.timestamp.type -> CreateTime, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> false, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> [delete], flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 1073741824, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}. (kafka.log.LogManager)
+[2018-12-03 23:27:52,285] INFO [Partition post_bookproperty-0 broker=0] No checkpointed highwatermark is found for partition post_bookproperty-0 (kafka.cluster.Partition)
+[2018-12-03 23:27:52,285] INFO Replica loaded for partition post_bookproperty-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-12-03 23:27:52,286] INFO [Partition post_bookproperty-0 broker=0] post_bookproperty-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-03 23:27:52,287] INFO [ReplicaAlterLogDirsManager on broker 0] Added fetcher for partitions List() (kafka.server.ReplicaAlterLogDirsManager)
+[2018-12-03 23:27:53,275] INFO Accepted socket connection from /127.0.0.1:59904 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:27:53,277] INFO Client attempting to establish new session at /127.0.0.1:59904 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:53,297] INFO Established session 0x167781bbfe7000a with negotiated timeout 30000 for client /127.0.0.1:59904 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:53,455] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe7000a type:setData cxid:0x5 zxid:0x67 txntype:-1 reqpath:n/a Error Path:/config/topics/post_login Error:KeeperErrorCode = NoNode for /config/topics/post_login (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:53,552] INFO Processed session termination for sessionid: 0x167781bbfe7000a (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:53,581] INFO Closed socket connection for client /127.0.0.1:59904 which had sessionid 0x167781bbfe7000a (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-03 23:27:53,634] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions post_login-0 (kafka.server.ReplicaFetcherManager)
+[2018-12-03 23:27:53,644] INFO [Log partition=post_login-0, dir=/tmp/kafka-logs] Loading producer state from offset 0 with message format version 2 (kafka.log.Log)
+[2018-12-03 23:27:53,645] INFO [Log partition=post_login-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 3 ms (kafka.log.Log)
+[2018-12-03 23:27:53,648] INFO Created log for partition post_login-0 in /tmp/kafka-logs with properties {compression.type -> producer, message.format.version -> 1.1-IV0, file.delete.delay.ms -> 60000, max.message.bytes -> 1000012, min.compaction.lag.ms -> 0, message.timestamp.type -> CreateTime, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> false, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> [delete], flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 1073741824, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}. (kafka.log.LogManager)
+[2018-12-03 23:27:53,651] INFO [Partition post_login-0 broker=0] No checkpointed highwatermark is found for partition post_login-0 (kafka.cluster.Partition)
+[2018-12-03 23:27:53,651] INFO Replica loaded for partition post_login-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-12-03 23:27:53,652] INFO [Partition post_login-0 broker=0] post_login-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-03 23:27:53,653] INFO [ReplicaAlterLogDirsManager on broker 0] Added fetcher for partitions List() (kafka.server.ReplicaAlterLogDirsManager)
+[2018-12-03 23:27:54,586] INFO Accepted socket connection from /127.0.0.1:59906 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:27:54,588] INFO Client attempting to establish new session at /127.0.0.1:59906 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:54,611] INFO Established session 0x167781bbfe7000b with negotiated timeout 30000 for client /127.0.0.1:59906 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:54,771] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe7000b type:setData cxid:0x5 zxid:0x6f txntype:-1 reqpath:n/a Error Path:/config/topics/post_lyp Error:KeeperErrorCode = NoNode for /config/topics/post_lyp (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:54,852] INFO Processed session termination for sessionid: 0x167781bbfe7000b (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:54,902] INFO Closed socket connection for client /127.0.0.1:59906 which had sessionid 0x167781bbfe7000b (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-03 23:27:54,938] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions post_lyp-0 (kafka.server.ReplicaFetcherManager)
+[2018-12-03 23:27:54,940] INFO [Log partition=post_lyp-0, dir=/tmp/kafka-logs] Loading producer state from offset 0 with message format version 2 (kafka.log.Log)
+[2018-12-03 23:27:54,941] INFO [Log partition=post_lyp-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 1 ms (kafka.log.Log)
+[2018-12-03 23:27:54,945] INFO Created log for partition post_lyp-0 in /tmp/kafka-logs with properties {compression.type -> producer, message.format.version -> 1.1-IV0, file.delete.delay.ms -> 60000, max.message.bytes -> 1000012, min.compaction.lag.ms -> 0, message.timestamp.type -> CreateTime, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> false, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> [delete], flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 1073741824, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}. (kafka.log.LogManager)
+[2018-12-03 23:27:54,945] INFO [Partition post_lyp-0 broker=0] No checkpointed highwatermark is found for partition post_lyp-0 (kafka.cluster.Partition)
+[2018-12-03 23:27:54,946] INFO Replica loaded for partition post_lyp-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-12-03 23:27:54,946] INFO [Partition post_lyp-0 broker=0] post_lyp-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-03 23:27:54,946] INFO [ReplicaAlterLogDirsManager on broker 0] Added fetcher for partitions List() (kafka.server.ReplicaAlterLogDirsManager)
+[2018-12-03 23:27:55,924] INFO Accepted socket connection from /127.0.0.1:59908 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:27:55,927] INFO Client attempting to establish new session at /127.0.0.1:59908 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:55,942] INFO Established session 0x167781bbfe7000c with negotiated timeout 30000 for client /127.0.0.1:59908 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:56,100] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe7000c type:setData cxid:0x5 zxid:0x77 txntype:-1 reqpath:n/a Error Path:/config/topics/post_ownerlogin Error:KeeperErrorCode = NoNode for /config/topics/post_ownerlogin (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:56,163] INFO Processed session termination for sessionid: 0x167781bbfe7000c (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:56,193] INFO Closed socket connection for client /127.0.0.1:59908 which had sessionid 0x167781bbfe7000c (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-03 23:27:56,237] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions post_ownerlogin-0 (kafka.server.ReplicaFetcherManager)
+[2018-12-03 23:27:56,253] INFO [Log partition=post_ownerlogin-0, dir=/tmp/kafka-logs] Loading producer state from offset 0 with message format version 2 (kafka.log.Log)
+[2018-12-03 23:27:56,255] INFO [Log partition=post_ownerlogin-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 5 ms (kafka.log.Log)
+[2018-12-03 23:27:56,259] INFO Created log for partition post_ownerlogin-0 in /tmp/kafka-logs with properties {compression.type -> producer, message.format.version -> 1.1-IV0, file.delete.delay.ms -> 60000, max.message.bytes -> 1000012, min.compaction.lag.ms -> 0, message.timestamp.type -> CreateTime, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> false, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> [delete], flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 1073741824, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}. (kafka.log.LogManager)
+[2018-12-03 23:27:56,262] INFO [Partition post_ownerlogin-0 broker=0] No checkpointed highwatermark is found for partition post_ownerlogin-0 (kafka.cluster.Partition)
+[2018-12-03 23:27:56,262] INFO Replica loaded for partition post_ownerlogin-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-12-03 23:27:56,263] INFO [Partition post_ownerlogin-0 broker=0] post_ownerlogin-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-03 23:27:56,264] INFO [ReplicaAlterLogDirsManager on broker 0] Added fetcher for partitions List() (kafka.server.ReplicaAlterLogDirsManager)
+[2018-12-03 23:27:57,217] INFO Accepted socket connection from /127.0.0.1:59910 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:27:57,219] INFO Client attempting to establish new session at /127.0.0.1:59910 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:57,235] INFO Established session 0x167781bbfe7000d with negotiated timeout 30000 for client /127.0.0.1:59910 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:57,392] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe7000d type:setData cxid:0x5 zxid:0x7f txntype:-1 reqpath:n/a Error Path:/config/topics/post_profile Error:KeeperErrorCode = NoNode for /config/topics/post_profile (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:57,462] INFO Processed session termination for sessionid: 0x167781bbfe7000d (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:57,504] INFO Closed socket connection for client /127.0.0.1:59910 which had sessionid 0x167781bbfe7000d (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-03 23:27:57,544] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions post_profile-0 (kafka.server.ReplicaFetcherManager)
+[2018-12-03 23:27:57,555] INFO [Log partition=post_profile-0, dir=/tmp/kafka-logs] Loading producer state from offset 0 with message format version 2 (kafka.log.Log)
+[2018-12-03 23:27:57,557] INFO [Log partition=post_profile-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 4 ms (kafka.log.Log)
+[2018-12-03 23:27:57,560] INFO Created log for partition post_profile-0 in /tmp/kafka-logs with properties {compression.type -> producer, message.format.version -> 1.1-IV0, file.delete.delay.ms -> 60000, max.message.bytes -> 1000012, min.compaction.lag.ms -> 0, message.timestamp.type -> CreateTime, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> false, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> [delete], flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 1073741824, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}. (kafka.log.LogManager)
+[2018-12-03 23:27:57,562] INFO [Partition post_profile-0 broker=0] No checkpointed highwatermark is found for partition post_profile-0 (kafka.cluster.Partition)
+[2018-12-03 23:27:57,562] INFO Replica loaded for partition post_profile-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-12-03 23:27:57,563] INFO [Partition post_profile-0 broker=0] post_profile-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-03 23:27:57,564] INFO [ReplicaAlterLogDirsManager on broker 0] Added fetcher for partitions List() (kafka.server.ReplicaAlterLogDirsManager)
+[2018-12-03 23:27:58,544] INFO Accepted socket connection from /127.0.0.1:59912 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:27:58,546] INFO Client attempting to establish new session at /127.0.0.1:59912 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:58,566] INFO Established session 0x167781bbfe7000e with negotiated timeout 30000 for client /127.0.0.1:59912 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:58,726] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe7000e type:setData cxid:0x5 zxid:0x87 txntype:-1 reqpath:n/a Error Path:/config/topics/post_sendmessage Error:KeeperErrorCode = NoNode for /config/topics/post_sendmessage (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:58,799] INFO Processed session termination for sessionid: 0x167781bbfe7000e (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:27:58,829] INFO Closed socket connection for client /127.0.0.1:59912 which had sessionid 0x167781bbfe7000e (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-03 23:27:58,869] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions post_sendmessage-0 (kafka.server.ReplicaFetcherManager)
+[2018-12-03 23:27:58,878] INFO [Log partition=post_sendmessage-0, dir=/tmp/kafka-logs] Loading producer state from offset 0 with message format version 2 (kafka.log.Log)
+[2018-12-03 23:27:58,881] INFO [Log partition=post_sendmessage-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 5 ms (kafka.log.Log)
+[2018-12-03 23:27:58,883] INFO Created log for partition post_sendmessage-0 in /tmp/kafka-logs with properties {compression.type -> producer, message.format.version -> 1.1-IV0, file.delete.delay.ms -> 60000, max.message.bytes -> 1000012, min.compaction.lag.ms -> 0, message.timestamp.type -> CreateTime, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> false, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> [delete], flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 1073741824, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}. (kafka.log.LogManager)
+[2018-12-03 23:27:58,886] INFO [Partition post_sendmessage-0 broker=0] No checkpointed highwatermark is found for partition post_sendmessage-0 (kafka.cluster.Partition)
+[2018-12-03 23:27:58,886] INFO Replica loaded for partition post_sendmessage-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-12-03 23:27:58,886] INFO [Partition post_sendmessage-0 broker=0] post_sendmessage-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-03 23:27:58,887] INFO [ReplicaAlterLogDirsManager on broker 0] Added fetcher for partitions List() (kafka.server.ReplicaAlterLogDirsManager)
+[2018-12-03 23:27:59,775] INFO Accepted socket connection from /127.0.0.1:59914 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:27:59,777] INFO Client attempting to establish new session at /127.0.0.1:59914 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:59,793] INFO Established session 0x167781bbfe7000f with negotiated timeout 30000 for client /127.0.0.1:59914 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:27:59,986] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe7000f type:setData cxid:0x5 zxid:0x8f txntype:-1 reqpath:n/a Error Path:/config/topics/post_signup Error:KeeperErrorCode = NoNode for /config/topics/post_signup (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:28:00,083] INFO Processed session termination for sessionid: 0x167781bbfe7000f (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:28:00,121] INFO Closed socket connection for client /127.0.0.1:59914 which had sessionid 0x167781bbfe7000f (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-03 23:28:00,158] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions post_signup-0 (kafka.server.ReplicaFetcherManager)
+[2018-12-03 23:28:00,161] INFO [Log partition=post_signup-0, dir=/tmp/kafka-logs] Loading producer state from offset 0 with message format version 2 (kafka.log.Log)
+[2018-12-03 23:28:00,161] INFO [Log partition=post_signup-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 1 ms (kafka.log.Log)
+[2018-12-03 23:28:00,162] INFO Created log for partition post_signup-0 in /tmp/kafka-logs with properties {compression.type -> producer, message.format.version -> 1.1-IV0, file.delete.delay.ms -> 60000, max.message.bytes -> 1000012, min.compaction.lag.ms -> 0, message.timestamp.type -> CreateTime, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> false, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> [delete], flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 1073741824, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}. (kafka.log.LogManager)
+[2018-12-03 23:28:00,164] INFO [Partition post_signup-0 broker=0] No checkpointed highwatermark is found for partition post_signup-0 (kafka.cluster.Partition)
+[2018-12-03 23:28:00,164] INFO Replica loaded for partition post_signup-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-12-03 23:28:00,164] INFO [Partition post_signup-0 broker=0] post_signup-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-03 23:28:00,165] INFO [ReplicaAlterLogDirsManager on broker 0] Added fetcher for partitions List() (kafka.server.ReplicaAlterLogDirsManager)
+[2018-12-03 23:28:01,057] INFO Accepted socket connection from /127.0.0.1:59916 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:28:01,062] INFO Client attempting to establish new session at /127.0.0.1:59916 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:28:01,077] INFO Established session 0x167781bbfe70010 with negotiated timeout 30000 for client /127.0.0.1:59916 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:28:01,242] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe70010 type:setData cxid:0x5 zxid:0x97 txntype:-1 reqpath:n/a Error Path:/config/topics/response_topic Error:KeeperErrorCode = NoNode for /config/topics/response_topic (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:28:01,363] INFO Processed session termination for sessionid: 0x167781bbfe70010 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:28:01,391] INFO Closed socket connection for client /127.0.0.1:59916 which had sessionid 0x167781bbfe70010 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-03 23:28:01,431] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions response_topic-0 (kafka.server.ReplicaFetcherManager)
+[2018-12-03 23:28:01,469] INFO [Log partition=response_topic-0, dir=/tmp/kafka-logs] Loading producer state from offset 0 with message format version 2 (kafka.log.Log)
+[2018-12-03 23:28:01,470] INFO [Log partition=response_topic-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 3 ms (kafka.log.Log)
+[2018-12-03 23:28:01,472] INFO Created log for partition response_topic-0 in /tmp/kafka-logs with properties {compression.type -> producer, message.format.version -> 1.1-IV0, file.delete.delay.ms -> 60000, max.message.bytes -> 1000012, min.compaction.lag.ms -> 0, message.timestamp.type -> CreateTime, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> false, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> [delete], flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 1073741824, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}. (kafka.log.LogManager)
+[2018-12-03 23:28:01,476] INFO [Partition response_topic-0 broker=0] No checkpointed highwatermark is found for partition response_topic-0 (kafka.cluster.Partition)
+[2018-12-03 23:28:01,477] INFO Replica loaded for partition response_topic-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-12-03 23:28:01,477] INFO [Partition response_topic-0 broker=0] response_topic-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-03 23:28:01,480] INFO [ReplicaAlterLogDirsManager on broker 0] Added fetcher for partitions List() (kafka.server.ReplicaAlterLogDirsManager)
+[2018-12-03 23:28:02,405] INFO Accepted socket connection from /127.0.0.1:59918 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:28:02,414] INFO Client attempting to establish new session at /127.0.0.1:59918 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:28:02,544] INFO Established session 0x167781bbfe70011 with negotiated timeout 30000 for client /127.0.0.1:59918 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:28:02,743] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe70011 type:setData cxid:0x5 zxid:0x9f txntype:-1 reqpath:n/a Error Path:/config/topics/get_transaction_history Error:KeeperErrorCode = NoNode for /config/topics/get_transaction_history (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:28:03,361] INFO Processed session termination for sessionid: 0x167781bbfe70011 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:28:03,578] INFO Closed socket connection for client /127.0.0.1:59918 which had sessionid 0x167781bbfe70011 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-03 23:28:03,662] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions get_transaction_history-0 (kafka.server.ReplicaFetcherManager)
+[2018-12-03 23:28:03,670] INFO [Log partition=get_transaction_history-0, dir=/tmp/kafka-logs] Loading producer state from offset 0 with message format version 2 (kafka.log.Log)
+[2018-12-03 23:28:03,671] INFO [Log partition=get_transaction_history-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 3 ms (kafka.log.Log)
+[2018-12-03 23:28:03,674] INFO Created log for partition get_transaction_history-0 in /tmp/kafka-logs with properties {compression.type -> producer, message.format.version -> 1.1-IV0, file.delete.delay.ms -> 60000, max.message.bytes -> 1000012, min.compaction.lag.ms -> 0, message.timestamp.type -> CreateTime, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> false, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> [delete], flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 1073741824, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}. (kafka.log.LogManager)
+[2018-12-03 23:28:03,676] INFO [Partition get_transaction_history-0 broker=0] No checkpointed highwatermark is found for partition get_transaction_history-0 (kafka.cluster.Partition)
+[2018-12-03 23:28:03,676] INFO Replica loaded for partition get_transaction_history-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-12-03 23:28:03,677] INFO [Partition get_transaction_history-0 broker=0] get_transaction_history-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-03 23:28:03,678] INFO [ReplicaAlterLogDirsManager on broker 0] Added fetcher for partitions List() (kafka.server.ReplicaAlterLogDirsManager)
+[2018-12-03 23:28:04,586] INFO Accepted socket connection from /127.0.0.1:59928 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:28:04,588] INFO Client attempting to establish new session at /127.0.0.1:59928 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:28:04,608] INFO Established session 0x167781bbfe70012 with negotiated timeout 30000 for client /127.0.0.1:59928 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:28:04,841] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe70012 type:setData cxid:0x5 zxid:0xa7 txntype:-1 reqpath:n/a Error Path:/config/topics/post_buyproperty Error:KeeperErrorCode = NoNode for /config/topics/post_buyproperty (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:28:04,928] INFO Processed session termination for sessionid: 0x167781bbfe70012 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:28:04,958] INFO Closed socket connection for client /127.0.0.1:59928 which had sessionid 0x167781bbfe70012 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-12-03 23:28:05,009] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions post_buyproperty-0 (kafka.server.ReplicaFetcherManager)
+[2018-12-03 23:28:05,015] INFO [Log partition=post_buyproperty-0, dir=/tmp/kafka-logs] Loading producer state from offset 0 with message format version 2 (kafka.log.Log)
+[2018-12-03 23:28:05,016] INFO [Log partition=post_buyproperty-0, dir=/tmp/kafka-logs] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 2 ms (kafka.log.Log)
+[2018-12-03 23:28:05,018] INFO Created log for partition post_buyproperty-0 in /tmp/kafka-logs with properties {compression.type -> producer, message.format.version -> 1.1-IV0, file.delete.delay.ms -> 60000, max.message.bytes -> 1000012, min.compaction.lag.ms -> 0, message.timestamp.type -> CreateTime, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> false, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> [delete], flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 1073741824, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}. (kafka.log.LogManager)
+[2018-12-03 23:28:05,020] INFO [Partition post_buyproperty-0 broker=0] No checkpointed highwatermark is found for partition post_buyproperty-0 (kafka.cluster.Partition)
+[2018-12-03 23:28:05,021] INFO Replica loaded for partition post_buyproperty-0 with initial high watermark 0 (kafka.cluster.Replica)
+[2018-12-03 23:28:05,021] INFO [Partition post_buyproperty-0 broker=0] post_buyproperty-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1 (kafka.cluster.Partition)
+[2018-12-03 23:28:05,022] INFO [ReplicaAlterLogDirsManager on broker 0] Added fetcher for partitions List() (kafka.server.ReplicaAlterLogDirsManager)
+[2018-12-03 23:29:51,971] INFO Accepted socket connection from /127.0.0.1:59940 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:29:51,973] WARN Connection request from old client /127.0.0.1:59940; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:29:51,973] INFO Client attempting to establish new session at /127.0.0.1:59940 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:29:52,003] INFO Established session 0x167781bbfe70013 with negotiated timeout 30000 for client /127.0.0.1:59940 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,356] INFO Accepted socket connection from /127.0.0.1:59952 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:30:17,356] INFO Accepted socket connection from /127.0.0.1:59954 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:30:17,356] INFO Accepted socket connection from /127.0.0.1:59956 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:30:17,356] INFO Accepted socket connection from /127.0.0.1:59958 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:30:17,356] INFO Accepted socket connection from /127.0.0.1:59960 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:30:17,357] INFO Accepted socket connection from /127.0.0.1:59962 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:30:17,357] INFO Accepted socket connection from /127.0.0.1:59964 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:30:17,357] INFO Accepted socket connection from /127.0.0.1:59966 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:30:17,358] INFO Accepted socket connection from /127.0.0.1:59968 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:30:17,358] INFO Accepted socket connection from /127.0.0.1:59970 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:30:17,358] INFO Accepted socket connection from /127.0.0.1:59972 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:30:17,358] INFO Accepted socket connection from /127.0.0.1:59974 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:30:17,358] INFO Accepted socket connection from /127.0.0.1:59976 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:30:17,359] INFO Accepted socket connection from /127.0.0.1:59978 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:30:17,360] WARN Connection request from old client /127.0.0.1:59952; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,360] INFO Client attempting to establish new session at /127.0.0.1:59952 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,360] INFO Accepted socket connection from /127.0.0.1:59980 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:30:17,361] WARN Connection request from old client /127.0.0.1:59954; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,361] INFO Client attempting to establish new session at /127.0.0.1:59954 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,361] WARN Connection request from old client /127.0.0.1:59956; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,361] INFO Client attempting to establish new session at /127.0.0.1:59956 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,361] INFO Accepted socket connection from /127.0.0.1:59982 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:30:17,361] WARN Connection request from old client /127.0.0.1:59958; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,361] INFO Client attempting to establish new session at /127.0.0.1:59958 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,361] WARN Connection request from old client /127.0.0.1:59962; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,361] INFO Client attempting to establish new session at /127.0.0.1:59962 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,362] WARN Connection request from old client /127.0.0.1:59970; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,362] INFO Client attempting to establish new session at /127.0.0.1:59970 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,362] WARN Connection request from old client /127.0.0.1:59968; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,362] INFO Client attempting to establish new session at /127.0.0.1:59968 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,362] WARN Connection request from old client /127.0.0.1:59966; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,362] INFO Client attempting to establish new session at /127.0.0.1:59966 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,362] WARN Connection request from old client /127.0.0.1:59964; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,362] INFO Client attempting to establish new session at /127.0.0.1:59964 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,362] WARN Connection request from old client /127.0.0.1:59960; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,362] INFO Client attempting to establish new session at /127.0.0.1:59960 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,363] WARN Connection request from old client /127.0.0.1:59982; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,363] INFO Client attempting to establish new session at /127.0.0.1:59982 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,363] WARN Connection request from old client /127.0.0.1:59974; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,363] INFO Client attempting to establish new session at /127.0.0.1:59974 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,363] WARN Connection request from old client /127.0.0.1:59972; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,363] INFO Client attempting to establish new session at /127.0.0.1:59972 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,363] WARN Connection request from old client /127.0.0.1:59978; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,363] INFO Client attempting to establish new session at /127.0.0.1:59978 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,363] WARN Connection request from old client /127.0.0.1:59980; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,363] INFO Client attempting to establish new session at /127.0.0.1:59980 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,363] WARN Connection request from old client /127.0.0.1:59976; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,363] INFO Client attempting to establish new session at /127.0.0.1:59976 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,384] INFO Established session 0x167781bbfe70014 with negotiated timeout 30000 for client /127.0.0.1:59952 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,401] INFO Established session 0x167781bbfe70015 with negotiated timeout 30000 for client /127.0.0.1:59954 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,401] INFO Established session 0x167781bbfe70016 with negotiated timeout 30000 for client /127.0.0.1:59956 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,402] INFO Established session 0x167781bbfe70017 with negotiated timeout 30000 for client /127.0.0.1:59958 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,402] INFO Established session 0x167781bbfe70018 with negotiated timeout 30000 for client /127.0.0.1:59962 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,403] INFO Established session 0x167781bbfe70019 with negotiated timeout 30000 for client /127.0.0.1:59970 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,403] INFO Established session 0x167781bbfe7001a with negotiated timeout 30000 for client /127.0.0.1:59968 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,403] INFO Established session 0x167781bbfe7001b with negotiated timeout 30000 for client /127.0.0.1:59966 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,404] INFO Established session 0x167781bbfe7001c with negotiated timeout 30000 for client /127.0.0.1:59964 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,404] INFO Established session 0x167781bbfe7001d with negotiated timeout 30000 for client /127.0.0.1:59960 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,405] INFO Established session 0x167781bbfe7001e with negotiated timeout 30000 for client /127.0.0.1:59982 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,405] INFO Established session 0x167781bbfe7001f with negotiated timeout 30000 for client /127.0.0.1:59974 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,405] INFO Established session 0x167781bbfe70020 with negotiated timeout 30000 for client /127.0.0.1:59972 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,406] INFO Established session 0x167781bbfe70021 with negotiated timeout 30000 for client /127.0.0.1:59978 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,407] INFO Established session 0x167781bbfe70022 with negotiated timeout 30000 for client /127.0.0.1:59980 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:30:17,407] INFO Established session 0x167781bbfe70023 with negotiated timeout 30000 for client /127.0.0.1:59976 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:31:03,849] INFO Accepted socket connection from /127.0.0.1:60084 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-12-03 23:31:03,856] WARN Connection request from old client /127.0.0.1:60084; will be dropped if server is in r-o mode (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:31:03,856] INFO Client attempting to establish new session at /127.0.0.1:60084 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:31:03,894] INFO Established session 0x167781bbfe70024 with negotiated timeout 30000 for client /127.0.0.1:60084 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-12-03 23:31:04,026] INFO Updated PartitionLeaderEpoch. New: {epoch:0, offset:0}, Current: {epoch:-1, offset:-1} for Partition: get_home-0. Cache now contains 0 entries. (kafka.server.epoch.LeaderEpochFileCache)
+[2018-12-03 23:31:04,218] INFO Updated PartitionLeaderEpoch. New: {epoch:0, offset:0}, Current: {epoch:-1, offset:-1} for Partition: response_topic-0. Cache now contains 0 entries. (kafka.server.epoch.LeaderEpochFileCache)
+[2018-12-03 23:31:08,205] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe70000 type:setData cxid:0xb7 zxid:0xc0 txntype:-1 reqpath:n/a Error Path:/consumers/kafka-node-group/offset/get_home/0 Error:KeeperErrorCode = NoNode for /consumers/kafka-node-group/offset/get_home/0 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:31:08,238] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe70000 type:create cxid:0xb8 zxid:0xc1 txntype:-1 reqpath:n/a Error Path:/consumers/kafka-node-group/offset/get_home Error:KeeperErrorCode = NoNode for /consumers/kafka-node-group/offset/get_home (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:31:08,255] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe70000 type:create cxid:0xb9 zxid:0xc2 txntype:-1 reqpath:n/a Error Path:/consumers/kafka-node-group/offset Error:KeeperErrorCode = NoNode for /consumers/kafka-node-group/offset (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:31:08,272] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe70000 type:create cxid:0xba zxid:0xc3 txntype:-1 reqpath:n/a Error Path:/consumers/kafka-node-group Error:KeeperErrorCode = NoNode for /consumers/kafka-node-group (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:31:09,037] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe70000 type:setData cxid:0xbf zxid:0xc8 txntype:-1 reqpath:n/a Error Path:/consumers/kafka-node-group/offset/response_topic/0 Error:KeeperErrorCode = NoNode for /consumers/kafka-node-group/offset/response_topic/0 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:31:09,053] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe70000 type:create cxid:0xc0 zxid:0xc9 txntype:-1 reqpath:n/a Error Path:/consumers/kafka-node-group/offset/response_topic Error:KeeperErrorCode = NoNode for /consumers/kafka-node-group/offset/response_topic (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:31:17,900] INFO Updated PartitionLeaderEpoch. New: {epoch:0, offset:0}, Current: {epoch:-1, offset:-1} for Partition: get_searchresults-0. Cache now contains 0 entries. (kafka.server.epoch.LeaderEpochFileCache)
+[2018-12-03 23:31:23,503] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe70000 type:setData cxid:0xc8 zxid:0xd1 txntype:-1 reqpath:n/a Error Path:/consumers/kafka-node-group/offset/get_searchresults/0 Error:KeeperErrorCode = NoNode for /consumers/kafka-node-group/offset/get_searchresults/0 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:31:23,527] INFO Got user-level KeeperException when processing sessionid:0x167781bbfe70000 type:create cxid:0xc9 zxid:0xd2 txntype:-1 reqpath:n/a Error Path:/consumers/kafka-node-group/offset/get_searchresults Error:KeeperErrorCode = NoNode for /consumers/kafka-node-group/offset/get_searchresults (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-12-03 23:31:34,798] WARN fsync-ing the write ahead log in SyncThread:0 took 1319ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2018-12-03 23:32:40,550] WARN fsync-ing the write ahead log in SyncThread:0 took 1115ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2018-12-03 23:33:26,686] WARN fsync-ing the write ahead log in SyncThread:0 took 1352ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2018-12-03 23:36:46,853] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-12-03 23:37:49,837] WARN fsync-ing the write ahead log in SyncThread:0 took 1494ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2018-12-03 23:38:35,717] WARN fsync-ing the write ahead log in SyncThread:0 took 1537ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2018-12-03 23:40:11,300] WARN fsync-ing the write ahead log in SyncThread:0 took 1381ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2018-12-03 23:40:16,064] WARN fsync-ing the write ahead log in SyncThread:0 took 1065ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2018-12-03 23:40:51,640] WARN fsync-ing the write ahead log in SyncThread:0 took 1146ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2018-12-03 23:44:23,682] WARN fsync-ing the write ahead log in SyncThread:0 took 1191ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2018-12-03 23:44:49,105] WARN fsync-ing the write ahead log in SyncThread:0 took 1472ms which will adversely effect operation latency. See the ZooKeeper troubleshooting guide (org.apache.zookeeper.server.persistence.FileTxnLog)
