@@ -154,7 +154,9 @@ const storage2 = multer.diskStorage({
         to save the file on the server and will be available as
         req.file.pathname in the router handler.
       */
-    const newFilename = `${uuidv4()}${path.extname(file.originalname)}`;
+    console.log("PHOTO NAME=" + file.originalname)
+    //const newFilename = `${uuidv4()}${path.extname(file.originalname)}`;
+    const newFilename = file.originalname
     cb(null, newFilename);
   }
 });
