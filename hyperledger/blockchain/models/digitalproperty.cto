@@ -13,10 +13,7 @@
  */
 
 /**
- * A business network for shipping perishable goods
- * The cargo is temperature controlled and contracts
- * can be negociated based on the temperature
- * readings received for the cargo
+ * A business network for digital property ledger
  */
 
 namespace org.digitalproperty
@@ -29,8 +26,7 @@ abstract transaction PropertyTransaction {
 }
 
 /**
- * An temperature reading for a shipment. E.g. received from a
- * device within a temperature controlled shipping container
+ * A transaction to be registered on the property
  */
 transaction TransactionDetails extends PropertyTransaction {
     o String buyer

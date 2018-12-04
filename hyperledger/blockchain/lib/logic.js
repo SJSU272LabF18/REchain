@@ -17,15 +17,13 @@
 
 
 /**
- * A temperature reading has been received for a shipment
- * @param {org.digitalproperty.TransactionDetails} transactionDetails - the TemperatureReading transaction
+ * A transaction has been received on a property
+ * @param {org.digitalproperty.TransactionDetails} transactionDetails - the Property Transaction
  * @transaction
  */
 async function transactionDetails(transactionDetails) {  // eslint-disable-line no-unused-vars
 
     const property = transactionDetails.property;
-
-    // console.log('Adding temperature ' + temperatureReading.centigrade + ' to shipment ' + shipment.$identifier);
 
     if (property.transactionHistory) {
         property.transactionHistory.push(transactionDetails);
@@ -33,7 +31,7 @@ async function transactionDetails(transactionDetails) {  // eslint-disable-line 
         property.transactionHistory = [transactionDetails];
     }
 
-    // add the temp reading to the shipment
+    // add the transaction to the specified property
     const propertyRegistry = await getAssetRegistry('org.digitalproperty.Property');
     await propertyRegistry.update(property);
 }
