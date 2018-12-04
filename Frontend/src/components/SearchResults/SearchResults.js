@@ -221,7 +221,7 @@ class SearchResults extends Component {
               <div class="searchphoto">
               {console.log("Photo", r.photos[0])}
                 {/* <img src="https://i.imgur.com/lVAv7GN.jpg" /> */}
-                <img class="proppp" src={require("../../images/photo1.jpg")} />
+                <img class="proppp" src={require("../../images/"+r.photos[0])} />
               </div>
               {/* { <img class="proppp" src={path.join(__dirname, "..", r.photos[0])} /> } */}
             </th>
