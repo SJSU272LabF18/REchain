@@ -20,11 +20,7 @@ router.post("/", function(req, res) {
         msg: "System Error, Try Again."
       });
     } else {
-      if (result.indexOf('error') < 0){
-        res.status(500).send(result);
-      }else {
-        res.status(200).send(result);
-      }    
+      res.status(200).end(result);  
     }
   });
 });

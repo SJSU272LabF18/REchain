@@ -70,13 +70,20 @@ function handle_request(msg, callback) {
             body: data,
             json: true
             }, function(error, response, body){
-                if(error || response.statusCode != 200){ 
+                if(error){ 
                   console.log(
                     "There was a problem in creating new asset in hyperledger in lyp.js"
                   );
                   console.log(error); 
                   callback(null, []);
                 } 
+
+                if (response.statusCode != 200) {
+                  console.log(
+                    "There was a problem in creating new asset in hyperledger in lyp.js"
+                  );
+                  callback(null, []);
+                }
                 console.log("Property asset created.")
                 console.log("********************************************************")
                 console.log("Posting transaction for property ",propID)
@@ -96,14 +103,20 @@ function handle_request(msg, callback) {
                     body: transaction,
                     json: true
                     }, function(error, response, body){
-                        if(error || response.statusCode != 200){ 
+                        if(error){ 
                           console.log(
                             "There was a problem in saving the transaction history to hyperledger in lyp.js"
                           );
                           console.log(error); 
                           callback(null, []);
+                        }  
+                        if (response.statusCode != 200) {
+                          console.log(
+                            "There was a problem in saving the transaction history to hyperledger in lyp.js"
+                          );
+                          callback(null, []);
                         }
-                        //console.log(body);
+                        // console.log(body);
                         console.log("Posting transaction completed.")
                         console.log("****************************************")
                         property.save().then(

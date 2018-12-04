@@ -120,7 +120,11 @@ export function lyp(values, callback) {
   const request = axios.post(`${ROOT_URL}/lyp`, values).then(response => {
     console.log("Status Code : ", response.status);
     console.log("ACTION RESP: ", response.data);
-    callback(response);
+    if (response.status === 200) {
+      callback(response.data);
+    } else {
+      console.log("Problem in listing property.");
+    }
   });
 
   return {
