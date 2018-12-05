@@ -206,7 +206,7 @@ class SearchResults extends Component {
                 </td>
                 <br />
                 <td>
-                  <h4>{r.streetaddr} </h4>
+                  <h4>{r.streetaddr} {" "} {r.unit} </h4>
                 </td>
                 <br />
                 <td>

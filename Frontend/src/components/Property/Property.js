@@ -513,6 +513,7 @@ var details=( <div class="btn-group inline dropdownnav">
                 <p class="grayie">
                   <b>Address of Property:</b> {"  "}
                   {this.state.streetaddr} {", "}{" "}
+                  {this.state.unit} {", "} {" "}
                   {this.state.city.charAt(0).toUpperCase() +
                     this.state.city.slice(1)}{" "}
                   {", "} {this.state.state.toUpperCase()} {", "}{" "}
