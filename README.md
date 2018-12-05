@@ -48,7 +48,7 @@ Title records are decentralized, challenging-to-access aspect of the real estate
 ```
 - Go back one level to hyperledger/ and then change directory to blockchain and run the following:
 ```sh
-composer network install --archiveFile ./dist/digital-property.bna  --card PeerAdmin@hlfv1
+composer network install --archiveFile digital-property.bna  --card PeerAdmin@hlfv1
 
 composer network start --networkName digital-property --networkVersion 0.2.6 --card PeerAdmin@hlfv1 --networkAdmin admin --networkAdminEnrollSecret adminpw
 
