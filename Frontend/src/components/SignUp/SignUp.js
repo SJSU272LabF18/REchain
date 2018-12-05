@@ -216,11 +216,11 @@ class SignUp extends Component {
                   <br />
                   <p class="disclaimer">
                     By joining Bloquity you are accepting our{" "}
-                    <a href="https://www.homeaway.com/info/about-us/legal/terms-conditions">
+                    <a href="#">
                       Terms of Service
                     </a>{" "}
                     and{" "}
-                    <a href="https://www.homeaway.com/info/about-us/legal/privacy-policy">
+                    <a href="#">
                       Privacy Policy
                     </a>
                     .

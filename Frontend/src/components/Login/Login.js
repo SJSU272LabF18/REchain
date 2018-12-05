@@ -187,11 +187,11 @@ class Login extends Component {
             <br />
             <div class="disclaimer2">
               Use of this Web site constitutes acceptance of the Bloquity.com{" "}
-              <a href="https://www.homeaway.com/info/about-us/legal/terms-conditions">
+              <a href="#">
                 Terms and Conditions
               </a>{" "}
               and{" "}
-              <a href="https://www.homeaway.com/info/about-us/legal/privacy-policy">
+              <a href="#">
                 Privacy Policy
               </a>
               .<br /> ©2018 Bloquity. All rights reserved.
