@@ -22,8 +22,14 @@ Title records are decentralized, challenging-to-access aspect of the real estate
 
 ****************************************************************************************************************
 
-### Usage (currently runs locally and is tedius, will be moved to AWS/Bluemix and dockerized eventually)
+### Usage (Links for AWS hosting provided + run commands for running locally)
 
+### AWS
+- Hyperledger: http://107.23.194.9:4000
+- Bloquity Web App: http://23.22.128.199:3000
+
+
+### Running locally
 #### Dependencies
 - Docker
 - Node (npm)
