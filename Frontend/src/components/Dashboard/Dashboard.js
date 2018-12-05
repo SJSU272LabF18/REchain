@@ -81,7 +81,7 @@ class Dashboard extends Component {
 
       if(typeof(this.props.match.params.streetaddr)!="undefined") {
         this.state.streetaddr=this.props.match.params.streetaddr
-        this.state.unit=this.props.match.params.state.unit
+        this.state.unit=this.props.match.params.unit
         this.state.zip=this.props.match.params.state.zip
         this.props.getTransactionHistory({streetaddr: this.props.match.params.streetaddr,
           unit: this.props.match.params.unit,
