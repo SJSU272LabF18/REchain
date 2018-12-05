@@ -54,7 +54,8 @@ class Login extends Component {
       sessionStorage.setItem("email", values.email);
       localStorage.setItem("token", res);
       window.location.reload();
-      this.props.history.push("/home");
+      //this.props.history.push("/home");
+      this.props.history.go(-1)
     });
   }
 
