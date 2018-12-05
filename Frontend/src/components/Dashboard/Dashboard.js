@@ -71,12 +71,18 @@ class Dashboard extends Component {
           });
         });
       if(this.props.location.state){
+        this.state.streetaddr=this.props.location.state.streetaddr
+        this.state.unit=this.props.location.state.unit
+        this.state.zip=this.props.location.state.zip
         this.props.getTransactionHistory({streetaddr: this.props.location.state.streetaddr,
           unit: this.props.location.state.unit,
           zip: this.props.location.state.zip});
       }
 
       if(typeof(this.props.match.params.streetaddr)!="undefined") {
+        this.state.streetaddr=this.props.match.params.streetaddr
+        this.state.unit=this.props.match.params.state.unit
+        this.state.zip=this.props.match.params.state.zip
         this.props.getTransactionHistory({streetaddr: this.props.match.params.streetaddr,
           unit: this.props.match.params.unit,
           zip: this.props.match.params.zip});
